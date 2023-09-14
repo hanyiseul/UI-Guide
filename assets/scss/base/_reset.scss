@@ -1,0 +1,28 @@
+
+* {
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  &:lang(ko) { word-break: keep-all; }
+}
+body {
+  scrollbar-width: none;                  /* Firefox */
+  &::-webkit-scrollbar { display: none; } /* Chrome */
+  overflow-wrap: break-word;
+  text-size-adjust: 100%;
+  line-height: 2rem;
+}
+a { color: $gray-600; text-decoration: none; -webkit-tap-highlight-color: transparent; }
+button { color: $gray-600; }
+img { max-width: 100%; height: auto; vertical-align: top; }
+::-moz-placeholder { opacity: 1; }        /* Firefox */
+[class] { margin: 0; padding: 0; box-sizing: border-box; }
+[class]::before,
+[class]::after { box-sizing: border-box; }
+[class]:where(ol, ul) { list-style: none; }
+[class]:where(button, fieldset, iframe, input, select, textarea) { border: 0; }
+[class]:where(button, dialog, input, mark, meter, progress) { background-color: transparent; }
+[class]:where(button, input, meter, progress, select, textarea) { appearance: none; }
+[class]:where(table) { border: 0; border-collapse: collapse; border-spacing: 0; }
+[class]:where(em) { font-style: normal; }

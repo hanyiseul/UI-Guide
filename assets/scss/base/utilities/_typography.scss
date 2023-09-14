@@ -1,0 +1,29 @@
+// Alignment
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+// Underline
+.text-underline {
+  text-decoration: underline !important;
+}
+
+// Font Weight
+@for $i from 1 through 9 {
+  .fw-#{$i * 100} {
+    font-weight: $i * 100 !important;
+  }
+}
+
+//ellipsis
+.is-ellipsis {
+    @include ellipsis();
+}
