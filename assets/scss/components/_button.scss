@@ -1,0 +1,18 @@
+button {
+  width: 2rem;
+  height: 2rem;
+  border: 0.1rem solid $gray-600;
+  background-color: inherit;
+  outline: none;
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+.btn {
+  &[class^="is"] {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2rem auto;
+  }
+}

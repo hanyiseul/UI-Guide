@@ -4279,6 +4279,18 @@ img {
   word-break: break-all;
 }
 
+.blind {
+  position: absolute !important;
+  width: 0.1rem !important;
+  height: 0.1rem !important;
+  padding: 0 !important;
+  margin: -0.1rem !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -4303,23 +4315,6 @@ img {
   vertical-align: bottom !important;
 }
 
-.visually-hidden {
-  position: absolute !important;
-  width: 0.1rem !important;
-  height: 0.1rem !important;
-  padding: 0 !important;
-  margin: -0.1rem !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
-}
-
-/*
-.visually-hidden-focusable:not(:focus):not(:focus-within) {
-  @include visually-hidden();
-}
-*/
 .width-0 {
   width: 0rem !important;
 }
@@ -6255,11 +6250,11 @@ http://scripts.sil.org/OFL
   src: local("Pretendard Thin"), url("../fonts/Pretendard-Thin.woff2") format("woff2"), url("../fonts/Pretendard-Thin.woff") format("woff");
 }
 body {
-  min-width: 36rem;
+  min-width: 128rem;
   font-size: 1.5rem;
   font-weight: 400;
   color: #222222;
-  line-height: 2.3rem;
+  line-height: 1em;
 }
 
 body,
@@ -6361,6 +6356,42 @@ section.contents__setting {
   height: 3rem;
 }
 
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+  width: 5rem;
+  height: auto;
+}
+
+.gnb {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100%;
+}
+.gnb li {
+  margin: 0 5rem;
+}
+
+.header__item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 44rem;
+}
+.header__item [class^=headerItem__] + [class^=headerItem__] {
+  margin-left: 2rem;
+}
+.header__item .headerItem__search .input {
+  padding: 0.5rem 0;
+}
+
 .before-load {
   overflow: hidden;
 }
@@ -6443,3 +6474,71 @@ section.contents__setting {
   100% { stroke-dashoffset: -157; }
 }
 */
+.icon,
+.img {
+  width: 2rem;
+  height: 2rem;
+  pointer-events: none;
+  touch-action: none;
+}
+.icon img,
+.img img {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  width: 2rem;
+  height: 2rem;
+  border: 0.1rem solid #222222;
+  background-color: inherit;
+  outline: none;
+}
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+.btn[class^=is] {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2rem auto;
+}
+
+[class]:where(input),
+[class]:where(textarea) {
+  color: #222222;
+  border-radius: 0;
+}
+[class]:where(input)::placeholder,
+[class]:where(textarea)::placeholder {
+  color: #BBBBBB;
+}
+[class]:where(input):disabled,
+[class]:where(textarea):disabled {
+  color: #D9D9D9;
+}
+[class]:where(input):focus, [class]:where(input):active, [class]:where(input):hover,
+[class]:where(textarea):focus,
+[class]:where(textarea):active,
+[class]:where(textarea):hover {
+  outline: none;
+}
+
+[class]:where(input) {
+  padding: 2rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border-bottom: 0.1rem solid #ECECEC;
+}
+[class]:where(input):hover, [class]:where(input):focus, [class]:where(input):active, [class]:where(input).is-active {
+  border-color: #222222;
+}
+[class]:where(input):disabled, [class]:where(input)[readonly] {
+  border-color: #ECECEC;
+}
+
+[class]:where(textarea) {
+  display: inline-block;
+  width: 100%;
+  padding: 2rem 0;
+}

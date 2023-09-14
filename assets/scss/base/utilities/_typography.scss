@@ -25,5 +25,11 @@
 
 //ellipsis
 .is-ellipsis {
-    @include ellipsis();
+  @include ellipsis();
 }
+
+// blind
+.blind {
+  @include visually-hidden();
+}
+  
