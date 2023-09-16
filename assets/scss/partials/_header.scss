@@ -1,4 +1,5 @@
 .header__inner {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,11 +24,11 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 44rem;
+  width: 46rem;
 
   [class^="headerItem__"] {
     + [class^="headerItem__"] {
-      margin-left: 2rem;
+      margin-left: 2.5rem;
     }
   }
   .headerItem__search {
