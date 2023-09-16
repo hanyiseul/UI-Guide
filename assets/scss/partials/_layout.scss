@@ -26,7 +26,7 @@ body {
   }
   
   .container {
-    min-height: calc((calc(var(--vh, 1vh) * 100)) - 12rem); // header
+    min-height: calc((calc(var(--vh, 1vh) * 100)) - 10rem); // header
     background: $blue-100; 
   }
   
