@@ -26,30 +26,13 @@ body {
   }
   
   .container {
-    min-height: calc((calc(var(--vh, 1vh) * 100)) - 10rem); // header
-    background: $blue-100; 
+    min-height: calc((calc(var(--vh, 1vh) * 100)) - 11.6rem); // header
+    padding-left: 21rem;
   }
   
   .contents {
-    min-height: calc((calc(var(--vh, 1vh) * 100)) - 10.6rem);
+    padding: 2rem;
   
-    &.is-main {
-      section {
-        background-color: transparent;
-      }
-      +.footer {
-        border-top: 0.1rem solid $gray-200;
-      }
-    }
-  
-    &.has-headers {
-      background-color: $gray-200;
-      background-color: $blue-100;
-  
-      .header:not(:last-child) {
-        margin-bottom: 2.3rem;
-      }
-    }
   }
   
   section {
