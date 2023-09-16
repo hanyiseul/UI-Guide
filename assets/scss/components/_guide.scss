@@ -1,0 +1,26 @@
+.is-guide {
+  border: 1px solid red;
+}
+
+
+.table {
+  &.typo__table {
+    width: 100%;
+    text-align: center;
+    tbody {
+      tr {
+        &:first-child {
+          td {
+            padding-top: 3rem;
+          }
+        }
+      }
+      td {
+        padding: 1rem 0;
+        font-size: 2.5rem;
+        font-weight: 500;
+        border-bottom: 0.1rem solid $gray-500;
+      }
+    }
+  }
+}

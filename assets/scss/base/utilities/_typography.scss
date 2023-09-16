@@ -32,4 +32,10 @@
 .blind {
   @include visually-hidden();
 }
-  
+
+// title 
+.title__wrap {
+  + .content {
+    margin-top: 2rem;
+  }
+}

@@ -21,6 +21,12 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+table {
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 a {
   color: #222222;
   text-decoration: none;
@@ -4291,6 +4297,10 @@ img {
   border: 0 !important;
 }
 
+.title__wrap + .content {
+  margin-top: 2rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -6283,64 +6293,7 @@ textarea {
 }
 
 section {
-  background-color: #ffffff;
   padding: 0 1.5rem;
-}
-section:only-child {
-  min-height: calc(var(--vh, 1vh) * 100 - 10.6rem);
-}
-section:last-child {
-  padding: 0 1.5rem 4rem;
-  box-sizing: border-box;
-}
-section.contents__setting {
-  background-color: transparent;
-  padding-top: 2rem;
-}
-
-.content__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 4.4rem;
-  margin: 0 -1.5rem;
-  padding: 0 1.5rem;
-  background-color: #F7F9FA;
-  box-sizing: border-box;
-}
-.content__header .header__title,
-.content__header .input__label {
-  color: #8D9FB5;
-  font-size: 1.3rem;
-  font-weight: 600;
-}
-.content__header .input {
-  display: flex;
-  align-items: center;
-}
-.content__header .btn__area {
-  margin: 0.7rem 0;
-}
-.content__header .btn__area .dropdown__area {
-  margin: 0 0 0 0.7rem;
-}
-.content__header .btn__area .dropdown__area .btn__area {
-  margin: 0;
-}
-.content__header .btn__dropdownMore {
-  height: 4.4rem;
-}
-.content__header .btn__dropdownMore + .dropdown {
-  top: 3.8rem;
-}
-.content__header .btn__refresh {
-  width: 3rem;
-  height: 100%;
-  justify-content: flex-end;
-}
-.content__header .btn__refresh .icon {
-  width: 3rem;
-  height: 3rem;
 }
 
 .header__inner {
@@ -6565,4 +6518,22 @@ button:not(:disabled) {
   display: inline-block;
   width: 100%;
   padding: 2rem 0;
+}
+
+.is-guide {
+  border: 1px solid red;
+}
+
+.table.typo__table {
+  width: 100%;
+  text-align: center;
+}
+.table.typo__table tbody tr:first-child td {
+  padding-top: 3rem;
+}
+.table.typo__table tbody td {
+  padding: 1rem 0;
+  font-size: 2.5rem;
+  font-weight: 500;
+  border-bottom: 0.1rem solid #494949;
 }

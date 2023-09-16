@@ -13,6 +13,7 @@ body {
   text-size-adjust: 100%;
   line-height: 2rem;
 }
+table { border: 0; border-collapse: collapse; border-spacing: 0 }
 a { color: $gray-600; text-decoration: none; -webkit-tap-highlight-color: transparent; }
 button { color: $gray-600; }
 img { max-width: 100%; height: auto; vertical-align: top; }

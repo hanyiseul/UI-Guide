@@ -6,102 +6,39 @@ body {
     color: $document-font-color;
     line-height: $document-line-height;
   }
-  
-  body,
-  button,
-  fieldset,
-  iframe,
-  input,
-  select,
-  textarea { font-family: $document-font-family; }
-  
-  // .wrapper {}
-  
-  .logo {
-    &.is-header {
-      display: inline-flex;
-      width: 13.8rem;
-      height: 2.2rem;
-    }
+
+body,
+button,
+fieldset,
+iframe,
+input,
+select,
+textarea { font-family: $document-font-family; }
+
+// .wrapper {}
+
+.logo {
+  &.is-header {
+    display: inline-flex;
+    width: 13.8rem;
+    height: 2.2rem;
   }
+}
+
+.container {
+  min-height: calc((calc(var(--vh, 1vh) * 100)) - 11.6rem); // header
+  padding-left: 21rem;
+}
+
+.contents {
+  padding: 2rem;
+
+}
+
+section {
+  padding: 0 1.5rem;
+}
+
+.content {
   
-  .container {
-    min-height: calc((calc(var(--vh, 1vh) * 100)) - 11.6rem); // header
-    padding-left: 21rem;
-  }
-  
-  .contents {
-    padding: 2rem;
-  
-  }
-  
-  section {
-    background-color: $white;
-    padding: 0 1.5rem;
-  
-    &:only-child {
-      min-height: calc((calc(var(--vh, 1vh) * 100)) - 10.6rem);
-    }
-    &:last-child {
-      padding: 0 1.5rem 4rem;
-      box-sizing: border-box;
-    }
-    &.contents__setting {
-      background-color: transparent;
-      padding-top: 2rem;
-    }
-  }
-  
-  .content__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 4.4rem;
-    margin: 0 -1.5rem;
-    padding: 0 1.5rem;
-    background-color: $blue-100;
-    box-sizing: border-box;
-  
-    .header__title,
-    .input__label {
-      color: $blue-500;
-      font-size: 1.3rem;
-      font-weight: 600;
-    }
-  
-    .input {
-      display: flex;
-      align-items: center;
-    }
-  
-    .btn__area {
-      margin: 0.7rem 0;
-  
-      .dropdown__area {
-        margin:0 0 0 0.7rem;
-        .btn__area {
-          margin:0;
-        }
-      }
-    }
-  
-    .btn__dropdownMore {
-      height: 4.4rem;
-      
-      +.dropdown {
-        top: 3.8rem;
-      }
-    }
-    
-    .btn__refresh {
-      width: 3rem;
-      height: 100%;
-      justify-content: flex-end;
-  
-      .icon {
-        width: 3rem;
-        height: 3rem;
-      }
-    }
-  }
-  
+}
