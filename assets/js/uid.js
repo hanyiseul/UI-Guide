@@ -1,4 +1,6 @@
-function includeHTML(){
+(() => {
+  // layout 호출
+  function includeHTML(){
     let allElements = document.getElementsByTagName('*');
       Array.prototype.forEach.call(allElements, function(el) {
         let includePath = el.dataset.includePath;
@@ -13,11 +15,7 @@ function includeHTML(){
           xhttp.send();
         }
       });
-}//includeHTML
- 
- 
-/* ✨ 실행 */
-window.addEventListener('DOMContentLoaded',()=>{
+    }
     includeHTML();
-});
- 
+
+})();
