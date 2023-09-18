@@ -1,0 +1,29 @@
+
+@mixin font-classes {
+  @for $i from 10 through 100 {
+    $value: $i * 0.1rem !important;
+    .font#{$i} {
+      font-size: $value;
+    }
+  }
+}
+@include font-classes;
+
+
+/* 타입을 받아서 폰트 세팅을 결정 */
+@mixin font($type: "h") {
+  @if ($type== "h1") {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    word-break: break-word;
+    font-weight: 600;
+  }
+  @if ($type== "semi-title") {
+    font-size: 1.4rem;
+    font-family: "Roboto", sans-serif;
+    color:#E0E0E0;
+    line-height:150%;
+    word-break: break-all;
+    font-weight:500;
+  }
+}

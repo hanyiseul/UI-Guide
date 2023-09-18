@@ -6,51 +6,142 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Typography</title>
 <script src="/assets/js/uid.js" defer></script>
+<script src="/assets/js/guide.js" defer></script>
 <link rel="stylesheet" href="/assets/css/index.css">
 </head>
 <body>
 <!-- https://www.w3schools.com/howto/howto_html_include.asp -->
  
-<header data-include-path="/html/layout/header.html"></header>
- 
-<nav data-include-path="/html/layout/sidebar.html"></nav>
-<div class="container">
+<div class="container container__guide">
+  <header data-include-path="/html/layout/header.html"></header>
+   
+  <nav data-include-path="/html/layout/sidebar.html"></nav>
+
   <div class="contents">
     <section>
       <div class="title__wrap">
         <div class="title">
-          <h2>Text</h2>
+          <h2>Typography</h2>
         </div>
       </div>
-      <div class="content is-guide">
-        <table class="table typo__table">
-          <colgroup>
-            <col>
-          </colgroup>
-          <thead>
-            <tr>
-              <th>Level</th>
-              <th>Font Size</th>
-              <th>Line Height</th>
-              <th>Usage</th>
-              <th>Font Weight</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><h1 class="h1">H1</h1></td>
-              <td>30px</td>
-              <td>36px</td>
-              <td>Main Title</td>
-              <td>Bold / 600</td>
-            </tr>
-          </tbody>
-        </table>
+
+      <div class="content">
+        <div class="is-guide">
+          <div class="title__wrap">
+            <div class="title">
+              <h3>Type scale</h3>
+            </div>
+          </div>
+          <table class="table typo__table">
+            <colgroup>
+              <col>
+            </colgroup>
+            <thead>
+              <tr>
+                <th>Level</th>
+                <th>Font Size</th>
+                <th>Line Height</th>
+                <th>Usage</th>
+                <th>Font Weight</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><h1 class="h1">Heading 1</h1></td>
+                <td>30px</td>
+                <td>36px</td>
+                <td>Main Title</td>
+                <td>Semibold / 600</td>
+              </tr>
+              <tr>
+                <td><h2 class="h2">Heading 2</h2></td>
+                <td>26px</td>
+                <td>30px</td>
+                <td>Sub Title</td>
+                <td>Semibold / 600</td>
+              </tr>
+              <tr>
+                <td><h3 class="h3">Heading 3</h3></td>
+                <td>17px</td>
+                <td>20px</td>
+                <td>Content Title</td>
+                <td>
+                  <span class="fw-600">Semibold</span> / 
+                  <span class="fw-500">Medium</span> / 
+                  <span class="fw-400">Regular</span>
+                </td>
+              </tr>
+              <tr>
+                <td><h4 class="h4">Heading 4</h4></td>
+                <td>16px</td>
+                <td>20px</td>
+                <td>2Depth Title</td>
+                <td>
+                  <span class="fw-600">Semibold</span> / 
+                  <span class="fw-500">Medium</span> / 
+                  <span class="fw-400">Regular</span>
+                </td>
+              </tr>
+              <tr>
+                <td><h5 class="h5">Heading 5</h5></td>
+                <td>15px</td>
+                <td>20px</td>
+                <td>3Depth Title</td>
+                <td>
+                  <span class="fw-600">Semibold</span> / 
+                  <span class="fw-500">Medium</span> / 
+                  <span class="fw-400">Regular</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Body</td>
+                <td>15px</td>
+                <td>20px</td>
+                <td>General Text / Label	Semibold / Medium / Regular</td>
+                <td>
+                  <span class="fw-600">Semibold</span> / 
+                  <span class="fw-500">Medium</span> / 
+                  <span class="fw-400">Regular</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="guide__code blind">
+            <h1 class="h1">Heading1</h1>
+            <h2 class="h2">Heading2</h2>
+            <h3 class="h3">Heading3</h3>
+            <h4 class="h4">Heading4</h4>
+            <h5 class="h5">Heading5</h5>
+            <p>body</p>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="button is-outline is-primary is-medium is-secondary guideBtn">Copy</button>
+          </div>
+        </div>
+        
+        <div class="is-guide">
+          <div class="title__wrap">
+            <div class="title">
+              <h3>Font Size</h3>
+            </div>
+          </div>
+
+          <div class="guide__code">
+            <p class="title">1</p>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="button is-outline is-primary is-medium is-secondary guideBtn">Copy</button>
+          </div>
+        </div>
+        </div>
       </div>
     </section>
   </div>
+  <footer data-include-path="/html/layout/footer.html"></footer>
 </div>
 
-<footer data-include-path="/html/layout/footer.html"></footer>
 </body>
 </html>
