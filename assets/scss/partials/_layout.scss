@@ -28,6 +28,7 @@ textarea { font-family: $document-font-family; }
 .container {
   min-height: calc((calc(var(--vh, 1vh) * 100)) - 11.6rem); // header
   padding-left: 21rem;
+  background-color: #f1f1f1;
 }
 
 .contents {
@@ -36,9 +37,7 @@ textarea { font-family: $document-font-family; }
 }
 
 section {
-  padding: 0 1.5rem;
 }
 
 .content {
-  
 }

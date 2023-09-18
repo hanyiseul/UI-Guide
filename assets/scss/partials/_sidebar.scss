@@ -1,11 +1,9 @@
 .sidebar {
-  position: fixed;
-  left: 0;
   width: 21rem;
   min-height: calc((calc(var(--vh, 1vh) * 100)) - 11.6rem);
-  padding: 1.5rem 5rem;
-  border-right: 0.1rem solid $gray-200;
   padding: 1.5rem 5rem 1.5rem 3rem;
+  border-right: 0.1rem solid $gray-200;
+  background-color: $white;
 }
 
 .sidebar__list {
