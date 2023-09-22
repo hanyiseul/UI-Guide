@@ -28,13 +28,13 @@ table {
 }
 
 a {
-  color: #222222;
+  color: #000;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
 
 button {
-  color: #222222;
+  color: #000;
 }
 
 img {
@@ -112,6 +112,12 @@ img {
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 2rem;
+}
+
+.h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.8rem;
 }
 
 .fontSize-xs {
@@ -6066,63 +6072,63 @@ img {
   border-color: #ECECEC !important;
 }
 
-.text-gray-250 {
+.text-gray-300 {
   color: #D9D9D9 !important;
 }
 
-.bg-gray-250 {
+.bg-gray-300 {
   background-color: #D9D9D9 !important;
 }
 
-.border-gray-250 {
+.border-gray-300 {
   border-color: #D9D9D9 !important;
 }
 
-.text-gray-300 {
+.text-gray-400 {
   color: #BBBBBB !important;
 }
 
-.bg-gray-300 {
+.bg-gray-400 {
   background-color: #BBBBBB !important;
 }
 
-.border-gray-300 {
+.border-gray-400 {
   border-color: #BBBBBB !important;
 }
 
-.text-gray-400 {
+.text-gray-500 {
   color: #979797 !important;
 }
 
-.bg-gray-400 {
+.bg-gray-500 {
   background-color: #979797 !important;
 }
 
-.border-gray-400 {
+.border-gray-500 {
   border-color: #979797 !important;
 }
 
-.text-gray-500 {
+.text-gray-600 {
   color: #494949 !important;
 }
 
-.bg-gray-500 {
+.bg-gray-600 {
   background-color: #494949 !important;
 }
 
-.border-gray-500 {
+.border-gray-600 {
   border-color: #494949 !important;
 }
 
-.text-gray-600 {
+.text-gray-700 {
   color: #222222 !important;
 }
 
-.bg-gray-600 {
+.bg-gray-700 {
   background-color: #222222 !important;
 }
 
-.border-gray-600 {
+.border-gray-700 {
   border-color: #222222 !important;
 }
 
@@ -6222,27 +6228,27 @@ img {
   border-color: #EEF7FE !important;
 }
 
-.text-point-1 {
+.text-alert-1 {
   color: #E23A15 !important;
 }
 
-.bg-point-1 {
+.bg-alert-1 {
   background-color: #E23A15 !important;
 }
 
-.border-point-1 {
+.border-alert-1 {
   border-color: #E23A15 !important;
 }
 
-.text-point-2 {
+.text-alert-2 {
   color: #4679FE !important;
 }
 
-.bg-point-2 {
+.bg-alert-2 {
   background-color: #4679FE !important;
 }
 
-.border-point-2 {
+.border-alert-2 {
   border-color: #4679FE !important;
 }
 
@@ -6312,7 +6318,7 @@ body {
   min-width: 128rem;
   font-size: 1.5rem;
   font-weight: 400;
-  color: #222222;
+  color: #494949;
   line-height: 1em;
 }
 
@@ -6388,7 +6394,7 @@ textarea {
   align-items: center !important;
   padding: 2rem;
   font-size: 1.2rem;
-  color: #494949;
+  color: #979797;
   border-top: 0.1rem solid #ECECEC;
   background-color: #ffffff;
 }
@@ -6510,7 +6516,7 @@ textarea {
 button {
   width: 2rem;
   height: 2rem;
-  border: 0.1rem solid #222222;
+  border: 0.1rem solid #494949;
   background-color: inherit;
   outline: none;
 }
@@ -6526,12 +6532,12 @@ button:not(:disabled) {
 
 [class]:where(input),
 [class]:where(textarea) {
-  color: #222222;
+  color: #494949;
   border-radius: 0;
 }
 [class]:where(input)::placeholder,
 [class]:where(textarea)::placeholder {
-  color: #BBBBBB;
+  color: #D9D9D9;
 }
 [class]:where(input):disabled,
 [class]:where(textarea):disabled {
@@ -6551,7 +6557,7 @@ button:not(:disabled) {
   border-bottom: 0.1rem solid #ECECEC;
 }
 [class]:where(input):hover, [class]:where(input):focus, [class]:where(input):active, [class]:where(input).is-active {
-  border-color: #222222;
+  border-color: #494949;
 }
 [class]:where(input):disabled, [class]:where(input)[readonly] {
   border-color: #ECECEC;
@@ -6619,6 +6625,17 @@ button:not(:disabled) {
 .guide__code > p:not(:first-child) {
   margin-top: 1rem;
 }
+.guide__code .text-white {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.guide__code [class^=bg] {
+  padding: 1rem;
+}
+.guide__code [class^=border] {
+  padding: 1rem;
+  border-width: 1px;
+  border-style: solid;
+}
 
 .guideCode {
   position: relative;
@@ -6643,8 +6660,15 @@ button:not(:disabled) {
 
 .guideBtn {
   position: absolute;
-  top: 1.5rem;
-  right: 2rem;
+  top: 1.2rem;
+  right: 1.2rem;
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  border: 0.1rem solid #D9D9D9;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
 }
 
 .table.typo__table {

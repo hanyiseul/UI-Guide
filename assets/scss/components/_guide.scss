@@ -62,6 +62,17 @@
       margin-top: 1rem;
     }
   }
+  .text-white {
+    background-color: rgba(0,0,0,0.5);
+  }
+  [class^="bg"] {
+    padding: 1rem;
+  }
+  [class^="border"] {
+    padding: 1rem;
+    border-width: 1px;
+    border-style: solid;
+  }
 }
 
 .guideCode {
@@ -87,8 +98,16 @@
 
 .guideBtn{
   position: absolute;
-  top: 1.5rem;
-  right: 2rem;
+  top: 1.2rem;
+  right: 1.2rem;
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  border: 0.1rem solid $gray-300;
+  border-radius: 0.5rem;
+  background-color: $white;
+  
 }
 
 .table {
