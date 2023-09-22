@@ -27,3 +27,17 @@ img { max-width: 100%; height: auto; vertical-align: top; }
 [class]:where(button, input, meter, progress, select, textarea) { appearance: none; }
 [class]:where(table) { border: 0; border-collapse: collapse; border-spacing: 0; }
 [class]:where(em) { font-style: normal; }
+
+// Document
+$document-min-width:   128rem;
+$document-font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", Roboto, "Malgun Gothic", "맑은 고딕", Dotum, "돋움", sans-serif;
+$document-font-size:   1.5rem;
+$document-font-weight: 400;
+$document-line-height: 1em;
+$document-font-color:  $gray-600;
+
+// Z-index
+$sidebar-index: 4000;
+$loading-index: 3000;
+// $modal-index: 2000;
+// $layout-index: 1000;
