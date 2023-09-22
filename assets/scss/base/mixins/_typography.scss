@@ -40,6 +40,11 @@ $font-style: (
     $font-weight-600,
     $line-height-m,
   ),
+  "h5": (
+    $font-size-xs,
+    $font-weight-600,
+    $line-height-s,
+  ),
 );
 
 @each $name, $pair in $font-style {
