@@ -6513,6 +6513,7 @@ textarea {
 */
 .icon,
 .img {
+  display: inline-block;
   width: 2rem;
   height: 2rem;
   pointer-events: none;
@@ -6525,8 +6526,8 @@ textarea {
 }
 
 button {
-  width: 2rem;
-  height: 2rem;
+  width: auto;
+  height: auto;
   border: 0.1rem solid #494949;
   background-color: inherit;
   outline: none;
@@ -6535,10 +6536,37 @@ button:not(:disabled) {
   cursor: pointer;
 }
 
+.btn {
+  font-weight: 500;
+  border-radius: 0.5rem;
+}
 .btn[class^=is] {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 2rem auto;
+}
+.btn.is-small {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+.btn.is-medium {
+  padding: 1rem 1.5rem;
+  font-size: 1.7rem;
+  line-height: 2rem;
+}
+.btn.is-large {
+  padding: 1.5rem 2rem;
+  font-size: 2.6rem;
+  line-height: 3rem;
+}
+.btn.is-fill {
+  color: #ffffff;
+  background-color: #405AE3;
+}
+.btn.is-outline {
+  color: #494949;
+  border: 0.1rem solid #405AE3;
 }
 
 [class]:where(input),

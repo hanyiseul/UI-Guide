@@ -1,6 +1,7 @@
+// button reset
 button {
-  width: 2rem;
-  height: 2rem;
+  width: auto;
+  height: auto;
   border: 0.1rem solid $gray-600;
   background-color: inherit;
   outline: none;
@@ -9,10 +10,63 @@ button {
   }
 }
 
+// button size
+$button-size: (
+  "small": (
+    $font-size-xs,
+    $line-height-s,
+  ),
+  "medium": (
+    $font-size-m,
+    $line-height-m,
+  ),
+  "large": (
+    $font-size-l,
+    $line-height-l,
+  ),
+);
+
+
 .btn {
+  font-weight: $font-weight-500;
+  border-radius: 0.5rem;
+
   &[class^="is"] {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 2rem auto;
+  }
+
+  // button size
+  &.is-small {
+    padding: 0.5rem 1rem;
+    font-size: $font-size-xs;
+    line-height: $line-height-s;
+  }
+  &.is-medium {
+    padding: 1rem 1.5rem;
+    font-size: $font-size-m;
+    line-height: $line-height-m;
+  }
+  &.is-large {
+    padding: 1.5rem 2rem;
+    font-size: $font-size-l;
+    line-height: $line-height-l;
+  }
+
+  // button style
+  &.is-fill {
+    color: $white;
+    background-color: $primary-1;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $;
+    }
+  }
+  &.is-outline {
+    color: $gray-600;
+    border: 0.1rem solid $primary-1;
   }
 }
