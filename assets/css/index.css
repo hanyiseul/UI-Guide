@@ -4348,12 +4348,23 @@ img {
 }
 
 .title__wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
   margin-bottom: 2rem;
 }
 .title__wrap .title {
   font-size: 2.6rem;
   font-weight: 600;
   line-height: 3rem;
+}
+.title__wrap .title + .desc {
+  margin-left: 1rem;
+  padding-bottom: 0.3rem;
+}
+.title__wrap .desc {
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 .overflow-hidden {

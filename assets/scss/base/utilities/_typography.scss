@@ -35,11 +35,23 @@
 
 // title 
 .title__wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
   margin-bottom: 2rem;
 
   .title {
     font-size: $font-size-l;
     font-weight: $font-weight-600;
     line-height: $line-height-l;
+
+    +.desc {
+      margin-left: 1rem;
+      padding-bottom: 0.3rem;
+    }
+  }
+  .desc {
+    font-size: $font-size-s;
+    font-weight: $font-weight-400;
   }
 }
