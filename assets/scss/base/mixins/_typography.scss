@@ -1,0 +1,82 @@
+// font size 
+$font-size-xl: 3rem;
+$font-size-l: 2.6rem;
+$font-size-m: 1.7rem;
+$font-size-s: 1.6rem;
+$font-size-xs: 1.5rem;
+
+// line-height size
+$line-height-xl: 3.6rem;
+$line-height-l: 3rem;
+$line-height-m: 2rem;
+$line-height-s: 1.8rem;
+
+// font-weight size
+$font-weight-700: 700;
+$font-weight-600: 600;
+$font-weight-500: 500;
+$font-weight-400: 400;
+$font-weight-300: 300;
+
+// font style
+$font-style: (
+  "h1": (
+    $font-size-xl,
+    $font-weight-600,
+    $line-height-xl,
+  ),
+  "h2": (
+    $font-size-l,
+    $font-weight-600,
+    $line-height-l,
+  ),
+  "h3": (
+    $font-size-m,
+    $font-weight-600,
+    $line-height-m,
+  ),
+  "h4": (
+    $font-size-s,
+    $font-weight-600,
+    $line-height-m,
+  ),
+);
+
+@each $name, $pair in $font-style {
+  $font-size: nth($pair, 1);
+  $font-weight: nth($pair, 2);
+  $line-height: nth($pair, 3);
+
+  .#{$name} {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+  }
+}
+
+// font size
+$font-size: (
+  "fontSize-xs": (
+    $font-size-xs,
+  ),
+  "fontSize-s": (
+    $font-size-s,
+  ),
+  "fontSize-m": (
+    $font-size-m,
+  ),
+  "fontSize-l": (
+    $font-size-l,
+  ),
+  "fontSize-xl": (
+    $font-size-xl,
+  ),
+);
+
+@each $name, $pair in $font-size {
+  $font-size: $pair;
+
+  .#{$name} {
+    font-size: $font-size;
+  }
+}

@@ -1,17 +1,17 @@
 @for $i from 0 through 100 {
-  .p-#{$i} {
+  .p#{$i} {
     padding: $i * 0.1 + rem !important;
   }
-  .pt-#{$i} {
+  .pt#{$i} {
     padding-top: $i * 0.1 + rem !important;
   }
-  .pb-#{$i} {
+  .pb#{$i} {
     padding-bottom: $i * 0.1 + rem !important;
   }
-  .pl-#{$i} {
+  .pl#{$i} {
     padding-left: $i * 0.1 + rem !important;
   }
-  .pr-#{$i} {
+  .pr#{$i} {
     padding-right: $i * 0.1 + rem !important;
   }
 }

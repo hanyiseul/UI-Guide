@@ -1,17 +1,17 @@
 @for $i from 0 through 100 {
-  .m-#{$i} {
+  .m#{$i} {
     margin: $i * 0.1 + rem !important;
   }
-  .mt-#{$i} {
+  .mt#{$i} {
     margin-top: $i * 0.1 + rem !important;
   }
-  .mb-#{$i} {
+  .mb#{$i} {
     margin-bottom: $i * 0.1 + rem !important;
   }
-  .ml-#{$i} {
+  .ml#{$i} {
     margin-left: $i * 0.1 + rem !important;
   }
-  .mr-#{$i} {
+  .mr#{$i} {
     margin-right: $i * 0.1 + rem !important;
   }
 }

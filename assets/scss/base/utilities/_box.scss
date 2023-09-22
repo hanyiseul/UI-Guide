@@ -1,5 +1,5 @@
 @for $width from 0 through 100 {
-    .box__#{$width} {
+    .box#{$width} {
       .box__item {
         width: 100% / $width !important;
       }
