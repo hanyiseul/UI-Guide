@@ -6573,15 +6573,27 @@ button:not(:disabled) {
   color: #ffffff;
   background-color: #405AE3;
 }
-.btn.is-fill:hover, .btn.is-fill:focus, .btn.is-fill:active {
+.btn.is-fill:hover, .btn.is-fill.is-hover, .btn.is-fill:focus, .btn.is-fill:active {
   background-color: #FFCA0D;
+}
+.btn.is-fill:disabled {
+  color: #ffffff;
+  background-color: #ECECEC;
 }
 .btn.is-outline {
   color: #494949;
-  border: 0.3rem solid #405AE3;
+  border: 0.1rem solid #405AE3;
 }
-.btn.is-outline:hover, .btn.is-outline:focus, .btn.is-outline:active {
+.btn.is-outline:hover, .btn.is-outline.is-hover, .btn.is-outline:focus, .btn.is-outline:active {
   border-color: #FFCA0D;
+}
+.btn.is-outline:disabled {
+  color: #ffffff;
+  border-color: #D9D9D9;
+  background-color: #ECECEC;
+}
+.btn.is-icon {
+  padding: 0.5rem;
 }
 
 [class]:where(input),
@@ -6692,6 +6704,9 @@ button:not(:disabled) {
 }
 .guide__code.display-block > * {
   display: block;
+}
+.guide__code.display-block > *.buttons:not(:first-child) {
+  margin-top: 2rem;
 }
 
 .guideCode {

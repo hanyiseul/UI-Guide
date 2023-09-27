@@ -29,7 +29,7 @@ $button-size: (
 
 .btn {
   font-weight: $font-weight-500;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 
   &[class^="is"] {
     background-repeat: no-repeat;
@@ -60,13 +60,35 @@ $button-size: (
     background-color: $primary-1;
 
     &:hover,
+    &.is-hover,
     &:focus,
     &:active {
-      background-color: $;
+      background-color: $primary-2;
+    }
+
+    &:disabled {
+      color: $white;
+      background-color: $gray-200;
     }
   }
   &.is-outline {
     color: $gray-600;
     border: 0.1rem solid $primary-1;
+
+    &:hover,
+    &.is-hover,
+    &:focus,
+    &:active {
+      border-color: $primary-2;
+    }
+
+    &:disabled {
+      color: $white;
+      border-color: $gray-300;
+      background-color: $gray-200;
+    }
+  }
+  &.is-icon {
+    padding: 0.5rem;
   }
 }

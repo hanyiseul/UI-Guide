@@ -77,6 +77,12 @@
   &.display-block {
     > * {
       display: block;
+
+      &.buttons {
+        &:not(:first-child) {
+          margin-top: 2rem;
+        }
+      }
     }
   }
 }

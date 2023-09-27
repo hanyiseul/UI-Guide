@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Typography</title>
+<title>Button</title>
 <script src="/assets/js/uid.js" defer></script>
 <script src="/assets/js/guide.js" defer></script>
 <link rel="stylesheet" href="/assets/css/index.css">
@@ -34,10 +34,22 @@
             </div>
           </div>
 
-          <div class="guide__code">
-            <button type="button" class="btn is-fill is-small">fill small</button>
-            <button type="button" class="btn is-fill is-medium">fill medium</button>
-            <button type="button" class="btn is-fill is-large">fill large</button>
+          <div class="guide__code display-block">
+            <div class="buttons">
+              <button type="button" class="btn is-fill is-small">fill small</button>
+              <button type="button" class="btn is-fill is-small is-hover">fill small</button>
+              <button type="button" class="btn is-fill is-small" disabled>fill small</button>
+            </div>
+            <div class="buttons">
+              <button type="button" class="btn is-fill is-medium">fill medium</button>
+              <button type="button" class="btn is-fill is-medium is-hover">fill medium</button>
+              <button type="button" class="btn is-fill is-medium" disabled>fill medium</button>
+            </div>
+            <div class="buttons">
+              <button type="button" class="btn is-fill is-large">fill large</button>
+              <button type="button" class="btn is-fill is-large is-hover">fill large</button>
+              <button type="button" class="btn is-fill is-large" disabled>fill large</button>
+            </div>
           </div>
 
           <div class="guideCode">
@@ -54,10 +66,22 @@
             </div>
           </div>
 
-          <div class="guide__code">
-            <button type="button" class="btn is-outline is-small">fill small</button>
-            <button type="button" class="btn is-outline is-medium">fill medium</button>
-            <button type="button" class="btn is-outline is-large">fill large</button>
+          <div class="guide__code display-block">
+            <div class="buttons">
+              <button type="button" class="btn is-outline is-small">outline small</button>
+              <button type="button" class="btn is-outline is-small is-hover">outline small</button>
+              <button type="button" class="btn is-outline is-small" disabled>outline small</button>
+            </div>
+            <div class="buttons">
+              <button type="button" class="btn is-outline is-medium">outline medium</button>
+              <button type="button" class="btn is-outline is-medium is-hover">outline medium</button>
+              <button type="button" class="btn is-outline is-medium" disabled>outline medium</button>
+            </div>
+            <div class="buttons">
+              <button type="button" class="btn is-outline is-large">outline large</button>
+              <button type="button" class="btn is-outline is-large is-hover">outline large</button>
+              <button type="button" class="btn is-outline is-large" disabled>outline large</button>
+            </div>
           </div>
 
           <div class="guideCode">
@@ -76,25 +100,37 @@
       </div>
 
       <div class="content">
-        <!-- fill button -->
+        <!-- Icon button -->
         <div class="is-guide">
           <div class="title__wrap">
             <div class="title">
-              <h3>Fill Button</h3>
+              <h3>Icon Button</h3>
             </div>
           </div>
 
           <div class="guide__code">
-            <button type="button" class="btn is-fill is-small">fill small</button>
-            <button type="button" class="btn is-fill is-medium">fill medium</button>
-            <button type="button" class="btn is-fill is-large">fill large</button>
+            <button type="button" class="btn is-outline is-small is-icon">
+              <span class="icon">
+                <img src="/assets/images/png/icon-search.png" alt="">
+              </span>
+            </button>
+            <button type="button" class="btn is-outline is-small is-icon is-hover">
+              <span class="icon">
+                <img src="/assets/images/png/icon-search.png" alt="">
+              </span>
+            </button>
+            <button type="button" class="btn is-outline is-small is-icon" disabled>
+              <span class="icon">
+                <img src="/assets/images/png/icon-search.png" alt="">
+              </span>
+            </button>
           </div>
 
           <div class="guideCode">
             <button type="button" class="btn guideBtn">Copy</button>
           </div>
         </div>
-        <!-- // fill button -->
+        <!-- // Icon button -->
       </div>
     </section>
   </div>
