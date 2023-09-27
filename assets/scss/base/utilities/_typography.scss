@@ -55,3 +55,20 @@
     font-weight: $font-weight-400;
   }
 }
+
+// link
+
+// Link
+.link {
+  display: inline-block;
+  color: $gray-600;
+
+  &:hover,
+  &.is-hover,
+  &:focus,
+  &:active {
+    color: $primary-1;
+    text-decoration: underline;
+  }
+}
+
