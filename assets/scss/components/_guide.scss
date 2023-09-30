@@ -73,6 +73,14 @@
     border-width: 1px;
     border-style: solid;
   }
+  .formControl {
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
+  .input[type="text"], .textarea {
+    width: 50rem;
+  }
 
   &.display-block {
     > * {
@@ -85,6 +93,9 @@
       }
     }
   }
+  &.display-inlineFlex {
+    flex-direction: column;
+  }
 }
 
 .guideCode {
@@ -95,6 +106,7 @@
   margin-top: 2rem;
   border-radius: 0.5rem;
   background: $gray-200;
+
   xmp {
       width: 100%;
       max-height: 25rem;

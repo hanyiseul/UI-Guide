@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form</title>
+<script src="/assets/js/uid.js" defer></script>
+<script src="/assets/js/guide.js" defer></script>
+<link rel="stylesheet" href="/assets/css/index.css">
+</head>
+<body>
+<!-- https://www.w3schools.com/howto/howto_html_include.asp -->
+ 
+<div class="container container__guide">
+  <header data-include-path="/html/layout/header.html"></header>
+   
+  <nav data-include-path="/html/layout/sidebar.html"></nav>
+
+  <div class="contents">
+    <section>
+      <div class="title__wrap">
+        <div class="title">
+          <h2>Form</h2>
+        </div>
+      </div>
+
+      <div class="content">
+        <!-- input -->
+        <div class="is-guide">
+          <div class="title__wrap">
+            <div class="title">
+              <h3>Input</h3>
+            </div>
+          </div>
+
+          <div class="guide__code display-block">
+            <div class="formControl">
+              <input type="text" class="input" placeholder="enabled">
+            </div>
+            <div class="formControl">
+
+            </div>
+            <div class="formControl">
+              <input type="text" class="input is-hover" placeholder="hover, focus">
+            </div>
+            <div class="formControl">
+              <input type="text" class="input" value="filled">
+            </div>
+            <div class="formControl">
+              <input type="text" class="input is-error" value="error">
+            </div>
+            <div class="formControl">
+              <input type="text" class="input" placeholder="disabled" disabled>
+            </div>
+            <div class="formControl">
+              <input type="text" class="input" placeholder="readonly" readonly>
+            </div>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="btn guideBtn">Copy</button>
+          </div>
+        </div>
+        <!-- // input -->
+
+        <!-- Icon input -->
+        <div class="is-guide">
+          <div class="title__wrap">
+            <div class="title">
+              <h3>Icon Input</h3>
+            </div>
+          </div>
+
+          <div class="guide__code display-inlineFlex">
+            <div class="formControl">
+              <input type="text" class="input" placeholder="enabled">
+              <span class="icon">
+                <img src="/assets/images/png/icon-search.png" alt="">
+              </span>
+            </div>
+            <div class="formControl">
+              <input type="text" class="input is-hover" placeholder="hover, focus">
+              <span class="icon">
+                <img src="/assets/images/png/icon-search.png" alt="">
+              </span>
+            </div>
+            <div class="formControl">
+              <input type="text" class="input" value="filled">
+              <span class="icon">
+                <img src="/assets/images/png/icon-search.png" alt="">
+              </span>
+            </div>
+            <div class="formControl">
+              <input type="text" class="input is-error" value="error">
+              <span class="icon">
+                <img src="/assets/images/png/icon-search.png" alt="">
+              </span>
+            </div>
+            <div class="formControl">
+              <input type="text" class="input" value="disabled" disabled>
+              <span class="icon">
+                <img src="/assets/images/png/icon-search.png" alt="">
+              </span>
+            </div>
+            <div class="formControl">
+              <input type="text" class="input" value="readonly" readonly>
+              <span class="icon">
+                <img src="/assets/images/png/icon-search.png" alt="">
+              </span>
+            </div>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="btn guideBtn">Copy</button>
+          </div>
+        </div>
+        <!-- // Icon input -->
+
+        <!-- textarea -->
+        <div class="is-guide">
+          <div class="title__wrap">
+            <div class="title">
+              <h3>Texrarea</h3>
+            </div>
+          </div>
+
+          <div class="guide__code display-block">
+            <div class="formControl">
+              <textarea class="textarea" cols="30" rows="10">enabled</textarea>
+            </div>
+            <div class="formControl">
+              <textarea class="textarea is-hover" cols="30" rows="10" placeholder="textarea placeholder"></textarea>
+            </div>
+            <div class="formControl">
+              <textarea class="textarea" cols="30" rows="10" disabled>disable</textarea>
+            </div>
+            <div class="formControl">
+              <textarea class="textarea" cols="30" rows="10" readonly>readonly</textarea>
+            </div>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="btn guideBtn">Copy</button>
+          </div>
+        </div>
+        <!-- // textarea -->
+
+        <!-- checkbox -->
+        <div class="is-guide">
+          <div class="title__wrap">
+            <div class="title">
+              <h3>Checkbox</h3>
+            </div>
+          </div>
+
+          <div class="guide__code display-block">
+            <div class="formControl">
+              <input type="checkbox" class="input" id="checkbox1">
+              <label for="checkbox1"><span>enabled</span></label>
+            </div>
+            <div class="formControl">
+              <input type="checkbox" class="input" id="checkbox2" checked>
+              <label for="checkbox2"><span>checked</span></label>
+            </div>
+            <div class="formControl">
+              <input type="checkbox" class="input" id="checkbox3" disabled>
+              <label for="checkbox3"><span>disabled</span></label>
+            </div>
+            <div class="formControl">
+              <input type="checkbox" class="input" id="checkbox4" readonly>
+              <label for="checkbox4"><span>readonly</span></label>
+            </div>
+            <div class="formControl">
+              <input type="checkbox" class="input" id="checkbox5" checked disabled>
+              <label for="checkbox5"><span>checkbox + disabled</span></label>
+            </div>
+            <div class="formControl">
+              <input type="checkbox" class="input" id="checkbox6" checked readonly>
+              <label for="checkbox6"><span>checked + readonly</span></label>
+            </div>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="btn guideBtn">Copy</button>
+          </div>
+        </div>
+        <!-- // checkbox -->
+
+        <!-- radio -->
+        <div class="is-guide">
+          <div class="title__wrap">
+            <div class="title">
+              <h3>Radio</h3>
+            </div>
+          </div>
+
+          <div class="guide__code display-block">
+            <div class="formControl">
+              <input type="radio" class="input" id="radio1">
+              <label for="radio1"><span>enabled</span></label>
+            </div>
+            <div class="formControl">
+              <input type="radio" class="input" id="radio2" checked>
+              <label for="radio2"><span>checked</span></label>
+            </div>
+            <div class="formControl">
+              <input type="radio" class="input" id="radio3" disabled>
+              <label for="radio3"><span>disabled</span></label>
+            </div>
+            <div class="formControl">
+              <input type="radio" class="input" id="radio4" readonly>
+              <label for="radio4"><span>readonly</span></label>
+            </div>
+            <div class="formControl">
+              <input type="radio" class="input" id="radio5" checked disabled>
+              <label for="radio5"><span>checkbox + disabled</span></label>
+            </div>
+            <div class="formControl">
+              <input type="radio" class="input" id="radio6" checked readonly>
+              <label for="radio6"><span>checked + readonly</span></label>
+            </div>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="btn guideBtn">Copy</button>
+          </div>
+        </div>
+        <!-- // radio -->
+
+        <!-- select -->
+        <div class="is-guide">
+          <div class="title__wrap">
+            <div class="title">
+              <h3>Select</h3>
+            </div>
+          </div>
+
+          <div class="guide__code">
+            <div class="formControl is-select">
+              <select class="select">
+                <option>option1</option>
+                <option>option2</option>
+                <option>option3</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="btn guideBtn">Copy</button>
+          </div>
+        </div>
+        <!-- // select -->
+      </div>
+    </section>
+  </div>
+  <footer data-include-path="/html/layout/footer.html"></footer>
+</div>
+
+</body>
+</html>
