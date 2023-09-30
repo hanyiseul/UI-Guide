@@ -20,4 +20,12 @@
   li {
     margin: 1rem 0;
   }
+
+  .sidebar__subList {
+    .menu__link {
+      &:hover {
+        font-weight: 600;
+      }
+    }
+  }
 }
