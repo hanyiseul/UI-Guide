@@ -20,15 +20,16 @@
     min-height: calc(var(--vh, 1vh) * 100 - 11.6rem);
     padding: 6rem 6rem 8rem 25rem;
 
-    h2 {
-      font-size: 3rem;
-      line-height: 3.6rem;
+    .title {
+      h2 {
+        font-size: 3rem;
+        line-height: 3.6rem;
+      }
+      h3 {
+        font-size: 2.6rem;
+        line-height: 3rem;
+      }  
     }
-    h3 {
-      font-size: 2.6rem;
-      line-height: 3rem;
-    }
-
     section {
       margin-top: 3rem;
     }
@@ -95,6 +96,35 @@
   }
   &.display-inlineFlex {
     flex-direction: column;
+  }
+  &.guide-flex {
+    > div {
+      display: flex;
+      margin: 1rem 0;
+
+      &[class^="align"] {
+        border: 1px solid $gray-400;
+        width: calc(100% / 5);
+        height: 5rem;
+        margin: 0 0.5rem;
+        box-sizing: border-box;
+      }
+
+      &.flex-center,
+      &.inline-flex-center {
+        border: 1px solid $gray-400;
+        width: calc(100% / 2);
+        height: 5rem;
+        margin: 0 0.5rem;
+        box-sizing: border-box;
+      }
+      &[class^="flex-grow"] {
+        border: 1px solid $gray-400;
+        height: 5rem;
+        margin: 0 0.5rem;
+        box-sizing: border-box;
+      }
+    }
   }
 }
 

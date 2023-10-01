@@ -294,8 +294,408 @@ http://scripts.sil.org/OFL
   align-items: center !important;
 }
 
+.flex-grow-0 {
+  flex-grow: 0 !important;
+}
+
 .flex-grow-1 {
-  flex-grow: 1;
+  flex-grow: 1 !important;
+}
+
+.flex-grow-2 {
+  flex-grow: 2 !important;
+}
+
+.flex-grow-3 {
+  flex-grow: 3 !important;
+}
+
+.flex-grow-4 {
+  flex-grow: 4 !important;
+}
+
+.flex-grow-5 {
+  flex-grow: 5 !important;
+}
+
+.flex-grow-6 {
+  flex-grow: 6 !important;
+}
+
+.flex-grow-7 {
+  flex-grow: 7 !important;
+}
+
+.flex-grow-8 {
+  flex-grow: 8 !important;
+}
+
+.flex-grow-9 {
+  flex-grow: 9 !important;
+}
+
+.flex-grow-10 {
+  flex-grow: 10 !important;
+}
+
+.flex-grow-11 {
+  flex-grow: 11 !important;
+}
+
+.flex-grow-12 {
+  flex-grow: 12 !important;
+}
+
+.flex-grow-13 {
+  flex-grow: 13 !important;
+}
+
+.flex-grow-14 {
+  flex-grow: 14 !important;
+}
+
+.flex-grow-15 {
+  flex-grow: 15 !important;
+}
+
+.flex-grow-16 {
+  flex-grow: 16 !important;
+}
+
+.flex-grow-17 {
+  flex-grow: 17 !important;
+}
+
+.flex-grow-18 {
+  flex-grow: 18 !important;
+}
+
+.flex-grow-19 {
+  flex-grow: 19 !important;
+}
+
+.flex-grow-20 {
+  flex-grow: 20 !important;
+}
+
+.flex-grow-21 {
+  flex-grow: 21 !important;
+}
+
+.flex-grow-22 {
+  flex-grow: 22 !important;
+}
+
+.flex-grow-23 {
+  flex-grow: 23 !important;
+}
+
+.flex-grow-24 {
+  flex-grow: 24 !important;
+}
+
+.flex-grow-25 {
+  flex-grow: 25 !important;
+}
+
+.flex-grow-26 {
+  flex-grow: 26 !important;
+}
+
+.flex-grow-27 {
+  flex-grow: 27 !important;
+}
+
+.flex-grow-28 {
+  flex-grow: 28 !important;
+}
+
+.flex-grow-29 {
+  flex-grow: 29 !important;
+}
+
+.flex-grow-30 {
+  flex-grow: 30 !important;
+}
+
+.flex-grow-31 {
+  flex-grow: 31 !important;
+}
+
+.flex-grow-32 {
+  flex-grow: 32 !important;
+}
+
+.flex-grow-33 {
+  flex-grow: 33 !important;
+}
+
+.flex-grow-34 {
+  flex-grow: 34 !important;
+}
+
+.flex-grow-35 {
+  flex-grow: 35 !important;
+}
+
+.flex-grow-36 {
+  flex-grow: 36 !important;
+}
+
+.flex-grow-37 {
+  flex-grow: 37 !important;
+}
+
+.flex-grow-38 {
+  flex-grow: 38 !important;
+}
+
+.flex-grow-39 {
+  flex-grow: 39 !important;
+}
+
+.flex-grow-40 {
+  flex-grow: 40 !important;
+}
+
+.flex-grow-41 {
+  flex-grow: 41 !important;
+}
+
+.flex-grow-42 {
+  flex-grow: 42 !important;
+}
+
+.flex-grow-43 {
+  flex-grow: 43 !important;
+}
+
+.flex-grow-44 {
+  flex-grow: 44 !important;
+}
+
+.flex-grow-45 {
+  flex-grow: 45 !important;
+}
+
+.flex-grow-46 {
+  flex-grow: 46 !important;
+}
+
+.flex-grow-47 {
+  flex-grow: 47 !important;
+}
+
+.flex-grow-48 {
+  flex-grow: 48 !important;
+}
+
+.flex-grow-49 {
+  flex-grow: 49 !important;
+}
+
+.flex-grow-50 {
+  flex-grow: 50 !important;
+}
+
+.flex-grow-51 {
+  flex-grow: 51 !important;
+}
+
+.flex-grow-52 {
+  flex-grow: 52 !important;
+}
+
+.flex-grow-53 {
+  flex-grow: 53 !important;
+}
+
+.flex-grow-54 {
+  flex-grow: 54 !important;
+}
+
+.flex-grow-55 {
+  flex-grow: 55 !important;
+}
+
+.flex-grow-56 {
+  flex-grow: 56 !important;
+}
+
+.flex-grow-57 {
+  flex-grow: 57 !important;
+}
+
+.flex-grow-58 {
+  flex-grow: 58 !important;
+}
+
+.flex-grow-59 {
+  flex-grow: 59 !important;
+}
+
+.flex-grow-60 {
+  flex-grow: 60 !important;
+}
+
+.flex-grow-61 {
+  flex-grow: 61 !important;
+}
+
+.flex-grow-62 {
+  flex-grow: 62 !important;
+}
+
+.flex-grow-63 {
+  flex-grow: 63 !important;
+}
+
+.flex-grow-64 {
+  flex-grow: 64 !important;
+}
+
+.flex-grow-65 {
+  flex-grow: 65 !important;
+}
+
+.flex-grow-66 {
+  flex-grow: 66 !important;
+}
+
+.flex-grow-67 {
+  flex-grow: 67 !important;
+}
+
+.flex-grow-68 {
+  flex-grow: 68 !important;
+}
+
+.flex-grow-69 {
+  flex-grow: 69 !important;
+}
+
+.flex-grow-70 {
+  flex-grow: 70 !important;
+}
+
+.flex-grow-71 {
+  flex-grow: 71 !important;
+}
+
+.flex-grow-72 {
+  flex-grow: 72 !important;
+}
+
+.flex-grow-73 {
+  flex-grow: 73 !important;
+}
+
+.flex-grow-74 {
+  flex-grow: 74 !important;
+}
+
+.flex-grow-75 {
+  flex-grow: 75 !important;
+}
+
+.flex-grow-76 {
+  flex-grow: 76 !important;
+}
+
+.flex-grow-77 {
+  flex-grow: 77 !important;
+}
+
+.flex-grow-78 {
+  flex-grow: 78 !important;
+}
+
+.flex-grow-79 {
+  flex-grow: 79 !important;
+}
+
+.flex-grow-80 {
+  flex-grow: 80 !important;
+}
+
+.flex-grow-81 {
+  flex-grow: 81 !important;
+}
+
+.flex-grow-82 {
+  flex-grow: 82 !important;
+}
+
+.flex-grow-83 {
+  flex-grow: 83 !important;
+}
+
+.flex-grow-84 {
+  flex-grow: 84 !important;
+}
+
+.flex-grow-85 {
+  flex-grow: 85 !important;
+}
+
+.flex-grow-86 {
+  flex-grow: 86 !important;
+}
+
+.flex-grow-87 {
+  flex-grow: 87 !important;
+}
+
+.flex-grow-88 {
+  flex-grow: 88 !important;
+}
+
+.flex-grow-89 {
+  flex-grow: 89 !important;
+}
+
+.flex-grow-90 {
+  flex-grow: 90 !important;
+}
+
+.flex-grow-91 {
+  flex-grow: 91 !important;
+}
+
+.flex-grow-92 {
+  flex-grow: 92 !important;
+}
+
+.flex-grow-93 {
+  flex-grow: 93 !important;
+}
+
+.flex-grow-94 {
+  flex-grow: 94 !important;
+}
+
+.flex-grow-95 {
+  flex-grow: 95 !important;
+}
+
+.flex-grow-96 {
+  flex-grow: 96 !important;
+}
+
+.flex-grow-97 {
+  flex-grow: 97 !important;
+}
+
+.flex-grow-98 {
+  flex-grow: 98 !important;
+}
+
+.flex-grow-99 {
+  flex-grow: 99 !important;
+}
+
+.flex-grow-100 {
+  flex-grow: 100 !important;
 }
 
 .m0 {
@@ -6849,11 +7249,11 @@ button:not(:disabled) {
   min-height: calc(var(--vh, 1vh) * 100 - 11.6rem);
   padding: 6rem 6rem 8rem 25rem;
 }
-.container__guide .contents h2 {
+.container__guide .contents .title h2 {
   font-size: 3rem;
   line-height: 3.6rem;
 }
-.container__guide .contents h3 {
+.container__guide .contents .title h3 {
   font-size: 2.6rem;
   line-height: 3rem;
 }
@@ -6909,6 +7309,30 @@ button:not(:disabled) {
 }
 .guide__code.display-inlineFlex {
   flex-direction: column;
+}
+.guide__code.guide-flex > div {
+  display: flex;
+  margin: 1rem 0;
+}
+.guide__code.guide-flex > div[class^=align] {
+  border: 1px solid #BBBBBB;
+  width: 20%;
+  height: 5rem;
+  margin: 0 0.5rem;
+  box-sizing: border-box;
+}
+.guide__code.guide-flex > div.flex-center, .guide__code.guide-flex > div.inline-flex-center {
+  border: 1px solid #BBBBBB;
+  width: 50%;
+  height: 5rem;
+  margin: 0 0.5rem;
+  box-sizing: border-box;
+}
+.guide__code.guide-flex > div[class^=flex-grow] {
+  border: 1px solid #BBBBBB;
+  height: 5rem;
+  margin: 0 0.5rem;
+  box-sizing: border-box;
 }
 
 .guideCode {

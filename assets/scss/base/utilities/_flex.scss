@@ -52,6 +52,8 @@
 }
 
 // Flex grow
-.flex-grow-1 {
-  flex-grow: 1;
+@for $i from 0 through 100 {
+  .flex-grow-#{$i} {
+    flex-grow: $i !important;
+  }
 }

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spacing</title>
+<script src="/assets/js/uid.js" defer></script>
+<script src="/assets/js/guide.js" defer></script>
+<link rel="stylesheet" href="/assets/css/index.css">
+</head>
+<body>
+<!-- https://www.w3schools.com/howto/howto_html_include.asp -->
+ 
+<div class="container container__guide">
+  <header data-include-path="/html/layout/header.html"></header>
+   
+  <nav data-include-path="/html/layout/sidebar.html"></nav>
+
+  <div class="contents">
+    <section>
+      <div class="title__wrap">
+        <div class="title">
+          <h2>Block</h2>
+        </div>
+      </div>
+
+      <div class="content">
+        <!-- Display block -->
+        <div class="is-guide">
+          <div class="title__wrap">
+            <div class="title">
+              <h3>Display block</h3>
+            </div>
+          </div>
+
+          <div class="guide__code">
+            <span class="display-block">display block</span>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="btn guideBtn">Copy</button>
+          </div>
+        </div>
+        <!-- // Display block -->
+      </div>
+    </section>
+    <section>
+      <div class="title__wrap">
+        <div class="title">
+          <h2>Inline</h2>
+        </div>
+      </div>
+
+      <div class="content">
+        <!-- Display inline -->
+        <div class="is-guide">
+          <div class="title__wrap">
+            <div class="title">
+              <h3>Display inline</h3>
+            </div>
+          </div>
+
+          <div class="guide__code">
+            <div class="display-inline">display inline</div>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="btn guideBtn">Copy</button>
+          </div>
+        </div>
+        <!-- // Display inline -->
+        <!-- Display inline-block -->
+        <div class="is-guide">
+          <div class="title__wrap">
+            <div class="title">
+              <h3>Display inline-block</h3>
+            </div>
+          </div>
+
+          <div class="guide__code">
+            <div class="display-inlineBlock">display inline-block</div>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="btn guideBtn">Copy</button>
+          </div>
+        </div>
+        <!-- // Display inline-block -->
+      </div>
+    </section>
+
+    <section>
+      <div class="title__wrap">
+        <div class="title">
+          <h2>Flex</h2>
+        </div>
+      </div>
+
+      <div class="content">
+        <!-- Display -->
+        <div class="is-guide">
+          <div class="title__wrap display-block">
+            <div class="title">
+              <h3>Display</h3>
+            </div>
+          </div>
+
+          <div class="guide__code">
+            <div class="display-flex">display flex</div>
+            <div class="display-inlineFlex">display inline-flex</div>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="btn guideBtn">Copy</button>
+          </div>
+        </div>
+        <!-- // Display -->
+        <!-- Justify Content -->
+        <div class="is-guide">
+          <div class="title__wrap display-block">
+            <div class="title">
+              <h3>Justify Content</h3>
+            </div>
+          </div>
+
+          <div class="guide__code guide-flex">
+            <div class="justify-content-start">justify-content: flex-start</div>
+            <div class="justify-content-end">justify-content: flex-end</div>
+            <div class="justify-content-center">justify-content: center</div>
+            <div class="justify-content-between">justify-content: space-between</div>
+            <div class="justify-content-around">justify-content: space-around</div>
+            <div class="justify-content-evenly">justify-content: space-evenly</div>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="btn guideBtn">Copy</button>
+          </div>
+        </div>
+        <!-- // Justify Content -->
+        <!-- Align Items -->
+        <div class="is-guide">
+          <div class="title__wrap display-block">
+            <div class="title">
+              <h3>Align Items</h3>
+            </div>
+          </div>
+
+          <div class="guide__code guide-flex display-flex">
+            <div class="align-items-start">align-items: flex-start</div>
+            <div class="align-items-end">align-items: flex-end</div>
+            <div class="align-items-center">align-items: center</div>
+            <div class="align-items-baseline">align-items: baseline</div>
+            <div class="align-items-stretch">align-items: stretch</div>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="btn guideBtn">Copy</button>
+          </div>
+        </div>
+        <!-- // Align Items -->
+
+        <!-- X,Y Center -->
+        <div class="is-guide">
+          <div class="title__wrap display-block">
+            <div class="title">
+              <h3>X,Y Center</h3>
+            </div>
+          </div>
+
+          <div class="guide__code guide-flex display-flex">
+            <div class="flex-center">flex center</div>
+            <div class="inline-flex-center">inline-flex center</div>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="btn guideBtn">Copy</button>
+          </div>
+        </div>
+        <!-- // X,Y Center -->
+
+
+        <!-- Flex grow -->
+        <div class="is-guide">
+          <div class="title__wrap display-block">
+            <div class="title">
+              <h3>Flex grow</h3>
+            </div>
+            <ul class="list__disc mt10">
+              <li>flex-grow: i</li>
+              <li>i : 0 ~ 100</li>
+            </ul>
+          </div>
+
+          <div class="guide__code guide-flex display-flex">
+            <div class="flex-grow-1">flex-grow: 1</div>
+            <div class="flex-grow-2">flex-grow: 2</div>
+            <div class="flex-grow-3">flex-grow: 3</div>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="btn guideBtn">Copy</button>
+          </div>
+        </div>
+        <!-- // Flex grow -->
+      </div>
+    </section>
+  </div>
+  <footer data-include-path="/html/layout/footer.html"></footer>
+</div>
+
+</body>
+</html>
