@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spacing</title>
+<script src="/assets/js/uid.js" defer></script>
+<script src="/assets/js/guide.js" defer></script>
+<link rel="stylesheet" href="/assets/css/index.css">
+</head>
+<body>
+<!-- https://www.w3schools.com/howto/howto_html_include.asp -->
+ 
+<div class="container container__guide">
+  <header data-include-path="/html/layout/header.html"></header>
+   
+  <nav data-include-path="/html/layout/sidebar.html"></nav>
+
+  <div class="contents">
+    <section>
+      <div class="title__wrap">
+        <div class="title">
+          <h2>Spacing</h2>
+        </div>
+      </div>
+
+      <div class="content">
+        <!-- Margin and padding< -->
+        <div class="is-guide">
+          <div class="title__wrap display-block">
+            <div class="title">
+              <h3>Margin and padding</h3>
+            </div>
+            <ul class="list__disc mt10">
+              <li>margin
+                  <ul class="list__dash">
+                    <li>margin top : mt</li>
+                    <li>margin bottom : mb</li>
+                    <li>margin left : ml</li>
+                    <li>margin right : mr</li>
+                  </ul>
+              </li>
+              <li>padding
+                <ul class="list__dash">
+                  <li>padding top : pt</li>
+                  <li>padding bottom : pb</li>
+                  <li>padding left : pl</li>
+                  <li>padding right : pr</li>
+                </ul>
+              </li>
+              <li>size : 0 ~ 10</li>
+            </ul>
+          </div>
+
+          <div class="guide__code display-block">
+            <div class="mt10 mb10 ml10 mr10">margin top 10px : mt10 / bottom 10px : mb10 / left 10px : ml10 / right 10px : mr10</div>
+            <div class="pt10 pb10 pl10 pr10">padding top 10px : pt10 / bottom 10px : pb10 / left 10px : pl10 / right 10px : pr10</div>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="btn guideBtn">Copy</button>
+          </div>
+        </div>
+        <!-- // Margin and padding< -->
+      </div>
+    </section>
+  </div>
+  <footer data-include-path="/html/layout/footer.html"></footer>
+</div>
+
+</body>
+</html>

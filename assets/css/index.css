@@ -6334,6 +6334,38 @@ http://scripts.sil.org/OFL
   text-decoration: underline;
 }
 
+ul > li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+ul > li:before {
+  content: "";
+  position: absolute;
+  top: 0.6rem;
+  left: 0;
+}
+ul li {
+  margin: 0.5rem;
+}
+ul [class^=list__] {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.list__disc > li:before {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #494949;
+}
+
+.list__dash > li:before {
+  top: 0.9rem;
+  width: 0.5rem;
+  height: 0.1rem;
+  background-color: #494949;
+}
+
 body {
   min-width: 128rem;
   font-size: 1.5rem;
