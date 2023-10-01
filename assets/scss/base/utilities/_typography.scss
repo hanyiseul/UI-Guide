@@ -56,8 +56,6 @@
   }
 }
 
-// link
-
 // Link
 .link {
   display: inline-block;
@@ -69,6 +67,48 @@
   &:active {
     color: $primary-1;
     text-decoration: underline;
+  }
+}
+
+
+// list
+ul {
+  > li {
+    position: relative;
+    padding-left: 1.5rem;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0.6rem;
+      left: 0;
+    }
+  }
+  li {
+    margin: 0.5rem;
+  }
+  [class^="list__"] {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+}
+.list__disc {
+  > li {
+    &:before {
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background-color: $gray-600;
+    }
+  }
+}
+.list__dash {
+  > li {
+    &:before {
+      top: 0.9rem;
+      width: 0.5rem;
+      height: 0.1rem;
+      background-color: $gray-600;
+    }
   }
 }
 
