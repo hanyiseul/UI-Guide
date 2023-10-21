@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dropdown & Accordion</title>
+<script src="/assets/js/uid.js" defer></script>
+<script src="/assets/js/guide.js" defer></script>
+<link rel="stylesheet" href="/assets/css/index.css">
+</head>
+<body>
+<!-- https://www.w3schools.com/howto/howto_html_include.asp -->
+ 
+<div class="container container__guide">
+  <header data-include-path="/html/layout/header.html"></header>
+   
+  <nav data-include-path="/html/layout/sidebar.html"></nav>
+
+  <div class="contents">
+    <section>
+      <div class="title__wrap">
+        <div class="title">
+          <h2>Dropdown & Accordion</h2>
+        </div>
+      </div>
+
+      <div class="content">
+        <!-- Dropdown -->
+        <div class="is-guide">
+          <div class="title__wrap">
+            <div class="title">
+              <h3>Dropdown</h3>
+            </div>
+          </div>
+
+          <div class="guide__code">
+            <div class="dropdown">
+              <div class="dropdown__btn">
+                <button type="button" class="btn option__select">select option</button>
+              </div>
+              <div class="dropdown__content">
+                <ul class="option__list">
+                  <li>option1</li>
+                  <li>option2</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__btn">
+                <button type="button" class="btn option__select" disabled>disabled</button>
+              </div>
+              <div class="dropdown__content">
+                <ul class="option__list">
+                  <li>option1</li>
+                  <li>option2</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="btn guideBtn">Copy</button>
+          </div>
+        </div>
+        <!-- // Dropdown -->
+        <!-- Accordion -->
+        <div class="is-guide">
+          <div class="title__wrap">
+            <div class="title">
+              <h3>Accordion</h3>
+            </div>
+          </div>
+
+          <div class="guide__code">
+            <div class="accordion">
+              <div class="dropdown accordion__item">
+                <div class="dropdown__btn">
+                  <button type="button" class="btn">아코디언1</button>
+                </div>
+                <div class="dropdown__content">
+                  아코디언 컨텐츠1
+                </div>
+              </div>
+              <div class="dropdown accordion__item">
+                <div class="dropdown__btn">
+                  <button type="button" class="btn">아코디언2</button>
+                </div>
+                <div class="dropdown__content">
+                  아코디언 컨텐츠2
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="btn guideBtn">Copy</button>
+          </div>
+        </div>
+        <!-- // Dropdown -->
+      </div>
+    </section>
+  </div>
+  <footer data-include-path="/html/layout/footer.html"></footer>
+</div>
+
+</body>
+</html>

@@ -126,6 +126,12 @@
       }
     }
   }
+  .dropdown {
+    display: inline-block;
+    &.accordion__item {
+      display: block;
+    }
+  }
 }
 
 .guideCode {
