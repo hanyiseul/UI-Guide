@@ -7238,6 +7238,27 @@ table .th {
   background: #D9D9D9;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltip__title:hover + .tooltip__desc {
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  overflow: visible;
+  white-space: nowrap;
+  border: 1px solid #BBBBBB;
+  border-radius: 0.5rem;
+}
+.tooltip .tooltip__desc {
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  overflow: hidden;
+  z-index: 99;
+}
+
 .dropdown {
   position: relative;
 }
