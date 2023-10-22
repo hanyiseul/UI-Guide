@@ -7229,6 +7229,15 @@ button:not(:disabled) {
   outline: none;
 }
 
+table tr > .th,
+table tr > td {
+  padding: 1rem 2rem;
+  border: 0.1rem solid #ECECEC;
+}
+table .th {
+  background: #D9D9D9;
+}
+
 .dropdown {
   position: relative;
 }
@@ -7294,6 +7303,32 @@ button:not(:disabled) {
 .accordion .accordion__item .dropdown__content {
   position: relative;
   margin: 0 1rem;
+}
+
+.tabs {
+  font-size: 0;
+}
+.tabs > li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.tabs > li:first-child .btn__tab {
+  border-left-width: 0.1rem;
+}
+.tabs > li .btn__tab {
+  width: 100%;
+  font-size: 1.4rem;
+  border: 0.1rem solid #BBBBBB;
+  border-width: 0.1rem 0.1rem 0.1rem 0;
+  border-radius: 0;
+}
+.tabs > li .btn__tab.is-active + .tab__content {
+  display: block;
+}
+.tabs > li .tab__content {
+  display: none;
+  font-size: 1.4rem;
 }
 
 .container__guide.container {
