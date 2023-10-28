@@ -56,6 +56,10 @@
     padding-top: 5rem;
     border-top: 0.1rem solid $gray-200;
   }
+  .table tr > .th, 
+  .table tr > td {
+    border-width: 0.1rem 0 0.1rem;
+  }
 }
 .guide__code {
   > p {
