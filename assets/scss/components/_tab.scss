@@ -1,0 +1,49 @@
+.tab {
+  font-size: 0;
+
+  .tab__list {
+    li {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+
+      &:first-child {
+        .btn__tab {
+          border-left-width: 0.1rem;
+        }
+      }
+
+      .btn__tab {
+        width: 100%;
+        font-size: 1.4rem;
+        border: 0.1rem solid $gray-400;
+        border-width: 0.1rem 0.1rem 0.1rem 0;
+        border-radius: 0;
+
+        &:focus {
+          outline: auto;
+        }
+
+        &.is-active {
+          color: $primary-1;
+          +.tab__content {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .tab__content {
+    display: none;
+    font-size: 1.4rem;
+
+    &.is-active {
+      display: block;
+    }
+    &:focus {
+      outline: auto;
+    }
+
+  }
+}

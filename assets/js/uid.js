@@ -51,28 +51,71 @@
 
     // tab
     function tab() {
-      const tab = document.querySelectorAll('.tabs > li .btn__tab')
+      const tabBtn = document.querySelectorAll('.tab__list > li .btn__tab');
+        
+        tabBtn.forEach((tabBtn) => {
+          const tab = tabBtn.closest('.tab');
+          const tabList = tab.querySelector('.tab__list');
+          const tabCon = tabList.nextElementSibling;
+          const href = tabBtn.getAttribute('href');
 
-      tab.forEach(tab => {
-        tab.addEventListener("click", () => {
-          const tabs = document.querySelectorAll('.btn__tab');
+          tabBtn.addEventListener('click', (e) => {
+            e.preventDefault();
 
-          tabs.forEach(tab => {
-            if(tab.classList.contains('is-acitve')) {
-              console.log(tab)
-              tab.classList.remove('is-active');
-            }
-          })
-          tab.classList.add('is-active');
-          // for(let i = 0; i < tabs.length; i++) {
-          //   if(tabs[i].classList.contains('is-acitve')) {
-          //     console.log(tabs)
-          //     tabs[i].classList.remove('is-active');
-          //   }
-          //   tab.classList.add('is-active');
-          // }
+            const tabBtns = tab.querySelectorAll('.btn__tab');
+            tabBtns.forEach(btn => {
+              btn.classList.remove('is-active');
+            });
+
+            const tabCons = tabCon.querySelectorAll('.tab__content');
+            tabCons.forEach(con => {
+              con.classList.remove('is-active');
+            });
+
+            tabBtn.classList.add('is-active');
+            tabCon.querySelector(`#${href}`).classList.add('is-active');
+          });
         });
-      });
+
+
+      // const tab = document.querySelectorAll('.tab');
+      // tab.forEach(tab => {
+      //   const tabBtn = tab.querySelectorAll('.tab__list > li .btn__tab');
+        
+      //   tabBtn.forEach((tabBtn) => {
+      //     const tabCon = tabBtn.closest('.tab__list').nextElementSibling;
+      //     console.log(tabBtn);
+
+      //     tabBtn.addEventListener('click', (e) => {
+      //       e.preventDefault();
+      //       console.log(tabCon);
+      //     });
+      //     // tabBtn.addEventListener('click', (e) => {
+      //     //   e.preventDefault();
+      //     //   console.log(tabCon);
+      //     // });
+      //   });
+      // })
+
+      // const tab = document.querySelectorAll('.tab');
+      // tab.forEach(tab => {
+      //   const tabBtn = tab.querySelectorAll('.tab__list > li .btn__tab');
+      //   tabBtn.forEach((tabBtn, index) => {
+      //     tabBtn.addEventListener('click', (e) => {
+      //       console.log(tabBtn)
+      //       e.preventDefault();
+      //       const btn = tabBtn.closest('.tab').querySelectorAll('.tab__list > li .btn__tab');
+      //       const content = tab.closest('.tab').querySelectorAll('.tab__contents > .tab__content');
+      //       console.log(content[index])
+      //       btn.forEach((btn, index) => {
+      //         btn.classList.remove('is-active');
+      //         content[index].classList.remove('is-active');
+      //       });
+      //       tabBtn.classList.add('is-active');
+      //       content[index].classList.add('is-active');
+      //     });
+      //   });
+      // });
     };
     tab();
 

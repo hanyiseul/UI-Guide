@@ -6869,6 +6869,7 @@ textarea {
 }
 .sidebar__list li {
   margin: 1rem 0;
+  padding: 0;
 }
 .sidebar__list .sidebar__subList .menu__link:hover {
   font-weight: 600;
@@ -7352,30 +7353,42 @@ table .th {
   margin: 0 1rem;
 }
 
-.tabs {
+.tab {
   font-size: 0;
 }
-.tabs > li {
+.tab .tab__list li {
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-.tabs > li:first-child .btn__tab {
+.tab .tab__list li:first-child .btn__tab {
   border-left-width: 0.1rem;
 }
-.tabs > li .btn__tab {
+.tab .tab__list li .btn__tab {
   width: 100%;
   font-size: 1.4rem;
   border: 0.1rem solid #BBBBBB;
   border-width: 0.1rem 0.1rem 0.1rem 0;
   border-radius: 0;
 }
-.tabs > li .btn__tab.is-active + .tab__content {
+.tab .tab__list li .btn__tab:focus {
+  outline: auto;
+}
+.tab .tab__list li .btn__tab.is-active {
+  color: #405AE3;
+}
+.tab .tab__list li .btn__tab.is-active + .tab__content {
   display: block;
 }
-.tabs > li .tab__content {
+.tab .tab__content {
   display: none;
   font-size: 1.4rem;
+}
+.tab .tab__content.is-active {
+  display: block;
+}
+.tab .tab__content:focus {
+  outline: auto;
 }
 
 .container__guide.container {

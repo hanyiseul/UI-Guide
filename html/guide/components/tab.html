@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tab</title>
+<script src="/assets/js/uid.js" defer></script>
+<script src="/assets/js/guide.js" defer></script>
+<link rel="stylesheet" href="/assets/css/index.css">
+</head>
+<body>
+<!-- https://www.w3schools.com/howto/howto_html_include.asp -->
+ 
+<div class="container container__guide">
+  <header data-include-path="/html/layout/header.html"></header>
+   
+  <nav data-include-path="/html/layout/sidebar.html"></nav>
+
+  <div class="contents">
+    <section>
+      <div class="title__wrap">
+        <div class="title">
+          <h2>Tab</h2>
+        </div>
+      </div>
+
+      <div class="content">
+        <!-- Tab -->
+        <div class="is-guide">
+          <div class="title__wrap">
+            <div class="title">
+              <h3>Tab</h3>
+            </div>
+          </div>
+
+          <div class="guide__code">
+            <div class="tab">
+              <ul class="tab__list">
+                <li>
+                  <a href="tab1" class="btn btn__tab is-active">tab1</a>
+                </li>
+                <li>
+                  <a href="tab2" class="btn btn__tab">tab2</a>
+                </li>
+                <li>
+                  <a href="tab3" class="btn btn__tab">tab3</a>
+                </li>
+              </ul>
+              <div class="tab__contents">
+                <div id="tab1" class="tab__content is-active">
+                  tab content1
+                </div>
+                <div id="tab2" class="tab__content">
+                  tab content2
+                </div>
+                <div id="tab3" class="tab__content">
+                  tab content3
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="btn guideBtn">Copy</button>
+          </div>
+        </div>
+        <!-- // Tab -->
+
+        <!-- sub Tab -->
+        <div class="is-guide">
+          <div class="title__wrap">
+            <div class="title">
+              <h3>Sub Tab</h3>
+            </div>
+          </div>
+
+          <div class="guide__code">
+            <div class="tab">
+              <ul class="tab__list">
+                <li>
+                  <a href="tab4" class="btn btn__tab is-active">tab1</a>
+                </li>
+                <li>
+                  <a href="tab5" class="btn btn__tab">tab2</a>
+                </li>
+                <li>
+                  <a href="tab6" class="btn btn__tab">tab3</a>
+                </li>
+              </ul>
+              <div class="tab__contents">
+                <div id="tab4" class="tab__content is-active">
+                  <div class="tab subTab">
+                    <ul class="tab__list">
+                      <li>
+                        <a href="subTab1" class="btn btn__tab is-active">subTab1</a>
+                      </li>
+                      <li>
+                        <a href="subTab2" class="btn btn__tab">subTab2</a>
+                      </li>
+                      <li>
+                        <a href="subTab3" class="btn btn__tab">subTab3</a>
+                      </li>
+                    </ul>
+                    <div class="tab__contents">
+                      <div id="subTab1" class="tab__content is-active">
+                        subTab content1
+                      </div>
+                      <div id="subTab2" class="tab__content">
+                        subTab content2
+                      </div>
+                      <div id="subTab3" class="tab__content">
+                        subTab content3
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab5" class="tab__content">
+                  <div class="tab subTab">
+                    <ul class="tab__list">
+                      <li>
+                        <a href="subTab4" class="btn btn__tab">subTab4</a>
+                      </li>
+                      <li>
+                        <a href="subTab5" class="btn btn__tab">subTab5</a>
+                      </li>
+                      <li>
+                        <a href="subTab6" class="btn btn__tab">subTab6</a>
+                      </li>
+                    </ul>
+                    <div class="tab__contents">
+                      <div id="subTab4" class="tab__content">
+                        subTab content4
+                      </div>
+                      <div id="subTab5" class="tab__content">
+                        subTab content5
+                      </div>
+                      <div id="subTab6" class="tab__content">
+                        subTab content6
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab6" class="tab__content">
+                  <div class="tab subTab">
+                    <ul class="tab__list">
+                      <li>
+                        <a href="subTab7" class="btn btn__tab">subTab7</a>
+                      </li>
+                      <li>
+                        <a href="subTab8" class="btn btn__tab">subTab8</a>
+                      </li>
+                      <li>
+                        <a href="subTab9" class="btn btn__tab">subTab9</a>
+                      </li>
+                    </ul>
+                    <div class="tab__contents">
+                      <div id="subTab7" class="tab__content">
+                        subTab content7
+                      </div>
+                      <div id="subTab8" class="tab__content">
+                        subTab content8
+                      </div>
+                      <div id="subTab9" class="tab__content">
+                        subTab content9
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="btn guideBtn">Copy</button>
+          </div>
+        </div>
+        <!-- // sub Tab -->
+      </div>
+    </section>
+  </div>
+  <footer data-include-path="/html/layout/footer.html"></footer>
+</div>
+
+</body>
+</html>
