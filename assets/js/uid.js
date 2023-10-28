@@ -18,10 +18,11 @@
     }
     includeHTML();
 
+    // dropdown
     function dropdown() {
       const btn = document.querySelectorAll('.dropdown__btn');
 
-      btn.forEach((btn) => {
+      btn.forEach(btn => {
         btn.addEventListener('click', () => {
           
           // accordion
@@ -48,4 +49,58 @@
     };
     dropdown();
 
+    // tab
+    function tab() {
+      const tab = document.querySelectorAll('.tabs > li .btn__tab')
+
+      tab.forEach(tab => {
+        tab.addEventListener("click", () => {
+          const tabs = document.querySelectorAll('.btn__tab');
+
+          tabs.forEach(tab => {
+            if(tab.classList.contains('is-acitve')) {
+              console.log(tab)
+              tab.classList.remove('is-active');
+            }
+          })
+          tab.classList.add('is-active');
+          // for(let i = 0; i < tabs.length; i++) {
+          //   if(tabs[i].classList.contains('is-acitve')) {
+          //     console.log(tabs)
+          //     tabs[i].classList.remove('is-active');
+          //   }
+          //   tab.classList.add('is-active');
+          // }
+        });
+      });
+    };
+    tab();
+
+    // tooltip
+    function tooltip () {
+      const tooltip = document.querySelectorAll('.tooltip__desc');
+
+      tooltip.forEach(tooltip => {
+        console.log(tooltip.getBoundingClientRect())
+        console.log(window.innerHeight / 2)
+        console.log(tooltip.getBoundingClientRect().y)
+
+        if(window.innerHeight / 2 < tooltip.getBoundingClientRect().y) {
+          tooltip.style.top = '-30px'
+        } else {
+          tooltip.style.bottom = '-30px'
+        }
+      });
+
+      const tooltipText = document.querySelectorAll('.tooltip__text');
+
+      tooltipText.forEach(tooltipText => {
+        const tooltipContents = document.createElement('span');
+        tooltipContents.className = 'tooltip__desc';
+        tooltipContents.innerHTML = tooltipText.innerHTML;
+        tooltipText.parentNode.style.position = 'relative';
+        tooltipText.after(tooltipContents)
+      })
+    }
+    tooltip();
 })();

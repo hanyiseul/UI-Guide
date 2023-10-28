@@ -7242,21 +7242,47 @@ table .th {
   position: relative;
   display: inline-block;
 }
-.tooltip .tooltip__title:hover + .tooltip__desc {
+
+.tooltip__title:hover + .tooltip__desc,
+.tooltip__text:hover + .tooltip__desc {
   width: auto;
   height: auto;
   padding: 0.5rem 1rem;
   overflow: visible;
-  white-space: nowrap;
   border: 1px solid #BBBBBB;
   border-radius: 0.5rem;
 }
-.tooltip .tooltip__desc {
+
+.tooltip__desc {
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   width: 0.1rem;
   height: 0.1rem;
+  white-space: nowrap;
   overflow: hidden;
+  background: #ffffff;
   z-index: 99;
+}
+
+.tooltip__text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+}
+.tooltip__text:hover + .tooltip__desc {
+  width: 100%;
+}
+.tooltip__text + .tooltip__desc {
+  top: 2rem;
+  left: 0;
+  white-space: break-spaces;
+  transform: translateX(0);
 }
 
 .dropdown {
@@ -7403,6 +7429,10 @@ table .th {
   margin-top: 5rem;
   padding-top: 5rem;
   border-top: 0.1rem solid #ECECEC;
+}
+.is-guide .table tr > .th,
+.is-guide .table tr > td {
+  border-width: 0.1rem 0 0.1rem;
 }
 
 .guide__code > p:not(:first-child) {
