@@ -40,9 +40,9 @@
           // dropdown show/hide
           const dropdown = btn.closest('.dropdown').querySelector('.dropdown__content');
           if(!btn.classList.contains('is-active')) {
-            dropdown.style.maxHeight = 0
+            dropdown.style.maxHeight = 0;
           } else {
-            dropdown.style.maxHeight = `${dropdown.scrollHeight}px`
+            dropdown.style.maxHeight = `${dropdown.scrollHeight}px`;
           };
         });
       });
@@ -53,69 +53,30 @@
     function tab() {
       const tabBtn = document.querySelectorAll('.tab__list > li .btn__tab');
         
-        tabBtn.forEach((tabBtn) => {
-          const tab = tabBtn.closest('.tab');
-          const tabList = tab.querySelector('.tab__list');
-          const tabCon = tabList.nextElementSibling;
-          const href = tabBtn.getAttribute('href');
-
-          tabBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-
-            const tabBtns = tab.querySelectorAll('.btn__tab');
-            tabBtns.forEach(btn => {
-              btn.classList.remove('is-active');
-            });
-
-            const tabCons = tabCon.querySelectorAll('.tab__content');
-            tabCons.forEach(con => {
-              con.classList.remove('is-active');
-            });
-
-            tabBtn.classList.add('is-active');
-            tabCon.querySelector(`#${href}`).classList.add('is-active');
-          });
-        });
-
-
-      // const tab = document.querySelectorAll('.tab');
-      // tab.forEach(tab => {
-      //   const tabBtn = tab.querySelectorAll('.tab__list > li .btn__tab');
+      tabBtn.forEach((tabBtn) => {
         
-      //   tabBtn.forEach((tabBtn) => {
-      //     const tabCon = tabBtn.closest('.tab__list').nextElementSibling;
-      //     console.log(tabBtn);
+        const tab = tabBtn.closest('.tab');
+        const tabList = tab.querySelector('.tab > .tab__list');
+        const tabCons = tabList.nextElementSibling;
+        const href = tabBtn.getAttribute('href');
 
-      //     tabBtn.addEventListener('click', (e) => {
-      //       e.preventDefault();
-      //       console.log(tabCon);
-      //     });
-      //     // tabBtn.addEventListener('click', (e) => {
-      //     //   e.preventDefault();
-      //     //   console.log(tabCon);
-      //     // });
-      //   });
-      // })
+        tabBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          
+          const tabBtns = tabList.querySelectorAll('.btn__tab');
+          tabBtns.forEach(btn => {
+            btn.classList.remove('is-active');
+          });
 
-      // const tab = document.querySelectorAll('.tab');
-      // tab.forEach(tab => {
-      //   const tabBtn = tab.querySelectorAll('.tab__list > li .btn__tab');
-      //   tabBtn.forEach((tabBtn, index) => {
-      //     tabBtn.addEventListener('click', (e) => {
-      //       console.log(tabBtn)
-      //       e.preventDefault();
-      //       const btn = tabBtn.closest('.tab').querySelectorAll('.tab__list > li .btn__tab');
-      //       const content = tab.closest('.tab').querySelectorAll('.tab__contents > .tab__content');
-      //       console.log(content[index])
-      //       btn.forEach((btn, index) => {
-      //         btn.classList.remove('is-active');
-      //         content[index].classList.remove('is-active');
-      //       });
-      //       tabBtn.classList.add('is-active');
-      //       content[index].classList.add('is-active');
-      //     });
-      //   });
-      // });
+          const tabCon = tabCons.children
+          for (let i = 0; i < tabCon.length; i++) {
+            tabCon[i].classList.remove('is-active')
+          }
+
+          tabBtn.classList.add('is-active');
+          tabCons.querySelector(`${href}`).classList.add('is-active');
+        });
+      });
     };
     tab();
 
@@ -124,14 +85,11 @@
       const tooltip = document.querySelectorAll('.tooltip__desc');
 
       tooltip.forEach(tooltip => {
-        console.log(tooltip.getBoundingClientRect())
-        console.log(window.innerHeight / 2)
-        console.log(tooltip.getBoundingClientRect().y)
 
         if(window.innerHeight / 2 < tooltip.getBoundingClientRect().y) {
-          tooltip.style.top = '-30px'
+          tooltip.style.top = '-30px';
         } else {
-          tooltip.style.bottom = '-30px'
+          tooltip.style.bottom = '-30px';
         }
       });
 
@@ -142,7 +100,7 @@
         tooltipContents.className = 'tooltip__desc';
         tooltipContents.innerHTML = tooltipText.innerHTML;
         tooltipText.parentNode.style.position = 'relative';
-        tooltipText.after(tooltipContents)
+        tooltipText.after(tooltipContents);
       })
     }
     tooltip();
