@@ -70,7 +70,6 @@
   }
 }
 
-
 // list
 ul {
   > li {
@@ -112,3 +111,10 @@ ul {
   }
 }
 
+// flag
+.flag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4rem;
+  background-color: $gray-100;
+} 

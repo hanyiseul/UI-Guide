@@ -20,6 +20,7 @@
 @import "base/utilities/size";
 @import "base/utilities/colors";
 @import "base/utilities/typography";
+@import "base/utilities/table";
 
 // Partials
 @import "partials/layout";
@@ -32,7 +33,7 @@
 @import "components/icon";
 @import "components/button";
 @import "components/form";
-@import "components/table";
+@import "components/board";
 @import "components/tooltip";
 @import "components/dropdown";
 @import "components/tab";

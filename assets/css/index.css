@@ -6766,6 +6766,28 @@ ul [class^=list__] {
   background-color: #494949;
 }
 
+.flag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4rem;
+  background-color: #F8F8F8;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  word-break: normal;
+}
+table tr > .th,
+table tr > td {
+  padding: 1rem 2rem;
+  border: 0.1rem solid #ECECEC;
+  vertical-align: middle;
+}
+table .th {
+  background: #D9D9D9;
+}
+
 body {
   min-width: 128rem;
   font-size: 1.5rem;
@@ -7230,13 +7252,78 @@ button:not(:disabled) {
   outline: none;
 }
 
-table tr > .th,
-table tr > td {
-  padding: 1rem 2rem;
-  border: 0.1rem solid #ECECEC;
+table.board tr > th,
+table.board tr > td {
+  text-align: center;
 }
-table .th {
-  background: #D9D9D9;
+table.board tr th {
+  padding: 1rem;
+  font-weight: 600;
+}
+table.board tr td {
+  white-space: nowrap;
+  padding: 2rem 1rem;
+}
+table.board a {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.board__list {
+  width: 100%;
+}
+.board__list > li {
+  margin: 0;
+  padding: 0;
+}
+.board__list [class^=board__] {
+  display: table;
+  width: 100%;
+  border-bottom: 1px solid #BBBBBB;
+  table-layout: fixed;
+}
+.board__list [class^=board__] > div {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.board__list .board__header .no,
+.board__list .board__body .no {
+  width: 10rem;
+}
+.board__list .board__header .title,
+.board__list .board__body .title {
+  width: 100%;
+}
+.board__list .board__header .date,
+.board__list .board__body .date {
+  width: 10rem;
+}
+.board__list .board__header > div {
+  padding: 1rem;
+  font-weight: 600;
+}
+.board__list .board__body > div {
+  padding: 2rem 1rem;
+}
+.board__list .board__body .title {
+  text-align: left;
+}
+.board__list .board__body .title .flag + a {
+  display: block;
+  margin: 1rem 0 0;
+}
+.board__list a {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: inline-block;
+  max-width: 100%;
 }
 
 .tooltip {
@@ -7364,20 +7451,23 @@ table .th {
 .tab .tab__list li:first-child .btn__tab {
   border-left-width: 0.1rem;
 }
-.tab .tab__list li .btn__tab {
+.tab .btn__tab {
+  display: inline-block;
   width: 100%;
+  padding: 1rem;
+  margin: 0 0 1rem;
   font-size: 1.4rem;
-  border: 0.1rem solid #BBBBBB;
+  border-bottom: 0.1rem solid #BBBBBB;
   border-width: 0.1rem 0.1rem 0.1rem 0;
   border-radius: 0;
 }
-.tab .tab__list li .btn__tab:focus {
+.tab .btn__tab:focus {
   outline: auto;
 }
-.tab .tab__list li .btn__tab.is-active {
+.tab .btn__tab.is-active {
   color: #405AE3;
 }
-.tab .tab__list li .btn__tab.is-active + .tab__content {
+.tab .btn__tab.is-active + .tab__content {
   display: block;
 }
 .tab .tab__content {
@@ -7389,6 +7479,13 @@ table .th {
 }
 .tab .tab__content:focus {
   outline: auto;
+}
+.tab.subTab .tab__list > li {
+  margin-right: 1rem;
+}
+.tab.subTab .btn__tab {
+  border: 0.1rem solid #BBBBBB;
+  border-radius: 4rem;
 }
 
 .container__guide.container {

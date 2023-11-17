@@ -12,24 +12,27 @@
           border-left-width: 0.1rem;
         }
       }
+    }
+  }
 
-      .btn__tab {
-        width: 100%;
-        font-size: 1.4rem;
-        border: 0.1rem solid $gray-400;
-        border-width: 0.1rem 0.1rem 0.1rem 0;
-        border-radius: 0;
+  .btn__tab {
+    display: inline-block;
+    width: 100%;
+    padding: 1rem;
+    margin: 0 0 1rem;
+    font-size: 1.4rem;
+    border-bottom: 0.1rem solid $gray-400;
+    border-width: 0.1rem 0.1rem 0.1rem 0;
+    border-radius: 0;
 
-        &:focus {
-          outline: auto;
-        }
+    &:focus {
+      outline: auto;
+    }
 
-        &.is-active {
-          color: $primary-1;
-          +.tab__content {
-            display: block;
-          }
-        }
+    &.is-active {
+      color: $primary-1;
+      +.tab__content {
+        display: block;
       }
     }
   }
@@ -45,5 +48,17 @@
       outline: auto;
     }
 
+  }
+
+  &.subTab {
+    .tab__list {
+      > li {
+        margin-right: 1rem;
+      }
+    }
+    .btn__tab {
+      border: 0.1rem solid $gray-400;
+      border-radius: 4rem;
+    }
   }
 }

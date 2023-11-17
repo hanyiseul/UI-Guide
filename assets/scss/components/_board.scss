@@ -1,0 +1,81 @@
+table {
+  &.board {
+    tr {
+      > th,
+      > td {
+        text-align: center;
+      }
+      th {
+        padding: 1rem;
+        font-weight: 600;
+      }
+      td {
+        white-space: nowrap;
+        padding: 2rem 1rem;
+      }
+    }
+    a {
+      @include ellipsis();
+      display: inline-block;
+      max-width: 100%;
+    }
+  }
+}
+
+.board__list {
+  width: 100%;
+
+  > li {
+    margin: 0;
+    padding: 0;
+  }
+  [class^="board__"] {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid $gray-400;
+    table-layout: fixed;
+    > div {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }  
+  .board__header,
+  .board__body {
+    .no {
+      width: 10rem;
+    }
+    .title {
+      width: 100%;
+    }
+    .date {
+      width: 10rem;
+    }
+  }
+  .board__header {
+    > div {
+      padding: 1rem;
+      font-weight: 600;
+    }
+  }
+  .board__body {
+    > div {
+      padding: 2rem 1rem;
+    }
+    .title {
+      text-align: left;
+
+      .flag {
+        + a {
+          display: block;
+          margin: 1rem 0 0;
+        }
+      }
+    };
+  }
+  a {
+    @include ellipsis();
+    display: inline-block;
+    max-width: 100%;
+  }
+}

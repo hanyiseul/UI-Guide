@@ -1,13 +1,14 @@
-.tableX {
-  
-}
-
 table {
+  width: 100%;
+  table-layout: fixed;
+  word-break: normal;
+
   tr {
     > .th,
     > td {
       padding: 1rem 2rem;
       border: 0.1rem solid $gray-200;
+      vertical-align: middle;
     }
   }
   .th {
