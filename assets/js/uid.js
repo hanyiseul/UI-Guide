@@ -104,4 +104,24 @@
       })
     }
     tooltip();
+
+    //popup
+    function modal() {
+      const modalBtn = document.querySelectorAll('.btn__modal');
+      const closedBtn = document.querySelectorAll('.is-closed');
+  
+      modalBtn.forEach(btn => {
+        btn.addEventListener('click', () => {
+          let modalName = btn.getAttribute('name')
+          document.querySelector(`.${modalName}`).classList.add('is-active');
+        })
+      })
+      closedBtn.forEach(btn => {
+        console.log(btn.closest('.modal'))
+        btn.addEventListener('click', () => {
+          btn.closest('.modal').classList.remove('is-active')
+        })
+      })
+    }
+    modal();
 })();

@@ -7017,6 +7017,7 @@ button:not(:disabled) {
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
   line-height: 1.8rem;
+  border-radius: 0.5rem;
 }
 .btn.is-medium {
   padding: 1rem 1.5rem;
@@ -7030,10 +7031,10 @@ button:not(:disabled) {
 }
 .btn.is-fill {
   color: #ffffff;
-  background-color: #405AE3;
+  background-color: #222222;
 }
 .btn.is-fill:hover, .btn.is-fill.is-hover, .btn.is-fill:focus, .btn.is-fill:active {
-  background-color: #FFCA0D;
+  background-color: #494949;
 }
 .btn.is-fill:disabled {
   color: #ffffff;
@@ -7041,10 +7042,10 @@ button:not(:disabled) {
 }
 .btn.is-outline {
   color: #494949;
-  border: 0.1rem solid #405AE3;
+  border: 0.1rem solid #979797;
 }
 .btn.is-outline:hover, .btn.is-outline.is-hover, .btn.is-outline:focus, .btn.is-outline:active {
-  border-color: #FFCA0D;
+  border-color: #222222;
 }
 .btn.is-outline:disabled {
   color: #ffffff;
@@ -7486,6 +7487,37 @@ table.board a {
 .tab.subTab .btn__tab {
   border: 0.1rem solid #BBBBBB;
   border-radius: 4rem;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999;
+}
+.modal.is-active {
+  display: block;
+}
+.modal .modal__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.modal .modal__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999999;
+  background-color: #ffffff;
+  width: 30rem;
+  height: 30rem;
 }
 
 .container__guide.container {

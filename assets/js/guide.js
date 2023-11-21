@@ -12,7 +12,6 @@
               });
           }
       });
-
       const guide = button.closest('.is-guide').getElementsByClassName('guide__code');
       const guideCode = button.closest('.is-guide').getElementsByClassName('guideCode');
 
@@ -28,4 +27,10 @@
       });
   });
 
+  window.onload = function () {
+    const gnbBtn = document.querySelectorAll('.btn__gnb');
+    gnbBtn.forEach((button)=>{
+      console.log(button)
+    })
+  }
 })();

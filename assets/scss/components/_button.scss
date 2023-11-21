@@ -10,23 +10,6 @@ button {
   }
 }
 
-// button size
-$button-size: (
-  "small": (
-    $font-size-xs,
-    $line-height-s,
-  ),
-  "medium": (
-    $font-size-m,
-    $line-height-m,
-  ),
-  "large": (
-    $font-size-l,
-    $line-height-l,
-  ),
-);
-
-
 .btn {
   font-weight: $font-weight-500;
   border-radius: 1rem;
@@ -42,6 +25,7 @@ $button-size: (
     padding: 0.5rem 1rem;
     font-size: $font-size-xs;
     line-height: $line-height-s;
+    border-radius: 0.5rem;
   }
   &.is-medium {
     padding: 1rem 1.5rem;
@@ -57,13 +41,13 @@ $button-size: (
   // button style
   &.is-fill {
     color: $white;
-    background-color: $primary-1;
+    background-color: $gray-700;
 
     &:hover,
     &.is-hover,
     &:focus,
     &:active {
-      background-color: $primary-2;
+      background-color: $gray-600;
     }
 
     &:disabled {
@@ -73,13 +57,13 @@ $button-size: (
   }
   &.is-outline {
     color: $gray-600;
-    border: 0.1rem solid $primary-1;
+    border: 0.1rem solid $gray-500;
 
     &:hover,
     &.is-hover,
     &:focus,
     &:active {
-      border-color: $primary-2;
+      border-color: $gray-700;
     }
 
     &:disabled {

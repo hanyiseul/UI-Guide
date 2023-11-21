@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Popup</title>
+<script src="../../../assets/js/uid.js" defer></script>
+<script src="../../../assets/js/guide.js" defer></script>
+<link rel="stylesheet" href="../../../assets/css/index.css">
+</head>
+<body>
+ 
+<div class="container container__guide">
+  <header data-include-path="../../layout/header.html"></header>
+   
+  <nav data-include-path="../../layout/sidebar.html"></nav>
+
+  <div class="contents">
+    <section>
+      <div class="title__wrap">
+        <div class="title">
+          <h2>Popup</h2>
+        </div>
+      </div>
+
+      <div class="content">
+        <!-- Popup -->
+        <div class="is-guide">
+          <div class="title__wrap">
+            <div class="title">
+              <h3>Popup</h3>
+            </div>
+          </div>
+
+          <div class="guide__code">
+            <button type="button" class="btn is-fill is-small btn__modal"  name="modal1">팝업</button>
+            <button type="button" class="btn is-fill is-small btn__modal" name="modal2">팝업 안의 팝업</button>
+
+            <div class="modal modal1">
+              <div class="modal__bg"></div>
+              <div class="modal__content">
+                modal1
+                <button type="button" class="btn is-fill is-small is-closed">닫기</button>
+              </div>
+            </div>
+
+            <div class="modal modal2">
+              <div class="modal__bg"></div>
+              <div class="modal__content">
+                modal2
+                <button type="button" class="btn is-fill is-small is-closed">닫기</button>
+
+                <button type="button" class="btn is-fill is-small btn__modal" name="modal3">팝업 안의 팝업</button>
+
+                <div class="modal modal3">
+                  <div class="modal__bg"></div>
+                  <div class="modal__content">
+                    modal3
+                    <button type="button" class="btn is-fill is-small is-closed">닫기</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="btn guideBtn">Copy</button>
+          </div>
+        </div>
+        <!-- // Popup -->
+
+        <!-- Alert -->
+        <div class="is-guide">
+          <div class="title__wrap">
+            <div class="title">
+              <h3>Alert</h3>
+            </div>
+          </div>
+
+          <div class="guide__code">
+            <button type="button" class="btn is-fill is-small btn__modal" name="modal4">alert</button>
+
+            <div class="modal modal4">
+              <div class="modal__bg"></div>
+              <div class="modal__content">
+                alert1
+                <button type="button" class="btn is-fill is-small is-closed">닫기</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="guideCode">
+            <button type="button" class="btn guideBtn">Copy</button>
+          </div>
+        </div>
+        <!-- // Alert -->
+
+
+      </div>
+    </section>
+  </div>
+  <footer data-include-path="../../layout/footer.html"></footer>
+</div>
+
+</body>
+</html>
