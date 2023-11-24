@@ -1,21 +1,21 @@
 @for $i from 0 through 100 {
   .width#{$i} {
-    width: $i * 0.1 + rem !important;
+    width: $i * 10 + px !important;
   }
 }
 @for $i from 0 through 100 {
   .height#{$i} {
-    height: $i * 0.1 + rem !important;
+    height: $i * 10 + px !important;
   }
 }
 
 @for $i from 0 through 100 {
   .icon#{$i} {
-    width: $i * 0.1 + rem !important;
-    height: $i * 0.1 + rem !important;
+    width: $i + px !important;
+    height: $i + px !important;
 
     + span {
-      line-height: $i * 0.1 + rem !important;
+      line-height: $i + px !important;
     }
   }
 }

@@ -3,7 +3,7 @@
   margin: 0;
 }
 html {
-  font-size: 62.5%;
+  // font-size: 625%;
   &:lang(ko) { word-break: keep-all; }
 }
 body {
@@ -11,7 +11,7 @@ body {
   &::-webkit-scrollbar { display: none; } /* Chrome */
   overflow-wrap: break-word;
   text-size-adjust: 100%;
-  line-height: 2rem;
+  line-height: 20px;
 }
 table { border: 0; border-collapse: collapse; border-spacing: 0 }
 a { color: #000; text-decoration: none; -webkit-tap-highlight-color: transparent; }
@@ -29,9 +29,9 @@ img { max-width: 100%; height: auto; vertical-align: top; }
 [class]:where(em) { font-style: normal; }
 
 // Document
-$document-min-width: 128rem;
+$document-min-width: 128px;
 $document-font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", Roboto, "Malgun Gothic", "맑은 고딕", Dotum, "돋움", sans-serif;
-$document-font-size: 1.5rem;
+$document-font-size: 15px;
 $document-font-weight: 400;
 $document-line-height: 1em;
 

@@ -1,8 +1,8 @@
 .sidebar {
-  width: 21rem;
-  height: calc((calc(var(--vh, 1vh) * 100)) - 11.6rem);
-  padding: 1.5rem 5rem 1.5rem 3rem;
-  border-right: 0.1rem solid $gray-200;
+  width: 210px;
+  height: calc((calc(var(--vh, 1vh) * 100)) - 116px);
+  padding: 15px 50px 15px 30px;
+  border-right: 1px solid $gray-200;
   background-color: $white;
   overflow-y: scroll;
 }
@@ -10,16 +10,16 @@
 .sidebar__list {
   > li {
     > .menu__link {
-      font-size: 1.8rem;
+      font-size: 18px;
       font-weight: 600;
     }
     + li {
-      margin-top: 3rem;
+      margin-top: 30px;
     }
   }
 
   li {
-    margin: 1rem 0;
+    margin: 10px 0;
     padding: 0;
   }
 

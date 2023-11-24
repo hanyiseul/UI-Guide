@@ -6,12 +6,12 @@ table {
         text-align: center;
       }
       th {
-        padding: 1rem;
+        padding: 10px;
         font-weight: 600;
       }
       td {
         white-space: nowrap;
-        padding: 2rem 1rem;
+        padding: 20px 10px;
       }
     }
     a {
@@ -43,24 +43,24 @@ table {
   .board__header,
   .board__body {
     .no {
-      width: 10rem;
+      width: 100px;
     }
     .title {
       width: 100%;
     }
     .date {
-      width: 10rem;
+      width: 100px;
     }
   }
   .board__header {
     > div {
-      padding: 1rem;
+      padding: 10px;
       font-weight: 600;
     }
   }
   .board__body {
     > div {
-      padding: 2rem 1rem;
+      padding: 20px 10px;
     }
     .title {
       text-align: left;
@@ -68,7 +68,7 @@ table {
       .flag {
         + a {
           display: block;
-          margin: 1rem 0 0;
+          margin: 10px 0 0;
         }
       }
     };

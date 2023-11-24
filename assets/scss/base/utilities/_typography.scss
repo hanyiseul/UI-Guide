@@ -38,7 +38,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 
   .title {
     font-size: $font-size-l;
@@ -46,8 +46,8 @@
     line-height: $line-height-l;
 
     +.desc {
-      margin-left: 1rem;
-      padding-bottom: 0.3rem;
+      margin-left: 10px;
+      padding-bottom: 3px;
     }
   }
   .desc {
@@ -74,27 +74,27 @@
 ul {
   > li {
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 15px;
     &:before {
       content: "";
       position: absolute;
-      top: 0.6rem;
+      top: 6px;
       left: 0;
     }
   }
   li {
-    margin: 0.5rem;
+    margin: 5px;
   }
   [class^="list__"] {
-    margin-top: 1rem;
-    font-size: 1.4rem;
+    margin-top: 10px;
+    font-size: 14px;
   }
 }
 .list__disc {
   > li {
     &:before {
-      width: 0.5rem;
-      height: 0.5rem;
+      width: 5px;
+      height: 5px;
       border-radius: 50%;
       background-color: $gray-600;
     }
@@ -103,9 +103,9 @@ ul {
 .list__dash {
   > li {
     &:before {
-      top: 0.9rem;
-      width: 0.5rem;
-      height: 0.1rem;
+      top: 9px;
+      width: 5px;
+      height: 1px;
       background-color: $gray-600;
     }
   }
@@ -114,7 +114,7 @@ ul {
 // flag
 .flag {
   display: inline-block;
-  padding: 0.5rem 1rem;
-  border-radius: 4rem;
+  padding: 5px 10px;
+  border-radius: 40px;
   background-color: $gray-100;
 } 

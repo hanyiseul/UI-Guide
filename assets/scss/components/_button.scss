@@ -2,7 +2,7 @@
 button {
   width: auto;
   height: auto;
-  border: 0.1rem solid $gray-600;
+  border: 1px solid $gray-600;
   background-color: inherit;
   outline: none;
   &:not(:disabled) {
@@ -12,28 +12,28 @@ button {
 
 .btn {
   font-weight: $font-weight-500;
-  border-radius: 1rem;
+  border-radius: 10px;
 
   &[class^="is"] {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 2rem auto;
+    background-size: 20px auto;
   }
 
   // button size
   &.is-small {
-    padding: 0.5rem 1rem;
+    padding: 5px 10px;
     font-size: $font-size-xs;
     line-height: $line-height-s;
-    border-radius: 0.5rem;
+    border-radius: 5px;
   }
   &.is-medium {
-    padding: 1rem 1.5rem;
+    padding: 10px 15px;
     font-size: $font-size-m;
     line-height: $line-height-m;
   }
   &.is-large {
-    padding: 1.5rem 2rem;
+    padding: 15px 20px;
     font-size: $font-size-l;
     line-height: $line-height-l;
   }
@@ -57,7 +57,7 @@ button {
   }
   &.is-outline {
     color: $gray-600;
-    border: 0.1rem solid $gray-500;
+    border: 1px solid $gray-500;
 
     &:hover,
     &.is-hover,
@@ -73,6 +73,6 @@ button {
     }
   }
   &.is-icon {
-    padding: 0.5rem;
+    padding: 5px;
   }
 }

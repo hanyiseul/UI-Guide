@@ -20,19 +20,19 @@ textarea { font-family: $document-font-family; }
 .logo {
   &.is-header {
     display: inline-flex;
-    width: 13.8rem;
-    height: 2.2rem;
+    width: 138px;
+    height: 22px;
   }
 }
 
 .container {
-  min-height: calc((calc(var(--vh, 1vh) * 100)) - 11.6rem); // header
-  padding-left: 21rem;
+  min-height: calc((calc(var(--vh, 1vh) * 100)) - 116px); // header
+  padding-left: 210px;
   background-color: #f1f1f1;
 }
 
 .contents {
-  padding: 2rem;
+  padding: 20px;
 
 }
 

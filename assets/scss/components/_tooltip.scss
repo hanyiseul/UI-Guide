@@ -10,10 +10,10 @@
     + .tooltip__desc {
       width: auto;
       height: auto;
-      padding: 0.5rem 1rem;
+      padding: 5px 10px;
       overflow: visible;
       border: 1px solid $gray-400;
-      border-radius: 0.5rem;
+      border-radius: 5px;
     }
   }
 }
@@ -21,8 +21,8 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 0.1rem;
-  height: 0.1rem;
+  width: 1px;
+  height: 1px;
   white-space: nowrap;
   overflow: hidden;
   background: $white;
@@ -42,7 +42,7 @@
     }
   }
   +.tooltip__desc {
-    top: 2rem;
+    top: 20px;
     left: 0;
     white-space: break-spaces;
     transform: translateX(0);

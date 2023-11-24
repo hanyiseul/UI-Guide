@@ -4,9 +4,9 @@
 
 // .loader {}
 .spinner {
-  width: 7rem;
-  height: 7rem;
-  border-width: .6rem;
+  width: 70px;
+  height: 70px;
+  border-width: 6px;
   border-style: solid;
   border-color: #BBB;
   border-bottom-color: #222;
@@ -52,8 +52,8 @@
   }
 
   .loading__circle {
-    width: 5.4rem;
-    height: 5.4rem;
+    width: 5.40px;
+    height: 5.40px;
     animation: loading-spin 3s infinite;
 
     circle {
