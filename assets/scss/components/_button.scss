@@ -41,23 +41,27 @@ button {
   // button style
   &.is-fill {
     color: $white;
+    border: 1px solid $gray-700;
     background-color: $gray-700;
 
     &:hover,
     &.is-hover,
     &:focus,
     &:active {
+      border-color: $gray-600;
       background-color: $gray-600;
     }
 
     &:disabled {
       color: $white;
+      border-color: $gray-200;
       background-color: $gray-200;
     }
   }
   &.is-outline {
     color: $gray-600;
     border: 1px solid $gray-500;
+    background-color: $white;
 
     &:hover,
     &.is-hover,

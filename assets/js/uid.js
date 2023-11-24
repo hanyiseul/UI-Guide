@@ -114,12 +114,14 @@
         btn.addEventListener('click', () => {
           let modalName = btn.getAttribute('name')
           document.querySelector(`.${modalName}`).classList.add('is-active');
+          document.body.style.overflow = 'hidden';
         })
       })
       closedBtn.forEach(btn => {
         console.log(btn.closest('.modal'))
         btn.addEventListener('click', () => {
-          btn.closest('.modal').classList.remove('is-active')
+          btn.closest('.modal').classList.remove('is-active');
+          document.body.removeAttribute('style');
         })
       })
     }

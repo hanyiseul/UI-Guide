@@ -7028,18 +7028,22 @@ button:not(:disabled) {
 }
 .btn.is-fill {
   color: #ffffff;
+  border: 1px solid #222222;
   background-color: #222222;
 }
 .btn.is-fill:hover, .btn.is-fill.is-hover, .btn.is-fill:focus, .btn.is-fill:active {
+  border-color: #494949;
   background-color: #494949;
 }
 .btn.is-fill:disabled {
   color: #ffffff;
+  border-color: #ECECEC;
   background-color: #ECECEC;
 }
 .btn.is-outline {
   color: #494949;
   border: 1px solid #979797;
+  background-color: #ffffff;
 }
 .btn.is-outline:hover, .btn.is-outline.is-hover, .btn.is-outline:focus, .btn.is-outline:active {
   border-color: #222222;
@@ -7490,31 +7494,53 @@ table.board a {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 99999999;
   display: none;
   width: 100%;
   height: 100%;
-  z-index: 99999999;
 }
 .modal.is-active {
   display: block;
+}
+.modal.is-alert .modal__body {
+  min-width: 200px;
+  min-height: 150px;
+}
+.modal.is-alert .modal__body .buttons {
+  right: 50%;
+  transform: translateX(50%);
 }
 .modal .modal__bg {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.modal .modal__content {
+.modal .modal__body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 999999;
+  min-width: 500px;
+  min-height: 300px;
+  padding: 20px 20px 25px;
   background-color: #ffffff;
-  width: 500px;
-  height: 300px;
+  transform: translate(-50%, -50%);
+}
+.modal .modal__body .modal__header {
+  color: #222222;
+  font-size: 18px;
+  font-weight: 600;
+}
+.modal .modal__body .modal__content {
+  padding: 15px 0 45px;
+}
+.modal .modal__body .buttons {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
 }
 
 .container__guide.container {
