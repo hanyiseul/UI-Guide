@@ -1,0 +1,29 @@
+.progress {
+  display: flex;
+  height: 20px;
+  border: 1px solid $gray-300;
+  background-color: $white;
+
+  &.is-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+  }
+  .progress__bar {
+    display: inline-block;
+    height: 100%;
+    background-color: $primary-1;
+
+    &.point1 {
+      background-color: $primary-1;
+    }
+    &.point2 {
+      background-color: $primary-2;
+    }
+    &.point3 {
+      background-color: $alerts-1;
+    }
+  }
+}

@@ -7543,6 +7543,34 @@ table.board a {
   right: 20px;
 }
 
+.progress {
+  display: flex;
+  height: 20px;
+  border: 1px solid #D9D9D9;
+  background-color: #ffffff;
+}
+.progress.is-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.progress .progress__bar {
+  display: inline-block;
+  height: 100%;
+  background-color: #405AE3;
+}
+.progress .progress__bar.point1 {
+  background-color: #405AE3;
+}
+.progress .progress__bar.point2 {
+  background-color: #FFCA0D;
+}
+.progress .progress__bar.point3 {
+  background-color: #E23A15;
+}
+
 .container__guide.container {
   padding: 0;
 }
