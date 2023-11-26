@@ -11,9 +11,9 @@
       position: absolute;
       top: 50%;
       right: 10px;
-      width: 80px;
-      height: 80px;
-      margin: -20px 0 0;
+      width: 8px;
+      height: 8px;
+      margin: -2px 0 0;
       border: 1px solid $gray-300;
       border-width: 0 1px 1px 0; 
       transform: translateY(-50%) rotate(45deg);
@@ -41,7 +41,7 @@
 
 .input {
   width: 100%;
-  padding: 10px 50px;
+  padding: 10px 5px;
   font-size: 15px;
   font-weight: 400;
 
