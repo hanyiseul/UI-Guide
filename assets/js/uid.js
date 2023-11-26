@@ -130,24 +130,23 @@
     // progress bar scroll
     function progress () {
       const progress = document.querySelector('.progress.is-scroll .progress__bar');
-      console.log(progress);
 
-      const scrollEvent = () => {
-        const scrollTop = document.documentElement.scrollTop;
-        const scrollHeight = document.documentElement.scrollHeight;
-        const clientHeight = document.documentElement.clientHeight;
+      if(progress) {
+        const scrollEvent = () => {
+          const scrollTop = document.documentElement.scrollTop;
+          const scrollHeight = document.documentElement.scrollHeight;
+          const clientHeight = document.documentElement.clientHeight;
 
-        const progressBar = (scrollTop / (scrollHeight - clientHeight))  * 100
+          const progressBar = (scrollTop / (scrollHeight - clientHeight))  * 100
 
-        console.log('scrollTop:',scrollTop)
-        console.log('scrollHeight:',scrollHeight)
-        console.log('clientHeight:',clientHeight)
-        console.log('progressbar:',progressBar)
+          progress.style.width = `${progressBar}%`
+        }
+  
+        window.addEventListener('scroll', () => scrollEvent());
 
-        progress.style.width = `${progressBar}%`
-        console.log(progressBar);
       }
-      window.addEventListener('scroll', () => scrollEvent());
+
+        
     }
     progress();
 })();
