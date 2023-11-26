@@ -1,0 +1,21 @@
+.pagination {
+  [class^="paging__"] {
+    border: 1px solid red;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .paging {
+    display: inline-block;
+    width: 34px;
+    height: 21px;
+    padding: 2px 8px;
+    text-align: center;
+    vertical-align: top;
+    box-sizing: border-box;
+
+  }
+  [class~="page"] {
+    border: 1px solid red;
+  }
+
+}
