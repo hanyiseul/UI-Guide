@@ -5,6 +5,7 @@ body {
   font-weight: $document-font-weight;
   color: $document-font-color;
   line-height: $document-line-height;
+  margin: 0;
 }
 
 body,
@@ -27,7 +28,7 @@ textarea { font-family: $document-font-family; }
 
 .container {
   min-height: calc((calc(var(--vh, 1vh) * 100)) - 12rem); // header
-  background: $blue-100; 
+  background-color: #f1f1f1;
 }
 
 .contents {
