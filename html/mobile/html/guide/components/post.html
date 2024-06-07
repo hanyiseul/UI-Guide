@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>post</title>
+<script src="/html/mobile/assets/js/uid.js" defer></script>
+<link rel="stylesheet" href="/html/mobile/assets/css/index.css">
+</head>
+<body>
+  
+  <header data-include-path="/html/mobile/html/layout/header.html"></header>
+
+  <nav data-include-path="/html/mobile/html/layout/sidebar.html"></nav>
+
+  <div class="container">
+    <div class="contents">
+      <section class="examples">
+        <div class="example__title">
+          <h1 class="h3">Post Title</h1>
+        </div>
+        <div class="postTitle">
+          <p class="title">타이틀제목이 들어가지요 세줄까지도 들어갑니다. 제목이 길어저도 문제가 세줄까지도 들어갑니다. 타이틀제목이 들어가지요 세줄까지도 들어갑니다. 제목이 길어저도 문제가 세줄까지도 들어갑니다. 타이틀제목이 들어가지요 세줄까지도 들어갑니다. 제목이 길어저도 문제가 세줄까지도 들어갑니다. </p>
+          <div class="writeInfo">
+            <div class="write__name">홍길동</div>
+            <div class="write__team">팀이름</div>
+            <div class="write__date">2023.01.01 (수) 오후1:16</div>
+          </div>
+          <div class="opinion">
+            <div class="opinion__like">28</div>
+            <div class="opinion__hate">444</div>
+          </div>
+        </div>
+      </section>
+    
+      <section class="examples">
+        <div class="example__title">
+          <h1 class="h3">Post View</h1>
+        </div>
+        <div class="formView">
+          내용입니다~!!
+
+        </div>
+      </section>
+    
+      <section class="examples">
+        <div class="example__title">
+          <h1 class="h3">File</h1>
+        </div>
+        <div class="formControl form__fileAttach">
+          <div class="file__header">
+            <div class="formControl__label">
+              <span class="label">첨부파일</span>
+            </div>
+            <div class="formControl__option">
+              <button type="button" class="btn btn__save">
+                <span>모두받기</span>
+              </button>
+            </div>
+          </div>
+          <div class="file__attach file__save">
+            <div class="file">
+              <div class="file__img">
+                <img src="" alt="">
+              </div>
+              <span class="file__name">imageTestTest.png</span>
+              <span class="file__volume">344kb</span>
+              <button type="button" class="btn file__btn">
+                <img src="/html/mobile/assets/images/svg/icon-attach-download.svg" alt="">
+                <span class="visually-hidden">다운로드</span>
+              </button>
+            </div>
+            <div class="file">
+              <div class="file__img">
+                <img src="" alt="">
+              </div>
+              <span class="file__name">imageTestTest2.png</span>
+              <span class="file__volume">344kb</span>
+              <button type="button" class="btn file__btn">
+                <img src="/html/mobile/assets/images/svg/icon-attach-download.svg" alt="">
+                <span class="visually-hidden">다운로드</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <section class="examples">
+        <div class="example__title">
+          <h1 class="h3">Comment</h1>
+        </div>
+        
+        <div class="dropdown__area double__dropdown comment">
+          <div class="btn__area comment__header">
+            <button type="button" class="btn btn__dropdown">
+              <span>댓글 <span>202</span></span>
+            </button>
+          </div>
+          <div class="dropdown">
+            <div class="form">
+              <div class="formControl form__recommend">
+                <input class="formText__input" type="text" title="댓글 입력" placeholder="댓글을 입력해 주세요." value="">
+                <button type="button" class="btn btn__enter">
+                  <img src="/html/mobile/assets/images/svg/icon-check.svg" alt="">
+                  <svg class="icon"><use href="#icon-check"></use></svg>
+                  <span class="visually-hidden">입력</span>
+                </button>
+              </div>
+    
+              <ul class="comment__list">
+                <li>
+                  <div class="comment__box">
+                    <span class="profile__img">
+                      <img src="/html/mobile/assets/images/svg/img-profile1.svg" alt="">
+                    </span>
+                    <div class="comment">
+                      <span class="comment__writer">홍길동</span>
+                      <span class="comment__team">팀명</span>
+                      <span class="comment__date">2023.01.01  17:16</span>
+                      <span class="comment__desc">
+                        댓글댓글
+                      </span>
+                      <div class="dropdown__area">
+                        <button type="button" class="btn btn__dropdownMore">
+                          <img src="/html/mobile/assets/images/svg/icon-more.svg" alt="">
+                          <span class="visually-hidden">더보기</span>
+                        </button>
+                        <div class="dropdown">
+                          <button type="button" class="btn recommend">
+                            <span>댓글쓰기</span>
+                          </button>
+                          <button type="button" class="btn modify">
+                            <span>수정</span>
+                          </button>
+                          <button type="button" class="btn delete">
+                            <span>삭제</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="comment__box">
+                    <span class="profile__img">
+                      <img src="/html/mobile/assets/images/svg/img-profile1.svg" alt="">
+                    </span>
+                    <div class="comment">
+                      <span class="comment__writer">홍길동</span>
+                      <span class="comment__team">팀명</span>
+                      <span class="comment__date">2023.01.01  17:16</span>
+                      <span class="comment__desc">
+                        댓글댓글
+                      </span>
+                      <div class="dropdown__area">
+                        <button type="button" class="btn btn__dropdownMore">
+                          <img src="/html/mobile/assets/images/svg/icon-more.svg" alt="">
+                          <span class="visually-hidden">더보기</span>
+                        </button>
+                        <div class="dropdown">
+                          <button type="button" class="btn recommend">
+                            <span>댓글쓰기</span>
+                          </button>
+                          <button type="button" class="btn modify">
+                            <span>수정</span>
+                          </button>
+                          <button type="button" class="btn delete">
+                            <span>삭제</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="dropdown">
+                      <button type="button" class="btn dropdown">
+                        <span>댓글쓰기</span>
+                      </button>
+                      <button type="button" class="btn dropdown">
+                        <span>수정</span>
+                      </button>
+                      <button type="button" class="btn dropdown">
+                        <span>삭제</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="formControl form__recommend mt-20">
+                    <input class="formText__input" type="text" title="댓글 입력" placeholder="댓글을 입력해 주세요." value="">
+                    <button type="button" class="btn btn__enter">
+                      <img src="/html/mobile/assets/images/svg/icon-chec.svg" alt="">
+                      <span class="visually-hidden">입력</span>
+                    </button>
+                  </div>
+                  
+                  <ul class="comment__list reply">
+                    <li>
+                      <div class="comment__box">
+                        <span class="profile__img">
+                          <img src="/html/mobile/assets/images/svg/img-profile1.svg" alt="">
+                        </span>
+                        <div class="comment">
+                          <span class="comment__writer">홍길동</span>
+                          <span class="comment__team">팀명</span>
+                          <span class="comment__date">2023.01.01  17:16</span>
+                          <span class="comment__desc">
+                            답글답글
+                          </span>
+                          <div class="dropdown__area">
+                            <button type="button" class="btn btn__dropdownMore">
+                              <img src="/html/mobile/assets/images/svg/icon-more.svg" alt="">
+                              <span class="visually-hidden">더보기</span>
+                            </button>
+                            <div class="dropdown">
+                              <button type="button" class="btn recommend">
+                                <span>댓글쓰기</span>
+                              </button>
+                              <button type="button" class="btn modify">
+                                <span>수정</span>
+                              </button>
+                              <button type="button" class="btn delete">
+                                <span>삭제</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+    
+                        <div class="dropdown">
+                          <button type="button" class="btn dropdown">
+                            <span>댓글쓰기</span>
+                          </button>
+                          <button type="button" class="btn dropdown">
+                            <span>수정</span>
+                          </button>
+                          <button type="button" class="btn dropdown">
+                            <span>삭제</span>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="comment__box">
+                        <span class="profile__img">
+                          <img src="/html/mobile/assets/images/svg/img-profile1.svg" alt="">
+                        </span>
+                        <div class="comment">
+                          <span class="comment__writer">홍길동</span>
+                          <span class="comment__team">팀명</span>
+                          <span class="comment__date">2023.01.01  17:16</span>
+                          <span class="comment__desc">
+                            답글답글
+                          </span>
+                          <div class="dropdown__area">
+                            <button type="button" class="btn btn__dropdownMore">
+                              <img src="/html/mobile/assets/images/svg/icon-more.svg" alt="">
+                              <span class="visually-hidden">더보기</span>
+                            </button>
+                            <div class="dropdown">
+                              <button type="button" class="btn recommend">
+                                <span>댓글쓰기</span>
+                              </button>
+                              <button type="button" class="btn modify">
+                                <span>수정</span>
+                              </button>
+                              <button type="button" class="btn delete">
+                                <span>삭제</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+    
+                        <div class="dropdown">
+                          <button type="button" class="btn dropdown">
+                            <span>댓글쓰기</span>
+                          </button>
+                          <button type="button" class="btn dropdown">
+                            <span>수정</span>
+                          </button>
+                          <button type="button" class="btn dropdown">
+                            <span>삭제</span>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="comment__box">
+                    <span class="profile__img">
+                      <img src="/html/mobile/assets/images/svg/img-profile1.svg" alt="">
+                    </span>
+                    <div class="comment">
+                      <span class="comment__writer">홍길동</span>
+                      <span class="comment__team">팀명</span>
+                      <span class="comment__date">2023.01.01  17:16</span>
+                      <span class="comment__desc">
+                        댓글댓글
+                      </span>
+                      <div class="dropdown__area">
+                        <button type="button" class="btn btn__dropdownMore">
+                          <img src="/html/mobile/assets/images/svg/icon-more.svg" alt="">
+                          <span class="visually-hidden">더보기</span>
+                        </button>
+                        <div class="dropdown">
+                          <button type="button" class="btn recommend">
+                            <span>댓글쓰기</span>
+                          </button>
+                          <button type="button" class="btn modify">
+                            <span>수정</span>
+                          </button>
+                          <button type="button" class="btn delete">
+                            <span>삭제</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="dropdown">
+                      <button type="button" class="btn dropdown">
+                        <span>댓글쓰기</span>
+                      </button>
+                      <button type="button" class="btn dropdown">
+                        <span>수정</span>
+                      </button>
+                      <button type="button" class="btn dropdown">
+                        <span>삭제</span>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <footer data-include-path="/html/mobile/html/layout/footer.html"></footer>
+</body>
+</html>

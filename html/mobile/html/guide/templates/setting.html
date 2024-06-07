@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>setting</title>
+<script src="/html/mobile/assets/js/uid.js" defer></script>
+<link rel="stylesheet" href="/html/mobile/assets/css/index.css">
+</head>
+<body>
+    
+  <!-- header -->
+  <header class="header">
+    <div class="header__item is-left">
+      <button type="button" class="btn is-icon">
+        <svg class="icon"><use href="#icon-header-prev"></use></svg>
+        <span class="visually-hidden">이전 페이지로 이동</span>
+      </button>
+    </div>
+    <div class="header__item is-center has-truncated">
+      <h1 class="header__title">환경설정</h1>
+    </div>
+    <div class="header__item is-right">
+      <button type="button" class="btn is-icon">
+        <svg class="icon"><use href="#icon-register"></use></svg>
+        <span class="visually-hidden">설정 저장하기</span>
+      </button>
+    </div>
+  </header>
+  <!-- // header -->
+
+  <nav data-include-path="/html/mobile/html/layout/sidebar.html"></nav>
+
+  <div class="container">
+    <div class="contents">
+      <section class="contents__setting">
+        <div class="toggle__area">
+          <span class="toggle__title">자동로그인</span>
+          <div class="input">
+            <input type="checkbox" id="toggle1" class="toggle" checked> 
+            <label for="toggle1" class="toggle__switch">
+              <span class="toggle__button"></span>
+            </label>
+          </div>
+        </div>
+        <div class="toggle__area">
+          <span class="toggle__title">메일 설정</span>
+          <div class="input">
+            <input type="checkbox" id="toggle2" class="toggle" checked> 
+            <label for="toggle2" class="toggle__switch">
+              <span class="toggle__button"></span>
+            </label>
+          </div>
+        </div>
+        <div class="toggle__area">
+          <span class="toggle__title">결제 알림</span>
+          <div class="input">
+            <input type="checkbox" id="toggle3" class="toggle" disabled> 
+            <label for="toggle3" class="toggle__switch">
+              <span class="toggle__button"></span>
+            </label>
+          </div>
+        </div>
+        <div class="toggle__area">
+          <span class="toggle__title">게시판 알림</span>
+          <div class="input">
+            <input type="checkbox" id="toggle4" class="toggle" disabled> 
+            <label for="toggle4" class="toggle__switch">
+              <span class="toggle__button"></span>
+            </label>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <footer data-include-path="/html/mobile/html/layout/footer.html"></footer>
+</body>
+</html>

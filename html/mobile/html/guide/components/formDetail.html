@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>form detail</title>
+<script src="/html/mobile/assets/js/uid.js" defer></script>
+<link rel="stylesheet" href="/html/mobile/assets/css/index.css">
+</head>
+<body>
+  
+  <header data-include-path="/html/mobile/html/layout/header.html"></header>
+
+  <nav data-include-path="/html/mobile/html/layout/sidebar.html"></nav>
+
+  <div class="container">
+    <div class="contents">
+      <section class="examples">
+        <div class="example__title">
+          <h1 class="h3">form no-line</h1>
+        </div>
+        <div class="form no-line">
+          <div class="formTitle">
+            <p class="title">제목!</p>
+          </div>
+          <div class="formControl receiver">
+            <div class="formControl__label">
+              <span class="label">글쓴이!</span>
+            </div>
+            <div class="form__receiver">
+              <div class="receiver__flag">
+                <div class="flag">
+                  <span class="label">abc@abc.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="formControl receiver">
+            <div class="formControl__label">
+              <span class="label">받는사람</span>
+              <button type="button" class="btn btn__reference">
+                <span class="visually-hidden">참조 열기</span>
+              </button>
+            </div>
+            <div class="form__receiver">
+              <input class="formText__input" type="text" title="제목 입력" placeholder="받는사람 입력" value="">
+              <div class="receiver__flag">
+                <div class="flag">
+                  <span class="label">abc@abc.com</span>
+                <button type="button" class="btn btn__remove">
+                  <img src="/html/mobile/assets/images/svg/icon-closed.svg" alt="">
+                  <span class="visually-hidden">삭제</span>
+                </button>
+                </div>
+              </div>
+              <div class="receiver__flag">
+                <div class="flag is-error">
+                  <span class="label">abc@abc.com</span>
+                <button type="button" class="btn btn__remove">
+                  <img src="/html/mobile/assets/images/svg/icon-closed.svg" alt="">
+                  <span class="visually-hidden">삭제</span>
+                </button>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn__referenceDropdown">
+              <img src="/html/mobile/assets/images/svg/icon-dropdown-arrow.svg" alt="">
+              <span class="visually-hidden">참조 탭 열기</span>
+            </button>
+          </div>
+          <div class="formControl reference">
+            <div class="formControl__label">
+              <span class="label">참조</span>
+            </div>
+            <div class="form__receiver">
+              <input class="formText__input" type="text" title="제목 입력" placeholder="받는사람 입력" value="">
+            </div>
+            <button type="button" class="btn__referenceDropdown">
+              <img src="/html/mobile/assets/images/svg/icon-dropdown-arrow.svg" alt="">
+              <span class="visually-hidden">참조 탭 열기</span>
+            </button>
+          </div>
+          <div class="formControl reference">
+            <div class="formControl__label">
+              <span class="label">숨은참조</span>
+            </div>
+            <div class="form__receiver">
+              <div class="receiver__flag">
+                <div class="flag">
+                  <span class="label">youonetravel@naver.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="formControl">
+            <div class="formControl__label">
+              <span class="label">설정</span>
+            </div>
+            <div class="formControl__option">
+              <div class="input">
+                <input type="checkbox" id="checkbox3" class="input__checkbox">
+                <label for="checkbox3" class="label__checkbox"><span class="input__label">내게쓰기</span>
+              </div>
+              <div class="input">
+                <input type="checkbox" id="checkbox4" class="input__checkbox">
+                <label for="checkbox4" class="label__checkbox"><span class="input__label">중요</span>
+              </div>
+            </div>
+          </div>
+          <div class="formControl">
+            <div class="formControl__label">
+              <span class="label">제목</span>
+            </div>
+            <div class="formControl__option">
+              <input class="formText__input" type="text" title="제목 입력" placeholder="제목이 들어가는 자리입니다." value="">
+              <div class="dropdown__area">
+                <div class="btn__area">
+                  <button type="button" class="btn btn__file btn__dropdown">
+                    <img src="/html/mobile/assets/images/svg/icon-attach.svg" alt="">
+                    <span class="visually-hidden">파일첨부</span>
+                  </button>
+                </div>
+
+                <div class="dropdown">
+                  <button type="button" class="btn">
+                    <span>일반파일</span>
+                  </button>
+                  <button type="button" class="btn">
+                    <span>문서</span>
+                  </button>
+                  <button type="button" class="btn">
+                    <span>클라우드</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="formControl form__fileAttach">
+            <div class="file__header">
+              <div class="formControl__label">
+                <span class="label">첨부파일</span>
+              </div>
+              <div class="formControl__option">
+                <span class="volume">일반 19.7KB</span>
+              </div>
+            </div>
+            <div class="file__attach">
+              <div class="file">
+                <span class="file__name">imageTestTest.png</span>
+                <span class="file__upload">100%</span>
+                <span class="file__volume">344kb</span>
+                <button type="button" class="btn file__btn btn__remove">
+                  <img src="/html/mobile/assets/images/svg/icon-closed.svg" alt="">
+                  <span class="visually-hidden">삭제</span>
+                </button>
+              </div>
+              <div class="file">
+                <span class="file__name">imageTestTest2.png</span>
+                <span class="file__upload">100%</span>
+                <span class="file__volume">344kb</span>
+                <button type="button" class="btn file__btn btn__remove">
+                  <img src="/html/mobile/assets/images/svg/icon-closed.svg" alt="">
+                  <span class="visually-hidden">삭제</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="formControl form__fileAttach">
+            <div class="file__header">
+              <div class="formControl__label">
+                <span class="label">첨부파일</span>
+              </div>
+              <div class="formControl__option">
+                <button type="button" class="btn btn__download">
+                  <span>모두받기</span>
+                </button>
+              </div>
+            </div>
+            <div class="file__attach">
+              <div class="file">
+                <span class="file__name">imageTestTest.png</span>
+                <span class="file__volume">344kb</span>
+                <button type="button" class="btn file__btn">
+                  <img src="/html/mobile/assets/images/svg/icon-attach-download.svg" alt="">
+                  <span class="visually-hidden">다운로드</span>
+                </button>
+              </div>
+              <div class="file">
+                <span class="file__name">imageTestTest2.png</span>
+                <span class="file__volume">344kb</span>
+                <button type="button" class="btn file__btn">
+                  <img src="/html/mobile/assets/images/svg/icon-attach-download.svg" alt="">
+                  <span class="visually-hidden">다운로드</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="mailView">
+            내용내용
+          </div>
+        </div>
+      </section>
+
+      <section class="examples">
+        <div class="example__title">
+          <h1 class="h3">form line</h1>
+        </div>
+        <div class="form"><div class="formControl receiver">
+            <div class="formControl__label">
+              <span class="label">받는사람</span>
+              <button type="button" class="btn btn__reference">
+                <span class="visually-hidden">참조 열기</span>
+              </button>
+            </div>
+            <div class="form__receiver">
+              <input class="formText__input" type="text" title="제목 입력" placeholder="받는사람 입력" value="">
+              <div class="receiver__flag">
+                <div class="flag">
+                  <span class="label">youonetravel@naver.com</span>
+                  <button type="button" class="btn btn__remove">
+                  <img src="/html/mobile/assets/images/svg/icon-closed.svg" alt="">
+                  <span class="visually-hidden">삭제</span>
+                </button>
+                </div>
+              </div>
+              <div class="receiver__flag">
+                <div class="flag is-error">
+                  <span class="label">youonetravel@naver.com</span>
+                <button type="button" class="btn btn__remove">
+                  <img src="/html/mobile/assets/images/svg/icon-closed.svg" alt="">
+                  <span class="visually-hidden">삭제</span>
+                </button>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn__referenceDropdown">
+              <img src="/html/mobile/assets/images/svg/icon-dropdown-arrow.svg" alt="">
+              <span class="visually-hidden">참조 탭 열기</span>
+            </button>
+          </div>
+          <div class="formControl reference">
+            <div class="formControl__label">
+              <span class="label">참조</span>
+            </div>
+            <div class="form__receiver">
+              <input class="formText__input" type="text" title="제목 입력" placeholder="받는사람 입력" value="">
+            </div>
+            <button type="button" class="btn__referenceDropdown">
+              <img src="/html/mobile/assets/images/svg/icon-dropdown-arrow.svg" alt="">
+              <span class="visually-hidden">참조 탭 열기</span>
+            </button>
+          </div>
+          <div class="formControl reference">
+            <div class="formControl__label">
+              <span class="label">숨은참조</span>
+            </div>
+            <div class="form__receiver">
+              <div class="receiver__flag">
+                <div class="flag">
+                  <span class="label">youonetravel@naver.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="formControl">
+            <div class="formControl__label">
+              <span class="label">기간지정</span>
+            </div>
+            <div class="formControl__option text-right">
+              <div class="input width-full">
+                <input type="date" id="calendar" class="input__calendar">
+                <label for="calendar" class="label__calendar"><span class="visually-hidden">캘린더</span></label>
+              </div>
+            </div>
+          </div>
+          <div class="formControl">
+            <div class="formControl__label">
+              <span class="label">제목</span>
+            </div>
+            <div class="formControl__option">
+              <input class="formText__input" type="text" title="제목 입력" placeholder="제목이 들어가는 자리입니다." value="">
+              <div class="dropdown__area">
+                <div class="btn__area">
+                  <button type="button" class="btn btn__file btn__dropdown">
+                    <img src="/html/mobile/assets/images/svg/icon-attach.svg" alt="">
+                    <span class="visually-hidden">파일첨부</span>
+                  </button>
+                </div>
+
+                <div class="dropdown">
+                  <button type="button" class="btn">
+                    <span>일반파일</span>
+                  </button>
+                  <button type="button" class="btn">
+                    <span>문서</span>
+                  </button>
+                  <button type="button" class="btn">
+                    <span>클라우드</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="formControl">
+            <textarea class="formText__textarea" cols="30" rows="10" title="내용 입력" placeholder="내용을 입력하세요."></textarea>
+          </div>
+        </div>
+      </section>
+
+      <section class="examples">
+        <div class="example__title">
+          <h1 class="h3">form full</h1>
+        </div>
+
+        <div class="form has-full">
+            <div class="formControl">
+              <div class="formControl__label">
+                <span class="label">성명</span>
+              </div>
+              <div class="formControl__option">
+                <input class="formText__input" type="text" title="성명 입력" value="스티브 잡스">
+              </div>
+            </div>
+            <div class="formControl">
+              <div class="formControl__label">
+                <span class="label">전화번호</span>
+              </div>
+              <div class="formControl__option option__select">
+                <div class="dropdown__area select__dropdown">
+                  <div class="btn__area select__btn">
+                    <button type="button" class="btn btn__dropdown btn__select">
+                      <span>선택</span>
+                      <img src="/html/mobile/assets/images/svg/icon-dropdown-arrow.svg" alt="">
+                    </button>
+                  </div>
+                  <div class="dropdown select__option">
+                    <button type="button" class="option">옵션1</button>
+                    <button type="button" class="option">옵션2</button>
+                    <button type="button" class="option">옵션3</button>
+                  </div>
+                </div>
+                <div class="option__grouped">
+                  <input class="formText__input" type="tel" title="전화번호 입력" value="">
+                  <button type="button" class="btn is-icon form-add">
+                    <span class="visually-hidden">추가하기</span>
+                  </button>
+                  <button type="button" class="btn is-icon form-delete">
+                    <span class="visually-hidden">삭제하기</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="formControl">
+              <div class="formControl__label">
+                <span class="label">이메일</span>
+              </div>
+              <div class="formControl__option">
+                <div class="option__grouped">
+                  <input class="formText__input" type="tel" title="이메일 입력" value="">
+                  <button type="button" class="btn is-icon form-add">
+                    <span class="visually-hidden">추가하기</span>
+                  </button>
+                  <button type="button" class="btn is-icon form-delete">
+                    <span class="visually-hidden">삭제하기</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
+  </div>
+
+  <footer data-include-path="/html/mobile/html/layout/footer.html"></footer>
+</body>
+</html>
