@@ -1,0 +1,251 @@
+{{#[../../helpers/layout2] htmlWebpackPlugin}}
+<header class="header">
+  <div class="header__item is-left">
+    <button type="button" class="btn is-icon header__sidebarTrigger">
+      <svg class="icon"><use href="#icon-header-menu"></use></svg>
+      <span class="visually-hidden">주메뉴 바로 가기</span>
+    </button>
+  </div>
+  <div class="header__item is-center has-truncated">
+    <h1 class="header__title">메일</h1>
+  </div>
+  <div class="header__item is-right">
+    <a class="btn is-icon" href="#">
+      <svg class="icon"><use href="#icon-header-search"></use></svg>
+      <span class="visually-hidden">검색 페이지로 이동</span>
+    </a>
+  </div>
+</header>
+{{> ../../partials/sidebar}}
+<div class="container">
+  <main class="contents">
+    <section>
+      <div class="checked__modal is-closed" data-closed="closed">
+        <button type="button" class="btn btn__closed">
+          <svg class="icon"><use href="#icon-closed"></use></svg>
+          <span class="visually-hidden">닫기</span>
+        </button>
+        <div class="modal__inner">
+          <div class="checked__count">
+            <span class="is-checked">3</span>
+            <span>/</span>
+            <span class="list__count">11</span>
+          </div>
+
+          <div class="btn__area">
+            <button type="button" class="btn btn__checked check__all">
+              <span class="btn__name">전체선택</span>
+            </button>
+            <button type="button" class="btn btn__mail">
+              <span class="btn__name">메일</span>
+            </button>
+            <button type="button" class="btn btn__delete">
+              <span class="btn__name">삭제</span>
+            </button>
+            <button type="button" class="btn btn__spam">
+              <span class="btn__name">스팸</span>
+            </button>
+            <button type="button" class="btn btn__movement">
+              <span class="btn__name">이동</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="content__header">
+        <div class="input">
+          <input type="checkbox" id="check__all" class="input__checkbox check__all">
+          <label for="check__all" class="label__checkbox"><span class="visually-hidden">전체 선택</span></label>
+          <span class="input__label">받은편지함 <span>2,018</span></span>
+        </div>
+        <button type="button" class="btn btn__refresh">
+            <svg class="icon"><use href="#icon-refresh"></use></svg>
+          <span class="visually-hidden">새로고침</span>
+        </button>
+      </div>
+
+
+      <!-- 메일이 있을 경우 -->
+      <ul class="check__list mail">
+        <li>
+          <div class="check__item is-new">
+            <div class="input">
+              <input type="checkbox" id="checkbox1" class="input__checkbox list__input">
+              <label for="checkbox1" class="label__checkbox"><span class="visually-hidden">메일 선택</span></label>
+            </div>
+            <div class="mail__info">
+              <a href="#none" class="mail__sender">
+                <span class="mail__writer">홍길동</span>
+                <span class="mail__date">01.30</span>
+              </a>
+              <div class="mail__inner">
+                <a href="#none" class="mail__desc fw-600">중요메일일 경우 볼드로 들어갑니다.</a>
+                <button type="button" class="btn btn__file">
+                    <svg class="icon"><use href="#icon-attach"></use></svg>
+                    <span class="visually-hidden">파일첨부</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="check__item is-new">
+            <div class="input">
+              <input type="checkbox" id="checkbox2" class="input__checkbox list__input">
+              <label for="checkbox2" class="label__checkbox"><span class="visually-hidden">메일 선택</span></label>
+            </div>
+            <div class="mail__info">
+              <a href="#none" class="mail__sender">
+                <span class="mail__writer">홍길동</span>
+                <span class="mail__date">01.30</span>
+              </a>
+              <div class="mail__inner">
+                <a href="#none" class="mail__desc">DarkSky 나의 어린이날은 비와함께</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="check__item">
+            <div class="input">
+              <input type="checkbox" id="checkbox3" class="input__checkbox list__input">
+              <label for="checkbox3" class="label__checkbox"><span class="visually-hidden">메일 선택</span></label>
+            </div>
+            <div class="mail__info">
+              <a href="#none" class="mail__sender">
+                <span class="mail__writer">홍길동</span>
+                <span class="mail__date">01.30</span>
+              </a>
+              <div class="mail__inner">
+                <a href="#none" class="mail__desc fw-600">DarkSky 나의 어린이날은 비와함께</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="check__item">
+            <div class="input">
+              <input type="checkbox" id="checkbox4" class="input__checkbox list__input">
+              <label for="checkbox4" class="label__checkbox"><span class="visually-hidden">메일 선택</span></label>
+            </div>
+            <div class="mail__info">
+              <a href="#none" class="mail__sender">
+                <span class="mail__writer">홍길동</span>
+                <span class="mail__date">01.30</span>
+              </a>
+              <div class="mail__inner">
+                <a href="#none" class="mail__desc">DarkSky 나의 어린이날은 비와함께</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="check__item">
+            <div class="input">
+              <input type="checkbox" id="checkbox5" class="input__checkbox list__input">
+              <label for="checkbox5" class="label__checkbox"><span class="visually-hidden">메일 선택</span></label>
+            </div>
+            <div class="mail__info">
+              <a href="#none" class="mail__sender">
+                <span class="mail__writer">홍길동</span>
+                <span class="mail__date">01.30</span>
+              </a>
+              <div class="mail__inner">
+                <a href="#none" class="mail__desc">DarkSky 나의 어린이날은 비와함께</a>
+                <button type="button" class="btn btn__file">
+                    <svg class="icon"><use href="#icon-attach"></use></svg>
+                    <span class="visually-hidden">파일첨부</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="check__item">
+            <div class="input">
+              <input type="checkbox" id="checkbox6" class="input__checkbox list__input">
+              <label for="checkbox6" class="label__checkbox"><span class="visually-hidden">메일 선택</span></label>
+            </div>
+            <div class="mail__info">
+              <a href="#none" class="mail__sender">
+                <span class="mail__writer">홍길동</span>
+                <span class="mail__date">01.30</span>
+              </a>
+              <div class="mail__inner">
+                <a href="#none" class="mail__desc">DarkSky 나의 어린이날은 비와함께 DarkSky 나의 어린이날은 비와함께</a>
+                <button type="button" class="btn btn__file">
+                    <svg class="icon"><use href="#icon-attach"></use></svg>
+                    <span class="visually-hidden">파일첨부</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="check__item is-new">
+            <div class="input">
+              <input type="checkbox" id="checkbox7" class="input__checkbox list__input">
+              <label for="checkbox7" class="label__checkbox"><span class="visually-hidden">메일 선택</span></label>
+            </div>
+            <div class="mail__info">
+              <a href="#none" class="mail__sender">
+                <span class="mail__writer">홍길동</span>
+                <span class="mail__date">01.30</span>
+              </a>
+              <div class="mail__inner">
+                <a href="#none" class="mail__desc fw-600">DarkSky 나의 어린이날은 비와함께 DarkSky 나의 어린이날은 비와함께</a>
+                <button type="button" class="btn btn__file">
+                    <svg class="icon"><use href="#icon-attach"></use></svg>
+                    <span class="visually-hidden">파일첨부</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="check__item is-new">
+            <div class="input">
+              <input type="checkbox" id="checkbox8" class="input__checkbox list__input">
+              <label for="checkbox8" class="label__checkbox"><span class="visually-hidden">메일 선택</span></label>
+            </div>
+            <div class="mail__info">
+              <a href="#none" class="mail__sender">
+                <span class="mail__writer">홍길동</span>
+                <span class="mail__date">01.30</span>
+              </a>
+              <div class="mail__inner">
+                <a href="#none" class="mail__desc">DarkSky 나의 어린이날은 비와함께 DarkSky 나의 어린이날은 비와함께</a>
+                <button type="button" class="btn btn__file">
+                    <svg class="icon"><use href="#icon-attach"></use></svg>
+                    <span class="visually-hidden">파일첨부</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="btn__area">
+        <button type="button" class="btn btn__listMore is-full">
+            <span>더보기</span>
+        </button>
+      </div>
+      <!-- // 메일이 있을 경우 --> 
+
+
+      <!-- 메일이 없을 경우 -->
+      <div class="noMail">
+        <svg class="img"><use href="#img-nomail"></use></svg>
+        <span class="noMail__desc">메일이 없습니다.</span>
+      </div>
+      <!-- // 메일이 없을 경우 --> 
+
+      <div class="floating__area">
+        <a href="post.html" class="btn btn__floating is-write">
+            <span class="visually-hidden">작성하기</span>
+        </a>
+      </div>
+    </section>
+  </main>
+</div>
+{{/[../../helpers/layout2]}}

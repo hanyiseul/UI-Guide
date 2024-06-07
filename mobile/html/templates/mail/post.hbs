@@ -1,0 +1,143 @@
+{{#[../../helpers/layout2] htmlWebpackPlugin}}
+<header class="header">
+  <div class="header__item is-left">
+    <button type="button" class="btn is-icon">
+      <svg class="icon"><use href="#icon-header-prev"></use></svg>
+      <span class="visually-hidden">이전 페이지로 이동</span>
+    </button>
+  </div>
+  <div class="header__item is-center has-truncated">
+    <h1 class="header__title">메일</h1>
+  </div>
+  <div class="header__item is-right">
+    <button type="button" class="btn is-icon">
+      <svg class="icon"><use href="#icon-mail-send"></use></svg>
+      <span class="visually-hidden">메일 보내기</span>
+    </button>
+  </div>
+</header>
+{{> ../../partials/sidebar}}
+<div class="container">
+  <main class="contents">
+    <section>
+      <div class="form">
+        <div class="formControl receiver">
+          <div class="formControl__label">
+            <span class="label">받는사람</span>
+            <button type="button" class="btn btn__reference">
+              <span class="visually-hidden">참조 열기</span>
+            </button>
+          </div>
+          <div class="form__receiver">
+            <input class="formText__input" type="text" title="제목 입력" placeholder="" value="">
+          </div>
+          <button type="button" class="btn__referenceDropdown">
+            <svg class="icon"><use href="#icon-dropdown-arrow"></use></svg>
+            <span class="visually-hidden">참조 탭 열기</span>
+          </button>
+        </div>
+        <div class="formControl reference">
+          <div class="formControl__label">
+            <span class="label">참조</span>
+          </div>
+          <div class="form__receiver">
+            <input class="formText__input" type="text" title="제목 입력" placeholder="" value="">
+          </div>
+          <button type="button" class="btn__referenceDropdown">
+            <svg class="icon"><use href="#icon-dropdown-arrow"></use></svg>
+            <span class="visually-hidden">참조 탭 열기</span>
+          </button>
+        </div>
+        <div class="formControl reference">
+          <div class="formControl__label">
+            <span class="label">숨은참조</span>
+          </div>
+          <div class="form__receiver">
+            <input class="formText__input" type="text" title="제목 입력" placeholder="" value="">
+          </div>
+          <button type="button" class="btn__referenceDropdown">
+            <svg class="icon"><use href="#icon-dropdown-arrow"></use></svg>
+            <span class="visually-hidden">참조 탭 열기</span>
+          </button>
+        </div>
+        <div class="formControl">
+          <div class="formControl__label">
+            <span class="label">설정</span>
+          </div>
+          <div class="formControl__option">
+            <div class="input">
+              <input type="checkbox" id="checkbox3" class="input__checkbox">
+              <label for="checkbox3" class="label__checkbox"><span class="input__label">내게쓰기</span>
+            </div>
+            <div class="input">
+              <input type="checkbox" id="checkbox4" class="input__checkbox">
+              <label for="checkbox4" class="label__checkbox"><span class="input__label">중요</span>
+            </div>
+          </div>
+        </div>
+        <div class="formControl">
+          <div class="formControl__label">
+            <span class="label">제목</span>
+          </div>
+          <div class="formControl__option">
+            <input class="formText__input" type="text" title="제목 입력" placeholder="" value="">
+            <div class="dropdown__area">
+              <div class="btn__area">
+                <button type="button" class="btn btn__file btn__dropdown">
+                    <svg class="icon"><use href="#icon-attach"></use></svg>
+                    <span class="visually-hidden">파일첨부</span>
+                </button>
+              </div>
+
+              <div class="dropdown">
+                <button type="button" class="btn">
+                  <span>일반파일</span>
+                </button>
+                <button type="button" class="btn">
+                  <span>문서</span>
+                </button>
+                <button type="button" class="btn">
+                  <span>클라우드</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="formControl form__fileAttach">
+          <div class="file__header">
+            <div class="formControl__label">
+              <span class="label">첨부파일</span>
+            </div>
+            <div class="formControl__option">
+              <span class="volume">일반 19.7KB</span>
+            </div>
+          </div>
+          <div class="file__attach">
+            <div class="file">
+              <span class="file__name">imageTestTest.png</span>
+              <span class="file__upload">100%</span>
+              <span class="file__volume">344kb</span>
+              <button type="button" class="btn file__btn btn__remove">
+                <svg class="icon"><use href="#icon-closed"></use></svg>
+                <span class="visually-hidden">삭제</span>
+              </button>
+            </div>
+            <div class="file">
+              <span class="file__name">imageTestTest2.png</span>
+              <span class="file__upload">100%</span>
+              <span class="file__volume">344kb</span>
+              <button type="button" class="btn file__btn btn__remove">
+                <svg class="icon"><use href="#icon-closed"></use></svg>
+                <span class="visually-hidden">삭제</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="formControl">
+          <textarea class="formText__textarea" cols="30" rows="10" title="내용 입력" placeholder="내용을 입력하세요."></textarea>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+{{/[../../helpers/layout2]}}

@@ -1,0 +1,51 @@
+{{#[../../helpers/layout2] htmlWebpackPlugin}}
+<header class="header">
+  <div class="header__item is-left">
+    <button type="button" class="btn is-icon">
+      <svg class="icon"><use href="#icon-header-prev"></use></svg>
+      <span class="visually-hidden">이전 페이지로 이동</span>
+    </button>
+  </div>
+  <div class="header__item is-center has-truncated">
+    <h1 class="header__title">조직도</h1>
+  </div>
+  <div class="header__item is-right">
+    <button type="button" class="btn is-icon">
+      <svg class="icon"><use href="#icon-mail-send"></use></svg>
+      <span class="visually-hidden">메일 보내기</span>
+    </button>
+  </div>
+</header>
+{{> ../../partials/sidebar}}
+<div class="container">
+  <main class="contents">
+    <section>
+      <div class="profile">
+        <span class="profile__img">
+          <svg class="img"><use href="#img-profile1"></use></svg>
+        </span>
+        <div class="profile__info">
+          <span class="profile__name">스티브잡스 매니저</span>
+          <span class="profile__team">전략 기획팀</span>
+        </div>
+      </div>
+      <div class="contents__list icon__list">
+        <div class="list__inner is-email">
+          <span class="list__desc">yrhong@ustra.gworks.com</span>
+        </div>
+        <div class="list__inner is-tel">
+          <span class="list__desc">-</span>
+        </div>
+        <div class="list__inner is-phone">
+          <span class="list__desc">010-2209-3000</span>
+        </div>
+        <div class="list__inner is-address">
+          <span class="list__desc">
+            판교<br>원서빌딩
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+{{/[../../helpers/layout2]}}

@@ -1,0 +1,385 @@
+{{#[../../helpers/layout2] htmlWebpackPlugin}}
+<header class="header">
+  <div class="header__item is-left">
+    <button type="button" class="btn is-icon header__sidebarTrigger">
+      <svg class="icon"><use href="#icon-header-menu"></use></svg>
+      <span class="visually-hidden">주메뉴 바로 가기</span>
+    </button>
+  </div>
+  <div class="header__item is-center has-truncated">
+    <h1 class="header__title">전자결재</h1>
+  </div>
+  <div class="header__item is-right">
+    <a class="btn is-icon" href="#">
+      <svg class="icon"><use href="#icon-header-search"></use></svg>
+      <span class="visually-hidden">검색 페이지로 이동</span>
+    </a>
+  </div>
+</header>
+{{> ../../partials/sidebar}}
+<div class="container">
+  <main class="contents">
+    <section>
+      <div class="checked__modal is-closed" data-closed="closed">
+        <button type="button" class="btn btn__closed">
+          <svg class="icon"><use href="#icon-closed"></use></svg>
+          <span class="visually-hidden">닫기</span>
+        </button>
+        <div class="modal__inner">
+          <div class="checked__count">
+            <span class="is-checked">3</span>
+            <span>/</span>
+            <span class="list__count">11</span>
+          </div>
+
+          <div class="btn__area">
+            <button type="button" class="btn btn__checked check__all">
+              <span class="btn__name">전체선택</span>
+            </button>
+            <button type="button" class="btn btn__delete">
+              <span class="btn__name">삭제</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="content__header">
+        <p class="header__title">결재현황</p>
+        <button type="button" class="btn btn__refresh">
+            <svg class="icon"><use href="#icon-refresh"></use></svg>
+          <span class="visually-hidden">새로고침</span>
+        </button>
+      </div>
+      <ul class="check__list approval">
+        <li>
+          <div class="check__item">
+            <a href="processingView.html" class="approval__item">
+              <div class="approval__title">
+                <span class="title">경비사용보고서 일반</span>
+                <span class="delay">[5일초과]</span>
+              </div>
+              <div class="state__process">
+                <span class="state__badge">
+                  <span class="label">상신</span>
+                  <span class="name">박민지</span>
+                </span>
+                <span class="state__badge is-status">
+                  <span class="label">결재</span>
+                  <span class="name">이복우</span>
+                </span>
+                <span class="state__badge">
+                  <span class="label">결재</span>
+                  <span class="name">김명욱</span>
+                </span>
+                <span class="state__badge">
+                  <span class="label">결재</span>
+                  <span class="name">박민지</span>
+                </span>
+                <span class="state__badge">
+                  <span class="label">결재</span>
+                  <span class="name">스티브잡스</span>
+                </span>
+                <span class="state__badge">
+                  <span class="label">최종결재</span>
+                  <span class="name">김명욱</span>
+                </span>
+              </div>
+              <div class="state__info is-small">
+                <div class="state__box">
+                  <span class="state__title">기안자</span>
+                  <span class="state__desc">이복우</span>
+                </div>
+                <div class="state__box">
+                  <span class="state__title">기안일</span>
+                  <span class="state__desc">2023.05.25 11:09</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="check__item">
+            <a href="processingView.html" class="approval__item">
+              <div class="approval__title">
+                <span class="title">경비사용보고서 일반</span>
+                <span class="delay">[5일초과]</span>
+              </div>
+              <div class="state__process">
+                <span class="state__badge is-status">
+                  <span class="label">상신</span>
+                  <span class="name">박민지</span>
+                </span>
+                <span class="state__badge">
+                  <span class="label">결재</span>
+                  <span class="name">이예진</span>
+                </span>
+                <span class="state__badge">
+                  <span class="label">결재</span>
+                  <span class="name">김명욱</span>
+                </span>
+              </div>
+              <div class="state__info">
+                <div class="state__box">
+                  <span class="state__title">기안자</span>
+                  <span class="state__desc">이복우</span>
+                </div>
+                <div class="state__box">
+                  <span class="state__title">기안일</span>
+                  <span class="state__desc">2023.05.25 11:09</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="check__item">
+            <a href="processingView.html" class="approval__item">
+              <div class="approval__title">
+                <span class="title">휴가 신청서 / 연차 월차 이연 외</span>
+              </div>
+              <div class="state__process">
+                <span class="state__badge">
+                  <span class="label">상신</span>
+                  <span class="name">박민지</span>
+                </span>
+                <span class="state__badge is-status">
+                  <span class="label">결재</span>
+                  <span class="name">이복우</span>
+                </span>
+                <span class="state__badge">
+                  <span class="label">결재</span>
+                  <span class="name">김명욱</span>
+                </span>
+                <span class="state__badge">
+                  <span class="label">결재</span>
+                  <span class="name">박민지</span>
+                </span>
+                <span class="state__badge">
+                  <span class="label">결재</span>
+                  <span class="name">스티브잡스</span>
+                </span>
+                <span class="state__badge">
+                  <span class="label">최종결재</span>
+                  <span class="name">김명욱</span>
+                </span>
+              </div>
+              <div class="state__info is-small">
+                <div class="state__box">
+                  <span class="state__title">기안자</span>
+                  <span class="state__desc">이복우</span>
+                </div>
+                <div class="state__box">
+                  <span class="state__title">기안일</span>
+                  <span class="state__desc">2023.05.25 11:09</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="check__item">
+            <a href="processingView.html" class="approval__item">
+              <div class="approval__title">
+                <span class="title">경비사용보고서 일반</span>
+              </div>
+              <div class="state__process">
+                <span class="state__badge is-status">
+                  <span class="label">상신</span>
+                  <span class="name">박민지</span>
+                </span>
+                <span class="state__badge">
+                  <span class="label">결재</span>
+                  <span class="name">이예진</span>
+                </span>
+                <span class="state__badge">
+                  <span class="label">결재</span>
+                  <span class="name">김명욱</span>
+                </span>
+              </div>
+              <div class="state__info">
+                <div class="state__box">
+                  <span class="state__title">기안자</span>
+                  <span class="state__desc">이복우</span>
+                </div>
+                <div class="state__box">
+                  <span class="state__title">기안일</span>
+                  <span class="state__desc">2023.05.25 11:09</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="check__item">
+            <a href="processingView.html" class="approval__item">
+              <div class="approval__title">
+                <span class="title">경비사용보고서 일반</span>
+                <span class="delay">[5일초과]</span>
+              </div>
+              <div class="state__process">
+                <span class="state__badge">
+                  <span class="label">상신</span>
+                  <span class="name">박민지</span>
+                </span>
+                <span class="state__badge is-status">
+                  <span class="label">최종결재</span>
+                  <span class="name">김명욱</span>
+                </span>
+              </div>
+              <div class="state__info is-small">
+                <div class="state__box">
+                  <span class="state__title">기안자</span>
+                  <span class="state__desc">이복우</span>
+                </div>
+                <div class="state__box">
+                  <span class="state__title">기안일</span>
+                  <span class="state__desc">2023.05.25 11:09</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="check__item">
+            <a href="processingView.html" class="approval__item">
+              <div class="approval__title">
+                <span class="title">경비사용보고서 일반</span>
+              </div>
+              <div class="state__process">
+                <span class="state__badge">
+                  <span class="label">상신</span>
+                  <span class="name">박민지</span>
+                </span>
+                <span class="state__badge is-status">
+                  <span class="label">최종결재</span>
+                  <span class="name">이예진</span>
+                </span>
+                <span class="state__badge">
+                  <span class="label">결재</span>
+                  <span class="name">김명욱</span>
+                </span>
+              </div>
+              <div class="state__info">
+                <div class="state__box">
+                  <span class="state__title">기안자</span>
+                  <span class="state__desc">이복우</span>
+                </div>
+                <div class="state__box">
+                  <span class="state__title">기안일</span>
+                  <span class="state__desc">2023.05.25 11:09</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="check__item">
+            <a href="processingView.html" class="approval__item">
+              <div class="approval__title">
+                <span class="title">경비사용보고서 일반</span>
+              </div>
+              <div class="state__process">
+                <span class="state__badge is-status">
+                  <span class="label">상신</span>
+                  <span class="name">박민지</span>
+                </span>
+                <span class="state__badge">
+                  <span class="label">결재</span>
+                  <span class="name">이예진</span>
+                </span>
+                <span class="state__badge">
+                  <span class="label">결재</span>
+                  <span class="name">김명욱</span>
+                </span>
+              </div>
+              <div class="state__info">
+                <div class="state__box">
+                  <span class="state__title">기안자</span>
+                  <span class="state__desc">이복우</span>
+                </div>
+                <div class="state__box">
+                  <span class="state__title">기안일</span>
+                  <span class="state__desc">2023.05.25 11:09</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="check__item">
+            <a href="processingView.html" class="approval__item">
+              <div class="approval__title">
+                <span class="title">경비사용보고서 일반</span>
+              </div>
+              <div class="state__process">
+                <span class="state__badge is-status">
+                  <span class="label">상신</span>
+                  <span class="name">박민지</span>
+                </span>
+                <span class="state__badge">
+                  <span class="label">결재</span>
+                  <span class="name">이예진</span>
+                </span>
+                <span class="state__badge">
+                  <span class="label">결재</span>
+                  <span class="name">김명욱</span>
+                </span>
+              </div>
+              <div class="state__info">
+                <div class="state__box">
+                  <span class="state__title">기안자</span>
+                  <span class="state__desc">이복우</span>
+                </div>
+                <div class="state__box">
+                  <span class="state__title">기안일</span>
+                  <span class="state__desc">2023.05.25 11:09</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="check__item">
+            <a href="processingView.html" class="approval__item">
+              <div class="approval__title">
+                <span class="title">경비사용보고서 일반</span>
+              </div>
+              <div class="state__process">
+                <span class="state__badge is-status">
+                  <span class="label">상신</span>
+                  <span class="name">박민지</span>
+                </span>
+                <span class="state__badge">
+                  <span class="label">결재</span>
+                  <span class="name">이예진</span>
+                </span>
+                <span class="state__badge">
+                  <span class="label">결재</span>
+                  <span class="name">김명욱</span>
+                </span>
+              </div>
+              <div class="state__info">
+                <div class="state__box">
+                  <span class="state__title">기안자</span>
+                  <span class="state__desc">이복우</span>
+                </div>
+                <div class="state__box">
+                  <span class="state__title">기안일</span>
+                  <span class="state__desc">2023.05.25 11:09</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </li>
+      </ul>
+
+      <div class="btn__area">
+        <button type="button" class="btn btn__listMore is-full">
+            <span>더보기</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+</div>
+{{/[../../helpers/layout2]}}

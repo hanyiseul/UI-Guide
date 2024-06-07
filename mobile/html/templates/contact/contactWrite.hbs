@@ -1,0 +1,105 @@
+{{#[../../helpers/layout2] htmlWebpackPlugin}}
+<header class="header is-line">
+  <div class="header__item is-left">
+    <button type="button" class="btn is-icon">
+      <svg class="icon"><use href="#icon-header-prev"></use></svg>
+      <span class="visually-hidden">이전 페이지로 이동</span>
+    </button>
+  </div>
+  <div class="header__item is-center has-truncated">
+    <h1 class="header__title">연락처</h1>
+  </div>
+  <div class="header__item is-right">
+    <button type="button" class="btn is-icon">
+      <svg class="icon"><use href="#icon-register"></use></svg>
+      <span class="visually-hidden">연락처 등록하기</span>
+    </button>
+  </div>
+</header>
+{{> ../../partials/sidebar}}
+<div class="container">
+  <main class="contents">
+    <section>
+      <div class="form has-full">
+        <div class="formControl">
+          <div class="formControl__label">
+            <span class="label">성명</span>
+          </div>
+          <div class="formControl__option">
+            <input class="formText__input" type="text" title="성명 입력" value="스티브 잡스">
+          </div>
+        </div>
+        <div class="formControl">
+          <div class="formControl__label">
+            <span class="label">전화번호</span>
+          </div>
+          <div class="formControl__option option__select">
+            <div class="dropdown__area select__dropdown">
+              <div class="btn__area select__btn">
+                <button type="button" class="btn btn__dropdown btn__select">
+                  <span>선택</span>
+                  <svg class="icon"><use href="#icon-dropdown-arrow"></use></svg>
+                </button>
+              </div>
+              <div class="dropdown select__option">
+                <button type="button" class="option">옵션1</button>
+                <button type="button" class="option">옵션2</button>
+                <button type="button" class="option">옵션3</button>
+              </div>
+            </div>
+            <div class="option__grouped">
+              <input class="formText__input" type="tel" title="전화번호 입력" value="">
+              <button type="button" class="btn is-icon form-add">
+                <span class="visually-hidden">추가하기</span>
+              </button>
+              <button type="button" class="btn is-icon form-delete">
+                <span class="visually-hidden">삭제하기</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="formControl">
+          <div class="formControl__label">
+            <span class="label">이메일</span>
+          </div>
+          <div class="formControl__option">
+            <div class="option__grouped">
+              <input class="formText__input" type="tel" title="이메일 입력" value="">
+              <button type="button" class="btn is-icon form-add">
+                <span class="visually-hidden">추가하기</span>
+              </button>
+              <button type="button" class="btn is-icon form-delete">
+                <span class="visually-hidden">삭제하기</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="formControl">
+          <div class="formControl__label">
+            <span class="label">회사</span>
+          </div>
+          <div class="formControl__option">
+            <input class="formText__input" type="text" title="회사 입력" value="">
+          </div>
+        </div>
+        <div class="formControl">
+          <div class="formControl__label">
+            <span class="label">부서명</span>
+          </div>
+          <div class="formControl__option">
+            <input class="formText__input" type="text" title="부서명 입력" value="">
+          </div>
+        </div>
+        <div class="formControl">
+          <div class="formControl__label">
+            <span class="label">직책</span>
+          </div>
+          <div class="formControl__option">
+            <input class="formText__input" type="text" title="직책 입력" value="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+{{/[../../helpers/layout2]}}

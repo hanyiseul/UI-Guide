@@ -7663,6 +7663,9 @@ table.board a {
 .guide__code .formControl:not(:first-child) {
   margin-top: 10px;
 }
+.guide__code .formControl .input[type=text], .guide__code .formControl .textarea {
+  width: 100%;
+}
 .guide__code .input[type=text], .guide__code .textarea {
   width: 500px;
 }

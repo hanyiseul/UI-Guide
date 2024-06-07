@@ -1,0 +1,34 @@
+@for $width from 0 through 100 {
+  .box__#{$width} {
+    .box__item {
+      width: 100% / $width !important;
+    }
+  }
+}
+
+.box {
+  display: flex;
+  margin: 2rem 0 0;
+}
+
+.box__item {
+  padding: 2.5rem 2.8rem 3.4rem 2.7rem;
+  color: $gray-600;
+  text-align: center;
+  border-radius: 1.2rem;
+  background: $blue-200;
+
+  &:not(:first-child) {
+    margin-left: 0.7rem;
+  }
+  .item__img {
+    svg {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    .img__title {
+      margin-top: 2rem;
+    }
+  } 
+}

@@ -1,0 +1,66 @@
+
+{{#[../../helpers/layout] htmlWebpackPlugin}}<main class="contents">
+
+  <section>
+    <div class="btn__area">
+      <button type="button" class="btn btn__primary is-black is-modal" data-modal="modal1">
+        <span>결제하기</span>
+      </button>
+    </div>
+
+    <!-- modal -->
+    <div id="modal1" class="modal" data-closed="closed">
+      <div class="modal__inner">
+        <button type="button" class="btn btn__closed">
+          <svg class="icon"><use href="#icon-closed"></use></svg>
+          <span class="visually-hidden">닫기</span>
+        </button>
+        <div class="modal__desc">
+          <div class="btn__area">
+            <button type="button" class="btn btn__primary is-modal is-primary is-full" data-modal="alert1">
+              <span>승인</span>
+            </button>
+            <button type="button" class="btn btn__primary is-white is-full">
+              <span>반려</span>
+            </button>
+            <button type="button" class="btn btn__primary is-white is-full">
+              <span>보류</span>
+            </button>
+          </div>
+          <div class="modal__form">
+            <div class="modal__formTitle">
+              <div class="title">의견남기기</div>
+              <button type="button" class="btn">
+                <span>확인</span>
+              </button>
+            </div>
+            <div class="formControl">
+              <textarea class="formText__textarea" placeholder="내용을 입력하세요."></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!-- // modal --> 
+
+    <!-- alert -->
+    <div id="alert1" class="modal is-alert is-closed" data-closed="closed">
+      <div class="modal__inner">
+        <button type="button" class="btn btn__closed">
+          <svg class="icon"><use href="#icon-closed"></use></svg>
+          <span class="visually-hidden">닫기</span>
+        </button>
+        <div class="modal__desc">
+          정상 처리되었습니다.
+        </div>
+        <div class="btn__area">
+          <button type="button" class="btn btn__primary is-black is-small">
+            <span>확인</span>
+          </button>
+        </div>
+      </div>
+    </div> 
+    <!-- // alert1 --> 
+  </section>
+
+</main>{{/[../../helpers/layout]}}

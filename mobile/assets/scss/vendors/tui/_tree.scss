@@ -1,0 +1,133 @@
+.tui-tree-wrap {
+  width: 100%;
+  background-color: transparent;
+
+  .tui-tree {
+    .tui-tree-node {
+      margin-top: .5rem;
+  
+      &:not(.tui-tree-leaf) {
+        position: relative;
+  
+        & > .tui-tree-content-wrapper {
+          display: flex;
+          align-items: center;
+  
+          .tui-tree-text {
+            width: calc(100% - 3.2rem);
+            height: 3.4rem;
+            padding: 0 1.2rem;
+            line-height: 2.3rem;
+            border: .1rem solid #ECECEC;
+            border-radius: .4rem;
+            background-color: $white;
+          }
+  
+          & + .tui-tree-subtree {
+            .tui-tree-node {
+              &::before {
+                left: 4.2rem;
+              }
+            }
+          }
+        }
+        &::before {
+          display: block;
+          position: absolute;
+          left: 1rem;
+          top: 2rem;
+          width: .1rem;
+          height: 100%;
+          background-color: #ECECEC;
+          content: "";
+        }
+        &:last-child {
+          &::before {
+            display: none;
+          }
+        }
+      }
+      &.tui-tree-leaf {
+        &:nth-child(n+2) {
+          margin: 0;
+        }
+        .tui-tree-content-wrapper {
+          .tui-tree-text {
+            width: 100%;
+            height: 3rem;
+            padding-left: 0;
+            line-height: 2rem;
+            padding-left: 3.4rem;
+            background-repeat: no-repeat;
+            background-position: .6rem 50%;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4.66699 4.4335V17.2335C4.66699 17.6578 4.8382 18.0648 5.14294 18.3649C5.44769 18.6649 5.86102 18.8335 6.29199 18.8335H16.042C16.473 18.8335 16.8863 18.6649 17.191 18.3649C17.4958 18.0648 17.667 17.6578 17.667 17.2335V7.9071C17.667 7.69394 17.6237 7.48295 17.5397 7.28649C17.4557 7.09004 17.3327 6.91209 17.1779 6.7631L13.5704 3.2895C13.2668 2.99722 12.8591 2.83355 12.4345 2.8335H6.29199C5.86102 2.8335 5.44769 3.00207 5.14294 3.30213C4.8382 3.60218 4.66699 4.00915 4.66699 4.4335V4.4335Z' stroke='%23222222' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M12.792 2.8335V6.0335C12.792 6.45784 12.9632 6.86481 13.2679 7.16487C13.5727 7.46492 13.986 7.6335 14.417 7.6335H17.667' stroke='%23222222' stroke-linejoin='round'/%3e%3cline x1='8' y1='10.5' x2='14' y2='10.5' stroke='%23222222'/%3e%3cline x1='8' y1='13.5' x2='14' y2='13.5' stroke='%23222222'/%3e%3c/svg%3e ");
+  
+            &:hover {
+              background-color: $points-2;
+              border-radius: .4rem;
+            }
+          }
+        }
+      }
+      &.tui-tree-opened {
+        & > .tui-tree-content-wrapper {
+          .tui-tree-toggle-btn {
+            transform: rotate(-90deg);
+          }
+        }
+      }
+      .tui-tree-content-wrapper {
+        display: flex;
+        width: 100%;
+  
+        &:hover {
+          background-color: transparent;
+        }
+        .tui-tree-toggle-btn {
+          margin: 0 1rem 0 0;
+          width: 2.2rem;
+          height: 2.2rem;
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          background-size: 2.2rem 2.2rem;
+          background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0.5' y='-0.5' width='21' height='21' rx='10.5' transform='matrix(1 0 0 -1 0 21)' fill='white'/%3e%3cpath d='M14.1938 10.4883C14.1938 10.4014 14.1784 10.3202 14.1477 10.2446C14.1169 10.169 14.0661 10.0955 13.9953 10.0241L10.1409 6.16976C10.0208 6.05043 9.86327 5.99401 9.6683 6.0005C9.47331 6.00699 9.31537 6.0699 9.19448 6.18923C9.04764 6.33453 8.98395 6.49266 9.00342 6.66363C9.02288 6.8346 9.09228 6.98624 9.21161 7.11856L12.5819 10.4888L9.21161 13.859C9.09228 13.9799 9.02613 14.1384 9.01315 14.3346C9.00017 14.5307 9.06699 14.6885 9.21362 14.8078C9.33428 14.9531 9.48916 15.016 9.67826 14.9965C9.86737 14.9771 10.0281 14.9077 10.1604 14.7884L13.9953 10.9535C14.0661 10.8818 14.1169 10.8081 14.1477 10.7323C14.1784 10.6564 14.1938 10.5751 14.1938 10.4883Z' fill='%238D9FB5'/%3e%3crect x='0.5' y='-0.5' width='21' height='21' rx='10.5' transform='matrix(1 0 0 -1 0 21)' stroke='%23ECECEC'/%3e%3c/svg%3e ");
+          transform: rotate(0);
+          // transition: transform 0.15s ease;
+  
+          .tui-ico-tree {
+            display: none;
+          }
+        }
+        .tui-tree-text {
+          display: flex;
+          align-items: center;
+          font-size: 1.4rem;
+          font-weight: 400;
+          color: $gray-600;
+          white-space: nowrap;
+
+          .tui-tree-ico {
+            display: none;
+          }
+        }
+      }
+      .tui-tree-subtree {
+        .tui-tree-content-wrapper {
+          padding-left: 3.2rem;
+        }
+        .tui-tree-subtree {
+          .tui-tree-content-wrapper {
+            padding-left: 6.4rem;
+          }
+        }
+      }
+    }
+    & > .tui-tree-node {
+      &.tui-tree-closed {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}

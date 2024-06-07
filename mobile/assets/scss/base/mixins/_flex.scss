@@ -1,0 +1,56 @@
+// Display
+@mixin d-flex() {
+  display: flex !important;
+}
+@mixin d-inline-flex() {
+  display: inline-flex !important;
+}
+
+// Justify content
+@mixin justify-content-start() {
+  justify-content: flex-start !important;
+}
+@mixin justify-content-end() {
+  justify-content: flex-end !important;
+}
+@mixin justify-content-center() {
+  justify-content: center !important;
+}
+@mixin justify-content-between() {
+  justify-content: space-between !important;
+}
+@mixin justify-content-around() {
+  justify-content: space-around !important;
+}
+@mixin justify-content-evenly() {
+  justify-content: space-evenly !important;
+}
+
+// Align items
+@mixin align-items-start() {
+  align-items: flex-start !important;
+}
+@mixin align-items-end() {
+  align-items: flex-end !important;
+}
+@mixin align-items-center() {
+  align-items: center !important;
+}
+@mixin align-items-baseline() {
+  align-items: baseline !important;
+}
+@mixin align-items-stretch() {
+  align-items: stretch !important;
+}
+
+// X, Y Center
+@mixin flex-center() {
+  @include d-flex();
+  @include justify-content-center();
+  @include align-items-center();
+}
+@mixin inline-flex-center() {
+  @include d-inline-flex();
+  @include justify-content-center();
+  @include align-items-center();
+}

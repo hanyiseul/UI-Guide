@@ -1,0 +1,45 @@
+{{#[../helpers/layout2] htmlWebpackPlugin}}
+
+<div class="login">
+  <div class="login__logo">
+    <svg class="logo__img"><use href="#logo"></use></svg>
+  </div>
+  <div class="login__wrap">
+    <div class="login__title">로그인</div>
+    <div class="form">
+      <div class="input is-error">
+        <input class="formText__input is-id" type="text" title="아이디 입력" placeholder="아이디" value="">
+        <button class="btn btn__inputDel"><span class="visually-hidden">삭제하기</span></button>
+        <p class="error__msg">아이디를 잘못 입력했습니다.</p>
+      </div>
+
+      <div class="input password is-error">
+        <input class="formText__input is-pw" type="password" title="비밀번호 입력" placeholder="비밀번호" value="">
+        <button class="btn btn__valueShow"><span class="visually-hidden">삭제하기</span></button>
+        <p class="error__msg">비밀번호를 잘못 입력했습니다.</p>
+      </div>
+
+      <div class="btn__area">
+        <button type="button" class="btn btn__primary is-black is-full">
+          <span>로그인</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="login__setting">
+      <div class="input">
+        <input type="checkbox" id="checkbox1" class="input__checkbox">
+        <label for="checkbox1" class="label__checkbox"><span class="input__label">로그인 상태 유지</span>
+      </div>
+
+      <div class="login__find">
+        <a href="#" class="find__link">아이디 찾기</a>
+        <a href="#" class="find__link">비밀번호 찾기</a>
+      </div>
+    </div> 
+  </div>
+  <div class="login__footer">
+    <p class="copyright">Copyright © GS All rights reserved.</p>
+  </div>
+</div>
+{{/[../helpers/layout2]}}

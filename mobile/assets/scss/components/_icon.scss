@@ -1,0 +1,24 @@
+.icon,
+.img {
+  width: inherit;
+  height: inherit;
+  width: 1.8rem;
+  height: 1.8rem;
+  pointer-events: none;
+  touch-action: none;
+}
+.profile__img {
+  display: inline-block;
+  // width: 4rem;
+  // height: 4rem;
+
+  svg {
+    border: 0.2rem solid $blue-300;
+    border-radius: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+  }
+}

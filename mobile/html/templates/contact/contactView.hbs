@@ -1,0 +1,52 @@
+{{#[../../helpers/layout2] htmlWebpackPlugin}}
+<header class="header">
+  <div class="header__item is-left">
+    <button type="button" class="btn is-icon">
+      <svg class="icon"><use href="#icon-header-prev"></use></svg>
+      <span class="visually-hidden">이전 페이지로 이동</span>
+    </button>
+  </div>
+  <div class="header__item is-center has-truncated">
+    <h1 class="header__title">연락처</h1>
+  </div>
+</header>
+{{> ../../partials/sidebar}}
+<div class="container">
+  <main class="contents">
+    <section>
+      <div class="contents__list pt-10">
+        <div class="list__inner">
+          <span class="list__item">성명</span>
+          <span class="list__desc">스티브잡스</span>
+        </div>
+        <div class="list__inner">
+          <span class="list__item">전화번호</span>
+          <a href="tel:010-8655-9998"class="list__desc is-link">휴대폰 010-8655-9998</a>
+        </div>
+        <div class="list__inner">
+          <span class="list__item">이메일</span>
+          <a href="mailto:it0933@gsitm.com"class="list__desc is-link">it0933@gsitm.com</a>
+        </div>
+        <div class="list__inner">
+          <span class="list__item">회사</span>
+          <span class="list__desc">지에스아이티엠</span>
+        </div>
+        <div class="list__inner">
+          <span class="list__item">부서명</span>
+          <span class="list__desc">UI개발</span>
+        </div>
+        <div class="list__inner">
+          <span class="list__item">직책</span>
+          <span class="list__desc">매니저</span>
+        </div>
+      </div>
+
+      <div class="btn__area is-bottom">
+        <button type="button" class="btn btn__primary is-primary is-full">
+          <span>수정하기</span>
+        </button>
+      </div>
+    </section>
+  </main>
+</div>
+{{/[../../helpers/layout2]}}

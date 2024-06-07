@@ -1,0 +1,158 @@
+[class]:where(input), 
+[class]:where(textarea) {
+  color: $gray-600;
+  border-radius: 0;
+  &::placeholder {
+    color: $gray-300;
+  }
+  &:disabled {
+    color: $gray-250;
+    // background-color: $gray-100;
+  }
+  &:focus,
+  &:active,
+  &:hover {
+    outline: none;
+  }
+}
+
+[class]:where(input) {
+  padding: 1.95rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border-bottom: 0.1rem solid $gray-200;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.is-active {
+    border-color: $gray-600;
+  }
+  &:disabled,
+  &[readonly] {
+    border-color: $gray-200;
+  }
+
+}
+
+[class]:where(textarea) {
+  display: inline-block;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.input {
+  position: relative;
+  display: inline-block;
+  line-height: 1em;
+  vertical-align: middle;
+
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+.input__checkbox {
+  @include visually-hidden; 
+  
+  +.label__checkbox {    
+    display: inline-flex;
+    align-items: center;
+    min-width: 1.8rem;
+    min-height: 1.8rem;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 1.8rem;
+      height: 1.8rem;
+      border: 0.1rem solid $gray-250;
+      border-radius: 0.3rem;
+      background-color: $white;
+      pointer-events: none;
+    }
+    +.input__label,
+    .input__label {
+      display: inline-block;
+      margin-left: 0.8rem;
+      line-height: 1em;
+    }
+  }
+
+  &:checked {
+    +.label__checkbox {
+      &:before {
+        border-color: $primary-1;
+        background: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.09994 7.68893C4.21028 7.73169 4.32434 7.75 4.43667 7.75C4.54901 7.75 4.66306 7.73169 4.77341 7.68893C4.89623 7.64133 4.99714 7.56687 5.07866 7.48789L10.9795 1.77094C11.1546 1.60127 11.25 1.38396 11.25 1.14152C11.25 0.899092 11.1546 0.681783 10.9795 0.512113C10.8043 0.342442 10.58 0.25 10.3298 0.25C10.0796 0.25 9.85528 0.342442 9.68015 0.512113L4.43667 5.59223L2.30452 3.5265C2.13337 3.36069 1.91306 3.26439 1.66253 3.26439C1.412 3.26439 1.19169 3.36069 1.02054 3.5265C0.841665 3.69981 0.75 3.92111 0.75 4.16334C0.75 4.40558 0.841665 4.62687 1.02054 4.80018L3.79468 7.48789C3.87621 7.56687 3.97711 7.64133 4.09994 7.68893Z' fill='white'/%3E%3C/svg%3E%0A") no-repeat center;
+        background-color: $primary-1;
+      }
+    }
+  }
+  &:disabled {
+    +.label__checkbox {
+      &:before {
+        border-color: $blue-300;
+        background-color: $blue-300;
+      }
+    }
+  }
+}
+
+input[type='date'] {
+  position: relative; 
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 0;
+  border: none;
+  background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.65 14.15C7.36667 14.15 7.12917 14.0542 6.9375 13.8625C6.74583 13.6708 6.65 13.4333 6.65 13.15C6.65 12.8667 6.74583 12.6292 6.9375 12.4375C7.12917 12.2458 7.36667 12.15 7.65 12.15C7.93333 12.15 8.17083 12.2458 8.3625 12.4375C8.55417 12.6292 8.65 12.8667 8.65 13.15C8.65 13.4333 8.55417 13.6708 8.3625 13.8625C8.17083 14.0542 7.93333 14.15 7.65 14.15ZM12.075 14.15C11.7917 14.15 11.5542 14.0542 11.3625 13.8625C11.1708 13.6708 11.075 13.4333 11.075 13.15C11.075 12.8667 11.1708 12.6292 11.3625 12.4375C11.5542 12.2458 11.7917 12.15 12.075 12.15C12.3583 12.15 12.5958 12.2458 12.7875 12.4375C12.9792 12.6292 13.075 12.8667 13.075 13.15C13.075 13.4333 12.9792 13.6708 12.7875 13.8625C12.5958 14.0542 12.3583 14.15 12.075 14.15ZM16.325 14.15C16.0417 14.15 15.8042 14.0542 15.6125 13.8625C15.4208 13.6708 15.325 13.4333 15.325 13.15C15.325 12.8667 15.4208 12.6292 15.6125 12.4375C15.8042 12.2458 16.0417 12.15 16.325 12.15C16.6083 12.15 16.8458 12.2458 17.0375 12.4375C17.2292 12.6292 17.325 12.8667 17.325 13.15C17.325 13.4333 17.2292 13.6708 17.0375 13.8625C16.8458 14.0542 16.6083 14.15 16.325 14.15ZM4.5 22C4.1 22 3.75 21.85 3.45 21.55C3.15 21.25 3 20.9 3 20.5V5C3 4.6 3.15 4.25 3.45 3.95C3.75 3.65 4.1 3.5 4.5 3.5H6.125V2H7.75V3.5H16.25V2H17.875V3.5H19.5C19.9 3.5 20.25 3.65 20.55 3.95C20.85 4.25 21 4.6 21 5V20.5C21 20.9 20.85 21.25 20.55 21.55C20.25 21.85 19.9 22 19.5 22H4.5ZM4.5 20.5H19.5V9.75H4.5V20.5ZM4.5 8.25H19.5V5H4.5V8.25Z' fill='%23979797'/%3E%3C/svg%3E%0A") no-repeat center; 
+}
+input[type='date']::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: transparent;
+  color: transparent; 
+  cursor: pointer;
+}
+
+.toggle__switch {
+  width: 5rem;
+  height: 2.4rem;
+  display: block;
+  position: relative;
+  border-radius: 3rem;
+  background: $primary-1;
+  cursor: pointer;
+
+  .toggle__button {
+    position: absolute;
+    top: 50%;
+    left: 0.3rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    background: $white;
+    transition: all 0.2s ease-in;
+    transform: translateY(-50%);
+  }
+}
+
+.toggle {
+  @include visually-hidden;
+  padding: 0;
+  &:checked {
+    ~ .toggle__switch {
+      .toggle__button {
+        left: calc(100% - 2.1rem);
+        background: $white;
+      }
+    }
+  }
+  &:disabled {
+    ~ .toggle__switch {
+      background: $blue-300;
+    }
+  }
+}
+

@@ -1,0 +1,67 @@
+//
+// Generate Palettes
+//
+// Docs Colors
+@each $color, $value in $docs-colors {
+  .text-#{$color} {
+    color: $value !important;
+  }
+  .bg-#{$color} {
+    background-color: $value !important;
+  }
+  .border-#{$color} {
+    border-color: $value !important;
+  }
+}
+
+// Gray Scale Colors
+@each $color, $value in $grays {
+  .text-gray-#{$color} {
+    color: $value !important;
+  }
+  .bg-gray-#{$color} {
+    background-color: $value !important;
+  }
+  .border-gray-#{$color} {
+    border-color: $value !important;
+  }
+}
+
+// Blue Gray Scale Colors
+@each $color, $value in $blue-grays {
+  .text-blue-#{$color} {
+    color: $value !important;
+  }
+  .bg-blue-#{$color} {
+    background-color: $value !important;
+  }
+  .border-blue-#{$color} {
+    border-color: $value !important;
+  }
+}
+
+// Point Colors
+@each $color, $value in $point-colors {
+  .text-point-#{$color} {
+    color: $value !important;
+  }
+  .bg-point-#{$color} {
+    background-color: $value !important;
+  }
+  .border-point-#{$color} {
+    border-color: $value !important;
+  }
+}
+
+// Alert Colors
+@each $color, $value in $alert-colors {
+  .text-point-#{$color} {
+    color: $value !important;
+  }
+  .bg-point-#{$color} {
+    background-color: $value !important;
+  }
+  .border-point-#{$color} {
+    border-color: $value !important;
+  }
+}

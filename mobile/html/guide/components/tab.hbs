@@ -1,0 +1,212 @@
+
+{{#[../helpers/layout] htmlWebpackPlugin}}<main class="contents">
+
+  <section class="examples">
+    <div class="example__title">
+      <h1 class="h3">Tab</h1>
+
+      
+    </div>
+
+    <div class="tabs">
+      <div class="tab__item">
+        <button type="button" class="tab__btn is-active" data-url="#tab__content1">
+          <span>tab1</span>
+        </button>
+        <button type="button" class="tab__btn" data-url="#tab__content2">
+          <span>tab2</span>
+        </button>
+      </div>
+
+      <div class="tab__contents">
+        <div class="tab__content is-active" id="tab__content1">
+          탭1 내용
+        </div>
+        <div class="tab__content" id="tab__content2">
+          탭2 내용
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="examples">
+    <div class="example__title">
+      <h1 class="h3">받는사람 드롭다운 탭</h1>
+    </div>
+
+    <div class="reference__dropdown">
+      <div class="tabs">
+        <div class="tab__item">
+          <button type="button" class="tab__btn is-active" data-url="#tab__reference-1">
+            <span>조직도</span>
+          </button>
+          <button type="button" class="tab__btn" data-url="#tab__reference-2">
+            <span>연락처</span>
+          </button>
+        </div>
+
+        <div class="tab__contents">
+          <div class="tab__content is-active" id="tab__reference-1">
+            <ul class="check__list contact__list recipient no-line">       
+              <li class="is-select">
+                <div class="check__item">
+                  <div class="input">
+                    <input type="checkbox" id="checkbox3" class="input__checkbox list__input" checked="checked">
+                    <label for="checkbox3" class="label__checkbox"><span class="visually-hidden">연락처 선택</span></label>
+                  </div>
+                  <span class="profile__img">
+                    <svg class="img"><use href="#img-profile1"></use></svg>
+                  </span>
+                  <div class="contact__item">
+                    <div class="contact__info">
+                      <span class="contact__name">이예진</span>
+                      <span class="contact__team">UI개발팀</span>
+                      <div class="contact">
+                        <span class="contact__email">it1880SSasKim33@gsitm.com</span>
+                        <span class="contact__phone">010-9022-1670</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="check__item">
+                  <div class="input">
+                    <input type="checkbox" id="checkbox4" class="input__checkbox list__input">
+                    <label for="checkbox4" class="label__checkbox"><span class="visually-hidden">연락처 선택</span></label>
+                  </div>
+                  <span class="profile__img">
+                    <svg class="img"><use href="#img-profile1"></use></svg>
+                  </span>
+                  <div class="contact__item">
+                    <div class="contact__info">
+                      <span class="contact__name">이예진</span>
+                      <span class="contact__team">UI개발팀</span>
+                      <div class="contact">
+                        <span class="contact__email">it1880SSasKim33@gsitm.com</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="tab__content" id="tab__reference-2">
+            <ul class="check__list contact__list recipient no-profile no-line">
+              <li>
+                <div class="check__item">
+                  <div class="contact__item">
+                    <div class="contact__info">
+                      <span class="contact__email">it1880SSasKim33@gsitm.com</span>
+                    </div>
+                    <button type="button" class="btn btn__remove">
+                        <svg class="icon"><use href="#icon-closed"></use></svg>
+                        <span class="visually-hidden">삭제하기</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="check__item">
+                  <div class="contact__item">
+                    <div class="contact__info">
+                      <span class="contact__email">it18@gsitm.com</span>
+                    </div>
+                    <button type="button" class="btn btn__remove">
+                        <svg class="icon"><use href="#icon-closed"></use></svg>
+                        <span class="visually-hidden">삭제하기</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="check__item">
+                  <div class="input">
+                    <input type="checkbox" id="checkbox3" class="input__checkbox list__input">
+                    <label for="checkbox3" class="label__checkbox"><span class="visually-hidden">연락처 선택</span></label>
+                  </div>
+                  <div class="contact__item">
+                    <div class="contact__info">
+                      <span class="contact__name">이예진</span>
+                    </div>
+                    <div class="contact__btn">
+                      <button type="button" class="btn btn__remove">
+                        <svg class="icon"><use href="#icon-closed"></use></svg>
+                        <span class="visually-hidden">삭제하기</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="check__item">
+                  <div class="input">
+                    <input type="checkbox" id="checkbox3" class="input__checkbox list__input">
+                    <label for="checkbox3" class="label__checkbox"><span class="visually-hidden">연락처 선택</span></label>
+                  </div>
+                  <div class="contact__item">
+                    <div class="contact__info">
+                      <span class="contact__email">it1880SSasKim33@gsitm.com</span>
+                    </div>
+                    <div class="contact__btn">
+                      <button type="button" class="btn btn__remove">
+                        <svg class="icon"><use href="#icon-closed"></use></svg>
+                        <span class="visually-hidden">삭제하기</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="check__item">
+                  <div class="input">
+                    <input type="checkbox" id="checkbox3" class="input__checkbox list__input">
+                    <label for="checkbox3" class="label__checkbox"><span class="visually-hidden">연락처 선택</span></label>
+                  </div>
+                  <div class="contact__item">
+                    <div class="contact__info">
+                      <span class="contact__name">이예진</span>
+                      <span class="contact__email">it1880SSasKim33@gsitm.com</span>
+                      <span class="contact__phone">010-9022-1670</span>
+                    </div>
+                    <div class="contact__btn">
+                      <button type="button" class="btn btn__remove">
+                        <svg class="icon"><use href="#icon-closed"></use></svg>
+                        <span class="visually-hidden">삭제하기</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="check__item">
+                  <div class="input">
+                    <input type="checkbox" id="checkbox3" class="input__checkbox list__input">
+                    <label for="checkbox3" class="label__checkbox"><span class="visually-hidden">연락처 선택</span></label>
+                  </div>
+                  <div class="contact__item">
+                    <div class="contact__info">
+                      <span class="contact__email">it1880SSasKim33@gsitm.com</span>
+                      <span class="contact__phone">010-9022-1670</span>
+                    </div>
+                    <div class="contact__btn">
+                      <button type="button" class="btn btn__remove">
+                        <svg class="icon"><use href="#icon-closed"></use></svg>
+                        <span class="visually-hidden">삭제하기</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="btn__area">
+        <button type="button" class="btn"><span>확인</span></button>
+        <button type="button" class="btn"><span>취소</span></button>
+      </div>
+    </div>
+  </section>
+
+</main>{{/[../helpers/layout]}}

@@ -1,0 +1,589 @@
+{{#[../helpers/layout] htmlWebpackPlugin}}<main class="contents">
+
+<section class="examples">
+  <div class="checked__modal is-closed" data-closed="closed">
+    <button type="button" class="btn btn__closed">
+      <svg class="icon"><use href="#icon-closed"></use></svg>
+      <span class="visually-hidden">닫기</span>
+    </button>
+    <div class="modal__inner">
+      <div class="checked__count">
+        <span class="is-checked">3</span>
+        <span>/</span>
+        <span class="list__count">11</span>
+      </div>
+
+      <div class="btn__area">
+        <button type="button" class="btn btn__checked check__all">
+          <span class="btn__name">전체선택</span>
+        </button>
+        <button type="button" class="btn btn__delete">
+          <span class="btn__name">삭제</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="content__header">
+    <p class="header__title">최근 게시물</p>
+    <div class="dropdown__area">
+      <button type="button" class="btn btn__dropdownMore">
+        <svg class="icon"><use href="#icon-more"></use></svg>
+        <span class="visually-hidden"></span>
+      </button>
+
+      <div class="dropdown">
+        <button type="button" class="btn">
+          <span>답글쓰기</span>
+        </button>
+        <button type="button" class="btn">
+          <span>목록보기</span>
+        </button>
+        <button type="button" class="btn">
+          <span>메일로보내기</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="content__header">
+    <p class="header__title">결재현황</p>
+    <button type="button" class="btn btn__refresh">
+      <svg class="icon"><use href="#icon-refresh"></use></svg>
+      <span class="visually-hidden">새로고침</span>
+    </button>
+  </div>
+
+  <div class="content__header">
+    <div class="input">
+      <input type="checkbox" id="check__all" class="input__checkbox check__all">
+      <label for="check__all" class="label__checkbox"><span class="visually-hidden">전체 선택</span></label>
+      <span class="input__label">결재 처리</span>
+    </div>
+    <button type="button" class="btn btn__refresh">
+        <svg class="icon"><use href="#icon-refresh"></use></svg>
+      <span class="visually-hidden">새로고침</span>
+    </button>
+  </div>
+
+  <div class="content__header">
+    <div class="btn__area">
+      <button type="button" class="btn btn__primary is-black is-modal" data-modal="modal1">
+        <span>결제하기</span>
+      </button>
+      <button type="button" class="btn btn__primary is-white is-modal" data-modal="modal2">
+        <span>의견보기</span>
+      </button>
+    </div>
+    <div class="dropdown__area">
+      <div class="btn__area">
+        <button type="button" class="btn btn__download btn__dropdown">
+          <span class="visually-hidden">다운로드</span>
+        </button>
+      </div>
+
+      <div class="dropdown">
+        <button type="button" class="btn btn__download">
+          <span>imageTestTest.png</span>
+        </button>
+        <button type="button" class="btn btn__download">
+          <span>imageTestTest.png</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="example__title">
+    <h1 class="h3">List</h1>
+  </div>
+
+  <div class="contents__list">
+      <div class="list__inner">
+        <span class="list__item">레벨</span>
+        <span class="list__desc">텍스트가 들어가는 자리</span>
+      </div>
+      <div class="list__inner">
+        <span class="list__item">레벨</span>
+        <span class="list__desc">텍스트가 들어가는 자리</span>
+      </div>
+  </div>
+
+  <ul class="contents__list">
+    <li>
+      <a href="#none" class="list__inner">
+        <span class="list__title">휴가 신청서 이연 월차 외 주어</span>
+        <span class="list__writer">오웬</span>
+        <span class="list__date">03.03</span>
+      </a>
+    </li>
+    <li>
+      <a href="#none" class="list__inner">
+        <span class="list__title">출장 보고서 (해외)</span>
+        <span class="list__writer">크리스퍼놀란</span>
+        <span class="list__date">03.03</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section class="examples">
+  <div class="example__title">
+    <h1 class="h3">게시판</h1>
+  </div>
+
+  <ul class="board__list">
+    <li>
+      <a href="#" class="list__inner">
+        <div class="list__item">
+          <span class="list__img">
+            <svg class="img"><use href="#img-board1"></use></svg>
+          </span>
+          <div class="list__info">
+            <span class="list__title">U.STRA Talk 첫 사업 수주 쾌거, 차바이오텍 U.STRA Talk 서비스 계약 체결 완료</span>
+            <span class="list__comment">[<span>28</span>]</span>
+            <span class="btn btn__file">
+              <svg class="icon"><use href="#icon-file"></use></svg>
+              <span class="visually-hidden">파일첨부</span>
+            </span>
+            <span class="btn btn__lock">
+              <svg class="icon"><use href="#icon-lock"></use></svg>
+              <span class="visually-hidden">비밀글</span>
+            </span>
+            <span class="btn btn__key">
+              <svg class="icon"><use href="#icon-key"></use></svg>
+              <span class="visually-hidden">비밀번호</span>
+            </span>
+            <div class="write__info">
+              <span class="list__writer">권주원</span>
+              <span class="list__team">UI개발팀</span>
+              <span class="list__date">01.01</span>
+              <span class="list__views">조회수 <span>18</span></span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="list__inner">
+        <div class="list__item">
+          <div class="list__info">
+            <span class="list__title">U.STRA Talk 첫 사업 수주 쾌거, 차바이오텍 U.STRA Talk 서비스 계약 체결 완료</span>
+            <span class="list__comment">[<span>28</span>]</span>
+            <span class="btn btn__file">
+              <svg class="icon"><use href="#icon-file"></use></svg>
+              <span class="visually-hidden">파일첨부</span>
+            </span>
+            <span class="btn btn__lock">
+              <svg class="icon"><use href="#icon-lock"></use></svg>
+              <span class="visually-hidden">비밀글</span>
+            </span>
+            <div class="write__info">
+              <span class="list__writer">권주원</span>
+              <span class="list__team">UI개발팀</span>
+              <span class="list__date">01.01</span>
+              <span class="list__views">조회수 <span>18</span></span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+
+</section>
+
+<section class="examples">
+  <div class="example__title">
+    <h1 class="h3">댓글</h1>
+  </div>
+
+  <ul class="comment__list">
+    <li>
+      <div class="comment__box">
+        <span class="profile__img">
+          <svg class="img"><use href="#img-profile1"></use></svg>
+        </span>
+        <div class="comment">
+          <span class="comment__writer">이예진</span>
+          <span class="comment__team">UI개발팀</span>
+          <span class="comment__date">2023.01.01  17:16</span>
+          <span class="comment__desc">
+            이 글을 빌려 다시 한번 개발 팀원들(신지훈과장, 정진우 과장, 이경선 과장, 유정현 대리, 김상현 대리) 이승명 팀장님, 서영준 팀장님께 감사드
+          </span>
+          <div class="dropdown__area">
+            <button type="button" class="btn btn__dropdownMore">
+              <svg class="icon"><use href="#icon-more"></use></svg>
+              <span class="visually-hidden">더보기</span>
+            </button>
+            <div class="dropdown">
+              <button type="button" class="btn recommend">
+                <span>댓글쓰기</span>
+              </button>
+              <button type="button" class="btn modify">
+                <span>수정</span>
+              </button>
+              <button type="button" class="btn delete">
+                <span>삭제</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <ul class="comment__list reply">
+        <li>
+          <div class="comment__box">
+            <span class="profile__img">
+              <svg class="img"><use href="#img-profile1"></use></svg>
+            </span>
+            <div class="comment">
+              <span class="comment__writer">이예진</span>
+              <span class="comment__team">UI개발팀</span>
+              <span class="comment__date">2023.01.01  17:16</span>
+              <span class="comment__desc">
+                유아인은 마음고생을 한 듯 수척해진 얼굴과 군데군 보이는 희끗희끗한 흰머리로 눈길을 끌었다. "마약것에 대해 후회 없냐"는 질문에도 "후회하고 있다"
+              </span>
+              <div class="dropdown__area">
+                <button type="button" class="btn btn__dropdownMore">
+                  <svg class="icon"><use href="#icon-more"></use></svg>
+                  <span class="visually-hidden">더보기</span>
+                </button>
+                <div class="dropdown">
+                  <button type="button" class="btn recommend">
+                    <span>댓글쓰기</span>
+                  </button>
+                  <button type="button" class="btn modify">
+                    <span>수정</span>
+                  </button>
+                  <button type="button" class="btn delete">
+                    <span>삭제</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section class="examples">
+  <div class="example__title">
+    <h1 class="h3">메일</h1>
+  </div>
+
+  <ul class="check__list mail">
+    <li>
+      <div class="check__item is-new">
+        <div class="input">
+          <input type="checkbox" id="checkbox1" class="input__checkbox list__input">
+          <label for="checkbox1" class="label__checkbox"><span class="visually-hidden">메일 선택</span></label>
+        </div>
+        <div class="mail__info">
+          <a href="#none" class="mail__sender">
+            <span class="mail__writer">홍길동</span>
+            <span class="mail__date">01.30</span>
+          </a>
+          <div class="mail__inner">
+            <a href="#none" class="mail__desc">핵무기 사용설명서, 게임이론/ 열심히 일하만 ..</a>
+            <button type="button" class="btn btn__file">
+                <svg class="icon"><use href="#icon-attach"></use></svg>
+                <span class="visually-hidden">파일첨부</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="check__item">
+        <div class="input">
+          <input type="checkbox" id="checkbox2" class="input__checkbox list__input" checked="checked">
+          <label for="checkbox2" class="label__checkbox"><span class="visually-hidden">메일 선택</span></label>
+        </div>
+        <div class="mail__info">
+          <a href="#none" class="mail__sender">
+            <span class="mail__writer">홍길동</span>
+            <span class="mail__date">01.30</span>
+          </a>
+          <div class="mail__inner">
+            <a href="#none" class="mail__desc fw-600">중요메일일 경우 볼드로 들어갑니다.</a>
+            <button type="button" class="btn btn__file">
+                <svg class="icon"><use href="#icon-attach"></use></svg>
+                <span class="visually-hidden">파일첨부</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="examples">
+  <div class="example__title">
+    <h1 class="h3">연락처</h1>
+  </div>
+
+  <ul class="check__list contact__list no-line">
+    <li>
+      <div class="check__item">
+        <div class="input">
+          <input type="checkbox" id="checkbox3" class="input__checkbox list__input">
+          <label for="checkbox3" class="label__checkbox"><span class="visually-hidden">연락처 선택</span></label>
+        </div>
+        <div class="contact__item">
+          <a href="#none" class="contact__info">
+            <span class="contact__name">이예진</span>
+            <span class="contact__email">it1880SSasKim33@gsitm.com</span>
+            <span class="contact__phone">010-9022-1670</span>
+          </a>
+          <div class="contact__btn">
+            <button type="button" class="btn btn__email">
+                <svg class="icon"><use href="#icon-email"></use></svg>
+                <span class="visually-hidden">이메일 보내기</span>
+            </button>
+            <button type="button" class="btn btn__phone">
+                <svg class="icon"><use href="#icon-phone"></use></svg>
+                <span class="visually-hidden">전화 걸기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="check__item">
+        <div class="contact__item">
+          <div class="contact__info">
+            <span class="contact__email">it1880SSasKim33@gsitm.com</span>
+          </div>
+          <button type="button" class="btn btn__remove">
+              <svg class="icon"><use href="#icon-closed"></use></svg>
+              <span class="visually-hidden">삭제하기</span>
+          </button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section> 
+
+<section class="examples">
+  <div class="example__title">
+    <h1 class="h3">조직도</h1>
+  </div>
+
+  <ul class="check__list contact__list no-line">
+    <li>
+      <div class="check__item">
+        <span class="profile__img">
+          <svg class="img"><use href="#img-profile1"></use></svg>
+        </span>
+        <div class="contact__item">
+          <a href="#none" class="contact__info">
+            <span class="contact__name">이예진</span>
+            <span class="contact__team">UI개발팀</span>
+            <span class="contact__email">it1880SSasKim33@gsitm.com</span>
+            <span class="contact__phone">010-9022-1670</span>
+          </a>
+          <div class="contact__btn">
+            <button type="button" class="btn btn__phone">
+                <svg class="icon"><use href="#icon-phone"></use></svg>
+                <span class="visually-hidden">전화 걸기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="check__item">
+        <span class="profile__img">
+          <svg class="img"><use href="#img-profile1"></use></svg>
+        </span>
+        <div class="contact__item">
+          <a href="#none" class="contact__info">
+            <span class="contact__name">이예진</span>
+            <span class="contact__team">UI개발팀</span>
+            <span class="contact__email">it1880SSasKim33@gsitm.com</span>
+            <span class="contact__phone">010-9022-1670</span>
+          </a>
+          <div class="contact__btn">
+            <button type="button" class="btn btn__phone">
+                <svg class="icon"><use href="#icon-phone"></use></svg>
+                <span class="visually-hidden">전화 걸기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <ul class="check__list contact__list recipient no-line">
+    <li>
+      <div class="check__item">
+        <div class="input">
+          <input type="checkbox" id="checkbox4" class="input__checkbox list__input" checked="checked">
+          <label for="checkbox4" class="label__checkbox"><span class="visually-hidden">연락처 선택</span></label>
+        </div>
+        <span class="profile__img">
+          <svg class="img"><use href="#img-profile1"></use></svg>
+        </span>
+        <div class="contact__item">
+          <di class="contact__info">
+            <span class="contact__name">이예진</span>
+            <span class="contact__team">UI개발팀</span>
+            <div class="contact">
+              <span class="contact__email">it1880SSasKim33@gsitm.com</span>
+              <span class="contact__phone">010-9022-1670</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="examples">
+  <div class="example__title">
+    <h1 class="h3">결재</h1>
+  </div>
+
+  <ul class="check__list approval">
+    <li>
+      <div class="check__item">
+        <div class="input">
+          <input type="checkbox" id="checkbox5" class="input__checkbox list__input">
+          <label for="checkbox5" class="label__checkbox"><span class="visually-hidden">결재 선택</span></label>
+        </div>
+        <a href="#none" class="approval__item">
+          <div class="approval__title">
+            <span class="title">경비사용보고서 일반</span>
+            <span class="delay">[5일초과]</span>
+          </div>
+          <div class="state__info">
+            <div class="state__box">
+              <span class="state__title">상태</span>
+              <span class="state__desc is-status">보류</span>
+            </div>
+            <div class="state__box">
+              <span class="state__title">기안자</span>
+              <span class="state__desc">이복우</span>
+            </div>
+            <div class="state__box">
+              <span class="state__title">기안일</span>
+              <span class="state__desc">2023.05.25 11:09</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </li>
+    <li>
+      <div class="check__item">
+        <div class="input">
+          <input type="checkbox" id="checkbox6" class="input__checkbox list__input" checked="checked">
+          <label for="checkbox6" class="label__checkbox"><span class="visually-hidden">결재 선택</span></label>
+        </div>
+        <a href="#none" class="approval__item">
+          <div class="approval__title">
+            <span class="title">경비사용보고서 일반</span>
+          </div>
+          <div class="state__info">
+            <div class="state__box">
+              <span class="state__title">상태</span>
+              <span class="state__desc is-status">보류</span>
+            </div>
+            <div class="state__box">
+              <span class="state__title">기안자</span>
+              <span class="state__desc">이복우</span>
+            </div>
+            <div class="state__box">
+              <span class="state__title">기안일</span>
+              <span class="state__desc">2023.05.25 11:09</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </li>
+  </ul>
+
+
+  <ul class="check__list approval">
+    <li>
+      <div class="check__item">
+        <a href="#none" class="approval__item">
+          <div class="approval__title">
+            <span class="title">경비사용보고서 일반</span>
+            <span class="delay">[5일초과]</span>
+          </div>
+          <div class="state__process">
+            <span class="state__badge is-status">
+              <span class="label">상신</span>
+              <span class="name">박민지</span>
+            </span>
+            <span class="state__badge">
+              <span class="label">결재</span>
+              <span class="name">이복우</span>
+            </span>
+            <span class="state__badge">
+              <span class="label">결재</span>
+              <span class="name">김명욱</span>
+            </span>
+            <span class="state__badge">
+              <span class="label">결재</span>
+              <span class="name">이예진</span>
+            </span>
+            <span class="state__badge">
+              <span class="label">결재</span>
+              <span class="name">이복우</span>
+            </span>
+            <span class="state__badge">
+              <span class="label">결재</span>
+              <span class="name">김명욱</span>
+            </span>
+          </div>
+          <div class="state__info is-small">
+            <div class="state__box">
+              <span class="state__title">기안자</span>
+              <span class="state__desc">이복우</span>
+            </div>
+            <div class="state__box">
+              <span class="state__title">기안일</span>
+              <span class="state__desc">2023.05.25 11:09</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </li>
+    <li>
+      <div class="check__item">
+        <a href="#none" class="approval__item">
+          <div class="approval__title">
+            <span class="title">경비사용보고서 일반</span>
+          </div>
+          <div class="state__process">
+            <span class="state__badge">
+              <span class="label">상신</span>
+              <span class="name">박민지</span>
+            </span>
+            <span class="state__badge is-status">
+              <span class="label">결재</span>
+              <span class="name">이복우</span>
+            </span>
+            <span class="state__badge">
+              <span class="label">결재</span>
+              <span class="name">김명욱</span>
+            </span>
+          </div>
+          <div class="state__info">
+            <div class="state__box">
+              <span class="state__title">기안자</span>
+              <span class="state__desc">이복우</span>
+            </div>
+            <div class="state__box">
+              <span class="state__title">기안일</span>
+              <span class="state__desc">2023.05.25 11:09</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </li>
+  </ul>
+</section>
+
+</main>{{/[../helpers/layout]}}

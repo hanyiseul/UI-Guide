@@ -1,0 +1,75 @@
+// Docs Colors
+$white: #ffffff;
+$black: #000000;
+$primary-1: #405AE3;
+$primary-2: #FFCA0D;
+$docs-colors: (
+  "white": $white,
+  "black": $black,
+  "primary-1": $primary-1,
+  "primary-2": $primary-2
+);
+
+// Gray Scale Colors
+$gray-100: #F8F8F8;
+$gray-200: #ECECEC;
+$gray-250: #D9D9D9;
+$gray-300: #BBBBBB;
+$gray-400: #979797;
+$gray-500: #494949;
+$gray-600: #222222;
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "250": $gray-250,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600
+);
+
+// Blue Scale Colors
+$blue-100: #F7F9FA;
+$blue-200: #E5EDF2;
+$blue-300: #E2EAF3;
+$blue-400: #BECCDC;
+$blue-500: #8D9FB5;
+$blue-600: #60738A;
+$blue-grays: (
+  "100": $blue-100,
+  "200": $blue-200,
+  "300": $blue-300,
+  "400": $blue-400,
+  "500": $blue-500,
+  "600": $blue-600
+);
+
+// Point Colors
+$points-1: #FFFAEA;
+$points-2: #EEF7FE;
+$point-colors: (
+  "1": $points-1,
+  "2": $points-2
+);
+
+// Alert Colors
+$alerts-1: #E23A15;
+$alerts-2: #4679FE;
+$alert-colors: (
+  "1": $alerts-1,
+  "2": $alerts-2
+);
+
+// Document
+$document-min-width:   36rem;
+$document-font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", Roboto, "Malgun Gothic", "맑은 고딕", Dotum, "돋움", sans-serif;
+$document-font-size:   1.5rem;
+$document-font-weight: 400;
+$document-line-height: 2.3rem;
+$document-font-color:  $gray-600;
+
+// Z-index
+$sidebar-index: 4000;
+$loading-index: 3000;
+// $modal-index: 2000;
+// $layout-index: 1000;

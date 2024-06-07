@@ -1,0 +1,26 @@
+@for $i from 0 through 100 {
+  .width-#{$i} {
+    width: $i * 0.1 + rem !important;
+  }
+}
+@for $i from 0 through 100 {
+  .height-#{$i} {
+    height: $i * 0.1 + rem !important;
+  }
+}
+
+@for $i from 0 through 100 {
+  .icon-#{$i} {
+    width: $i * 0.1 + rem !important;
+    height: $i * 0.1 + rem !important;
+
+    + span {
+      line-height: $i * 0.1 + rem !important;
+    }
+  }
+}
+
+.width-full {
+  width: 100% !important;
+}
+

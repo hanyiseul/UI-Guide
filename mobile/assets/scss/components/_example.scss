@@ -1,0 +1,81 @@
+.examples {
+  padding: 0 1.5rem 5rem;
+  border-top: .1rem solid $gray-200;
+  border-bottom: .1rem solid $gray-200;
+  background: $white;
+
+  .example__title {
+    width: calc(100% - 3rem);
+    margin: 2rem 0 1.5rem;
+    padding: 2rem 0 1rem;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    color: $black;
+    border-bottom: .1rem solid #DFDFDF;
+  }
+  .sidebar {
+    position: relative;
+    left: 0;
+  }
+  .has-headers & {
+    .example__title {
+      border: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .form {
+    > [class^="formText"] {
+      &:not(:first-child) {
+        margin-top: 2rem;
+      }
+    }
+    .btn__area {
+      .btn__file {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .btn__area {
+    &.is-bgBlack{
+      padding: 1.5rem;
+      text-align: center;
+      background: $gray-600;
+      opacity: 0.9;
+    }
+    &.select__btn {
+      .btn {
+        margin-top: 0;
+      }
+    }
+    .btn {
+      margin-top: 0.5rem;
+    }
+
+    .btn__refresh,
+    .btn__download {
+      width: 4rem;
+      height: 4rem;
+      margin: 0;    
+      vertical-align: top;
+      svg {
+        vertical-align: middle;
+      }
+    }
+    .btn__dropdown {
+      margin: 0;
+    }
+  }
+
+  .reference__dropdown {
+    position: relative;
+  }
+
+  .formControl {
+    .reference__dropdown {
+      position: fixed;
+    }
+  }
+}

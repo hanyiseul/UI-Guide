@@ -1,0 +1,19 @@
+.footer {
+  padding: 2rem 0;
+  background: $blue-100;  
+
+  /*
+  &.has-border {
+    border-top-width: .1rem;
+    border-top-style: solid;
+    border-top-color: $gray-200;
+  }
+  */
+
+  .copyright {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: $gray-300;
+  }
+}

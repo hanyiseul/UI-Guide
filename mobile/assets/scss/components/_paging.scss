@@ -1,0 +1,32 @@
+.paging {
+  margin: 0 -1.5rem;
+  border-top: 1rem solid $blue-100;
+
+  > [class^="paging"] {
+    display: block;
+    padding: 1.5rem 0 1.5rem 4.5rem;
+    background-repeat: no-repeat;
+    background-position: center left 1.5rem;
+    @include ellipsis();
+
+    &:not(:first-child) {
+      border-top: 0.1rem solid $gray-200;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+    .comment {
+      color: $gray-400;
+    }
+  }
+  .paging__prev {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='42' viewBox='0 0 20 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='20' height='42' fill='white'/%3E%3Cpath d='M9.99949 18.6219C9.91587 18.6219 9.83765 18.6367 9.76484 18.6663C9.69202 18.696 9.62122 18.7449 9.55244 18.8131L5.83994 22.5256C5.725 22.6413 5.67066 22.793 5.67691 22.9808C5.68316 23.1686 5.74375 23.3208 5.85869 23.4372C5.99864 23.5786 6.15095 23.64 6.31562 23.6212C6.4803 23.6025 6.62636 23.5356 6.75381 23.4207L10 20.1745L13.2462 23.4207C13.3626 23.5356 13.5153 23.5993 13.7042 23.6118C13.8932 23.6243 14.0451 23.56 14.1601 23.4188C14.3 23.3025 14.3606 23.1534 14.3418 22.9712C14.3231 22.7891 14.2562 22.6343 14.1413 22.5068L10.4476 18.8131C10.3786 18.7449 10.3076 18.696 10.2345 18.6663C10.1615 18.6367 10.0831 18.6219 9.99949 18.6219Z' fill='%238D9FB5'/%3E%3C/svg%3E%0A");
+  }
+  .paging__current {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='42' viewBox='0 0 20 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 21H13' stroke='%238D9FB5' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    background-color: $blue-100;
+  }
+  .paging__next {
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.99949 11.6247C8.91587 11.6247 8.83765 11.6099 8.76484 11.5803C8.69202 11.5506 8.62122 11.5017 8.55244 11.4335L4.83994 7.721C4.725 7.60531 4.67066 7.45357 4.67691 7.26577C4.68316 7.07796 4.74375 6.92583 4.85869 6.80939C4.99864 6.66796 5.15095 6.60661 5.31562 6.62536C5.4803 6.64411 5.62636 6.71096 5.75381 6.82589L9 10.0721L12.2462 6.82589C12.3626 6.71096 12.5153 6.64724 12.7042 6.63474C12.8932 6.62224 13.0451 6.6866 13.1601 6.82782C13.3 6.94405 13.3606 7.09323 13.3418 7.27537C13.3231 7.45752 13.2562 7.61231 13.1413 7.73975L9.44756 11.4335C9.37859 11.5017 9.30757 11.5506 9.23452 11.5803C9.16147 11.6099 9.08313 11.6247 8.99949 11.6247Z' fill='%238D9FB5'/%3E%3C/svg%3E%0A");
+  }
+}
