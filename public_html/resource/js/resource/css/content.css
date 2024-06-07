@@ -1,0 +1,125 @@
+/******************************************** pc ********************************************/
+
+/** main ***/
+.main{display:flex; align-items:center;}
+.main .titArea{transform:translateY(-76px);}
+
+/* contact */
+.contact{position:absolute; bottom:76px; right:0; text-align:right}
+.contact .tit{display:inline-block; margin-bottom:15px; font-size:24px; font-weight:bold;}
+.contactList li{padding:5px;}
+.contactList li a{color:#fff;}
+
+/** about **/
+
+/* infoArea */
+.infoArea{display:flex; flex-wrap:wrap; width:100%; height:calc(100% - 300px); margin:60px 0 30px;}
+.infoArea .fl{width:45%;}
+.infoArea .fr{width:55%; box-sizing:border-box; padding-left:20px;}
+.introduce{position:absolute; bottom:50px; right:0; width:100%; text-align:right;}
+
+.fr .infoList .historyList{max-height:calc(100vh - 400px);}
+
+/* infoList */
+.infoList{margin-bottom:40px; font-size:0;}
+.infoList > li{padding:10px 0;}
+.infoList .tit{display:inline-block; width:120px; font-size:18px; font-weight:500; vertical-align:top;}
+.infoList .desc{display:inline-block; width: calc(100% - 120px); font-size:18px; line-height:1.2rem;}
+.infoList .date{font-size:18px;}
+.infoList .historyList{width: calc(100% - 120px); max-height:calc(100vh - 590px); overflow-y:auto;}
+
+/* historyList */
+.historyList{display:inline-block; padding:0;}
+.historyList li{padding:17px 17px 17px 0;}
+.historyList li:first-child{padding-top:0;}
+.historyList .tit{display:block; width:auto; padding-top:10px; font-size:18px; font-weight:500;}
+.historyList .flag + .date{display:inline-block;}
+.historyList .date{display: block;}
+.historyList .company{padding-top:20px; font-size:16px;}
+.historyList .company .tit{display:inline-block; width:auto; margin-right:20px; padding:0px; font-weight:400;}
+
+/** project **/
+.projectArea{margin:60px 0 30px;}
+
+.prjWrap{display:flex; flex-wrap:wrap; margin:0 -5px;}
+.prjWrap .boxCon{width:calc(33.3% - 20px);}
+.prjWrap .img{height:150px; text-align:center;}
+.prjWrap .img:after{content:""; display:inline-block; vertical-align:middle; height:100%;}
+.prjWrap .img img{width:200px; height:auto; vertical-align:middle;}
+
+.project{display:flex; justify-content:space-between; height:auto; margin:90px 0 50px;}
+.project .fl{width:70%; padding-right:50px;}
+.project .titArea{margin-bottom:30px;}
+.project .date{display:inline-block; font-size:14px;}
+.project .type{display:block; margin-top:10px; font-size:16px;}
+.project .tit3{display:block; margin-top:20px; font-size:40px;}
+.project .projectInfo{margin-bottom:30px;}
+.project .projectInfo .tit{display:inline-block; margin-bottom:18px; font-size:18px; font-weight:500;}
+.project .projectInfo .info{font-size:18px; line-height:1.2em;}
+.project .btnArea .linkBtn{width:150px; box-sizing:border-box;}
+.project .fr{display:flex; align-items:flex-start; justify-content:center; width:30%; height:100%; overflow: hidden;}
+.project .imgProject{max-width:100%; max-height:100%;}
+
+/* boxCon */
+.boxCon{ box-sizing:border-box; margin:10px 10px; padding:30px; border:1px solid #999; background:#eee;}
+.boxCon .info{margin:20px 0 0; padding:30px 0 0; border-top:1px solid #666;}
+.boxCon .info .tit3{margin:15px 0 0; font-weight:500; line-height:1.2em;}
+.boxCon .info .date{font-size:14px; text-align:right;}
+
+
+/**************************************************** mo ****************************************************/
+@media screen and (max-width: 1200px) {
+  
+    /* main */
+    .main{display:block;}
+    .main .titArea{transform:none;}
+
+    /* contact */
+    .contact{position:initial; bottom:0; top:0; margin-top:10px; direction:rtl;}
+    .contact .tit{margin:0; font-size:1.4rem;}
+    .contactList{display:inline-block;}
+    .contactList li{display:inline-block; padding:0 3px 0;}
+    .contactList li:before{content:''; display:inline-block; width:1px; height:10px; padding:0 3px; border-left:1px solid #222;}
+    .contactList li:first-child:before{content:none;}
+    .contactList li a{color:#222; font-size:1.2rem}
+
+    /* infoArea */
+    .infoArea{display:block; margin:30px 0;}
+    .infoArea .fl{width:auto;}
+    .infoArea .fr{width:auto; padding-left:0;}
+    .infoArea .infoList{margin-bottom:20px;}
+    .infoArea .infoList .tit{width:80px; font-size:1.6rem;}
+    .infoArea .infoList .desc{width:auto; font-size:1.6rem;}
+    .infoArea .infoList .date{font-size:1.4rem;}
+    .infoArea .infoList .historyList{width:100%; max-height:inherit; overflow-y:auto; margin-top:20px;}
+    .introduce{position:initial; font-size:1.4rem; line-height:1.5em; text-align:center; word-break:keep-all;}
+
+    .historyList li{padding:10px 10px 10px 0;}
+    .historyList li:first-child{padding-top:10px;}
+    .historyList li .tit{display:block; font-size:1.6rem; line-height:1.2em;}
+    .historyList .flag{font-size:1.2rem;}
+    .historyList .flag + .date{display:block; margin-top:13px; padding-left:0px;}
+    .historyList .company{padding-top:10px; font-size:1.4rem;}
+    .historyList .company .tit{width:50px; font-size:1.6rem;}
+    .historyList .company .desc{display:inline-block; font-size:1.6rem; line-height:1.2em;}
+
+    .fr .historyList .tit{width:100%;}
+
+    /* project */
+    .projectArea{margin:30px 0 30px;}
+    .prjWrap .boxCon{width:100%;}
+    .projectArea .project{display:block; height:auto; margin:0 0 30px;}
+
+    .project .fl{width:100%; padding:0;}
+    .project .titArea{margin-bottom:20px;}
+    .project .type{margin:0; font-size:1.4rem;}
+    .project .date{margin:10px 0; font-size:1.4rem;}
+    .project .tit3{font-size:2.4rem;}
+    .project .projectInfo{margin-bottom:10px;}
+    .project .projectInfo .tit{margin-bottom:10px; font-size:1.4rem; font-weight:bold;}
+    .project .projectInfo .info{margin-bottom:15px; font-size:1.6rem;}
+    .project .btnArea .linkBtn{width:100%; box-sizing:border-box;}
+
+    .project .fr{display:block; width:100%; margin:30px 0 0;}
+
+}
