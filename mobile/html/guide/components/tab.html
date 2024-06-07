@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>layout</title>
+<script src="/mobile/assets/js/uid.js" defer></script>
+<link rel="stylesheet" href="/mobile/assets/css/index.css">
+</head>
+<body>
+  
+  <header data-include-path="/mobile/html/layout/header.html"></header>
+
+  <nav data-include-path="/mobile/html/layout/sidebar.html"></nav>
+
+  <div class="container">
+    <div class="contents">
+      <section class="examples">
+        <div class="example__title">
+          <h1 class="h3">Tab</h1>
+    
+          
+        </div>
+    
+        <div class="tabs">
+          <div class="tab__item">
+            <button type="button" class="tab__btn is-active" data-url="#tab__content1">
+              <span>tab1</span>
+            </button>
+            <button type="button" class="tab__btn" data-url="#tab__content2">
+              <span>tab2</span>
+            </button>
+          </div>
+    
+          <div class="tab__contents">
+            <div class="tab__content is-active" id="tab__content1">
+              탭1 내용
+            </div>
+            <div class="tab__content" id="tab__content2">
+              탭2 내용
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <footer data-include-path="/mobile/html/layout/footer.html"></footer>
+</body>
+</html>

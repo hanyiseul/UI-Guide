@@ -16,7 +16,6 @@
         };
       });
     }
-    includeHTML();
 
   // 모바일 높이
   function mobileHeight () {
@@ -25,78 +24,43 @@
   }
   mobileHeight();
   
-  // form
-  function formHasDelete() {
-    if($('.form.has-delete').length) {
-      $('.form.has-delete').each(function() {
-        var formInput = $(this).find('.formText__input');
+  // // tab
+  // function urlTabs() {
+  //   if($('[data-url^="#tab"]').length) {
+  //     var tabTrigger = $('[data-url^="#tab"]');
 
-        if(formInput.val().length) {
-          formInput.siblings('.form__delete').show();
-        } else {
-          formInput.siblings('.form__delete').hide();
-        }
-      });
-    }
-  }
-
-  function formValueDelete() {
-    if($('.form.has-delete').length) {
-      var formWrapper = $('.form.has-delete'),
-          formInput   = formWrapper.find('.formText__input'),
-          formDelete  = formWrapper.find('.form__delete');
-
-      formInput.on('input', function() {
-        if($(this).val().length) {
-          $(this).siblings('.form__delete').show();
-        } else {
-          $(this).siblings('.form__delete').hide();
-        }
-      });
-
-      formDelete.on('click', function() {
-        $(this).hide().siblings('.formText__input').val('').focus();
-      });
-    }
-  }
-
-  // tab
-  function urlTabs() {
-    if($('[data-url^="#tab"]').length) {
-      var tabTrigger = $('[data-url^="#tab"]');
-
-      tabTrigger.each(function() {
-        var tabTarget  = $($(this).data('url'));
+  //     tabTrigger.each(function() {
+  //       var tabTarget  = $($(this).data('url'));
         
-        $(this).on('click', function(event) {
-          $(this).addClass('is-active').siblings().removeClass('is-active');
-          tabTarget.addClass('is-active');
-          tabTarget.siblings('.tab__content').removeClass('is-active');
-          event.preventDefault();
-        });
-      });
-    }
-  }
+  //       $(this).on('click', function(event) {
+  //         $(this).addClass('is-active').siblings().removeClass('is-active');
+  //         tabTarget.addClass('is-active');
+  //         tabTarget.siblings('.tab__content').removeClass('is-active');
+  //         event.preventDefault();
+  //       });
+  //     });
+  //   }
+  // }
 
-  // sidebar
-  function sidebar() {
-    if($('.header__sidebarTrigger').length) {
-      var sidebar        = $('.sidebar'),
-          sidebarTrigger = $('.header__sidebarTrigger'),
-          sidebarClose   = sidebar.find('.header__sidebarClose');
+  // // sidebar
+  // function sidebar() {
+  //   if($('.header__sidebarTrigger').length) {
+  //     var sidebar        = $('.sidebar'),
+  //         sidebarTrigger = $('.header__sidebarTrigger'),
+  //         sidebarClose   = sidebar.find('.header__sidebarClose');
       
-      sidebarTrigger.on('click', function(event) {
-        $('html, body').css('overflow','hidden');
-        sidebar.addClass('is-active');
-        event.preventDefault();
-      });
-      sidebarClose.on('click', function(event) {
-        $('html, body').removeAttr('style');
-        sidebar.removeClass('is-active');
-        event.preventDefault();
-      });
-    }
-  }
+  //     sidebarTrigger.on('click', function(event) {
+  //       $('html, body').css('overflow','hidden');
+  //       sidebar.addClass('is-active');
+  //       event.preventDefault();
+  //     });
+  //     sidebarClose.on('click', function(event) {
+  //       $('html, body').removeAttr('style');
+  //       sidebar.removeClass('is-active');
+  //       event.preventDefault();
+  //     });
+  //   }
+  // }
 
   // lnb
   function lnb() {
@@ -588,13 +552,12 @@
   
   // DOMContentLoaded
   window.addEventListener("DOMContentLoaded", function () {
+    includeHTML();
     mobileHeight();
-    formHasDelete();
-    formValueDelete();
     // hrefTabs();
-    urlTabs();
-    sidebar();
-    lnb();
+    // urlTabs();
+    // sidebar();
+    // lnb();
     btnClosed();
     listChecked();
     dropdown();

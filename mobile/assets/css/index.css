@@ -7015,7 +7015,7 @@ section.contents__setting {
 .profile__img {
   display: inline-block;
 }
-.profile__img svg {
+.profile__img .img {
   border: 0.2rem solid #E2EAF3;
   border-radius: 50%;
   overflow: hidden;
