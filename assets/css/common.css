@@ -6,7 +6,7 @@
 .hiddenPc{display:none !important;}
 
 /* gnb */
-header{position:fixed; top:0; left:0; z-index:100; width:100%; background:#004054; transition:all 0.5s ease;}
+header{position:fixed; top:0; left:0; z-index:100; width:100%; background:#111; transition:all 0.5s ease;}
 header.active{background:#f2f2f2; transition:all 0.5s ease;}
 .gnb{width:1200px; height:80px; box-sizing:border-box; margin:0 auto; padding:30px 0; text-align:right;}
 .gnb .menu{position:relative; visibility:hidden; opacity:0; display:inline-block; clip: rect(0 0 0 0); font-size:0; animation:gnbOut 0.5s ease-in-out;}
@@ -47,7 +47,7 @@ header.active{background:#f2f2f2; transition:all 0.5s ease;}
 /* section */
 .content{position:relative; width:100%;}
 .content section{position:relative; width:100%; height:auto; overflow:hidden; padding:78px 0 0; background:#f2f2f2; transition:all 0.5s linear;}
-.content .main{height:calc(100vh - 78px); color:#fff; background:#004054;}
+.content .main{height:calc(100vh - 78px); color:#fff; background:#111;}
 
 section .wrap{position:relative; width:1200px; height:100%; box-sizing:border-box; margin:0 auto; padding:60px 0;}
 section.on{height:450px !important;}
