@@ -6,8 +6,8 @@
 .hiddenPc{display:none !important;}
 
 /* gnb */
-header{position:fixed; top:0; left:0; z-index:100; width:100%; background:#111; transition:all 0.5s ease;}
-header.active{background:#f2f2f2; transition:all 0.5s ease;}
+header{position:fixed; top:0; left:0; z-index:100; width:100%; background:#222; transition:all 0.5s ease;}
+/* header.active{background:#f2f2f2; transition:all 0.5s ease;} */
 .gnb{width:1200px; height:80px; box-sizing:border-box; margin:0 auto; padding:30px 0; text-align:right;}
 .gnb .menu{position:relative; visibility:hidden; opacity:0; display:inline-block; clip: rect(0 0 0 0); font-size:0; animation:gnbOut 0.5s ease-in-out;}
 .gnb .menu li{display:inline-block; margin-right:30px; font-size:18px;}
@@ -16,9 +16,10 @@ header.active{background:#f2f2f2; transition:all 0.5s ease;}
 .gnb .menu.on + .btnMenu:before{width:30px; transition: all 0.3s;}
 .gnb .btnMenu{cursor:pointer; position:relative; display:inline-block; width:36px; height:23px; padding:0; border:5px solid #fff; border-width:5px 0; background:none; vertical-align:top; transition: all 0.3s;}
 .gnb .btnMenu:before{content:''; float:right; display:block; width:36px; height:5px;background:#fff; transition: all 0.3s;}
-.active .gnb .menu li a{color:#004054;}
+.active header {border-bottom: 1px solid rgba(255,255,255,0.5);}
+/* .active .gnb .menu li a{color:#004054;}
 .active .gnb .btnMenu{border:5px solid #004054; border-width:5px 0;}
-.active .gnb .btnMenu:before{background:#004054;}
+.active .gnb .btnMenu:before{background:#004054;} */
 
 /* gnb animation */
 @keyframes gnbIn {
@@ -45,11 +46,11 @@ header.active{background:#f2f2f2; transition:all 0.5s ease;}
 }
 
 /* section */
-.content{position:relative; width:100%;}
-.content section{position:relative; width:100%; height:auto; overflow:hidden; padding:78px 0 0; background:#f2f2f2; transition:all 0.5s linear;}
-.content .main{height:calc(100vh - 78px); color:#fff; background:#111;}
-
-section .wrap{position:relative; width:1200px; height:100%; box-sizing:border-box; margin:0 auto; padding:60px 0;}
+.content{position:relative; width:100%; scroll-behavior: smooth; 
+  transition: 0.5s;}
+.content section{position:relative; width:100%; height:100vh; overflow:hidden; padding: 78px 0; color:#fff; background:#222; transition:all 0.5s linear; box-sizing: border-box;}
+.content .main{color:#fff; background:#222;}
+section .wrap{position:relative; width:1200px; height:100%; box-sizing:border-box; margin:0 auto;}
 section.on{height:450px !important;}
 section.on .titArea{transform:none;}
 section.on .contact{position:absolute; width:1px; height:1px; clip:rect(0 0 0 0); overflow:hidden;}
@@ -64,14 +65,14 @@ section.on .contact{position:absolute; width:1px; height:1px; clip:rect(0 0 0 0)
 
 /* button */
 .btnArea{width:100%; margin:50px 0 0; text-align:left;}
-.linkBtn{display:inline-block; padding:15px 30px; font-size:16px; text-align:center; border:2px solid #004054; background:#f2f2f2;}
+.linkBtn{display:inline-block; padding:15px 30px; font-size:16px; text-align:center; border:2px solid rgba(255,255,255, 0.5); }
 .linkBtn:hover{cursor:pointer; color:#fff; background:#004054; transition:all 0.5s ease;}
 
 /* tab */
 .tabList{display:flex; margin:0 0 60px;}
-.tabList li {cursor:pointer; display:inline-block; flex:1; padding:20px 0; text-align:center; background:#eaeaea; transition:all 0.3s linear}
+.tabList li {cursor:pointer; display:inline-block; flex:1; padding:20px 0; text-align:center; transition:all 0.3s linear}
 /* .tabList li:hover,.tabList li:focus{color:#004054;} */
-.tabList li.on{color:#fff; background:#004054; transition:all 0.3s linear;}
+.tabList li.on{color:#fff; font-weight:700; font-size: 20px; transition:all 0.3s linear;}
 .tabPannel{display:none}
 .tabPannel.on{display:block;}
 

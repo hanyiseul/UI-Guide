@@ -1,4 +1,4 @@
-function content(){
+(() => {
     // gnb
     const menu = document.querySelector('.gnb > .menu');
     const body = document.querySelector("body");
@@ -85,9 +85,4 @@ function content(){
     //         console.log("모바일");
     //     }
     // });
-}        
-
-window.onload = function() { 
-    main();
-    content();
-}
+})();

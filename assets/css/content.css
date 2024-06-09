@@ -2,7 +2,22 @@
 
 /** main ***/
 .main .wrap{display:flex; align-items:center;}
-.main .wrap .titArea{transform:translateY(-76px);}
+.arrow {padding-top: 70px;}
+.arrow:before {content:""; display:block; position:absolute; bottom:0; left:50%; width:24px; height:24px; margin-left:-12px; border-left:1px solid #fff; border-bottom:1px solid #fff; -webkit-transform:rotate(-45deg); transform:rotate(-45deg); -webkit-animation:scrollEvent 1.5s infinite; animation:scrollEvent 1.5s infinite; box-sizing:border-box;}
+
+@-webkit-keyframes scrollEvent {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
 
 /* contact */
 .contact{position:absolute; bottom:76px; right:0; text-align:right}
@@ -13,7 +28,7 @@
 /** about **/
 
 /* infoArea */
-.infoArea{display:flex; flex-wrap:wrap; width:100%; height:calc(100% - 300px); margin:60px 0 30px;}
+.infoArea{margin:0 30px;}
 .infoArea .fl{width:45%;}
 .infoArea .fr{width:55%; box-sizing:border-box; padding-left:20px;}
 .introduce{position:absolute; bottom:50px; right:0; width:100%; text-align:right;}
@@ -22,11 +37,13 @@
 
 /* infoList */
 .infoList{margin-bottom:40px; font-size:0;}
-.infoList > li{padding:10px 0;}
-.infoList .tit{display:inline-block; width:120px; font-size:18px; font-weight:500; vertical-align:top;}
-.infoList .desc{display:inline-block; width: calc(100% - 120px); font-size:18px; line-height:1.2rem;}
+.infoList li {display:flex;}
+.infoList > li{margin:50px 0;}
+.infoList .tit{display:inline-block; width:40%; font-size:40px; font-weight:500; vertical-align:top;}
+.infoList .desc{display:inline-flex; align-items:center; width: calc(100% - 120px); font-size:18px; line-height:1.2rem;}
 .infoList .date{font-size:18px;}
 .infoList .historyList{width: calc(100% - 120px); max-height:calc(100vh - 590px); overflow-y:auto;}
+.infoList a {color: #fff;}
 
 /* historyList */
 .historyList{display:inline-block; padding:0;}
@@ -35,7 +52,7 @@
 .historyList .tit{display:block; width:auto; padding-top:10px; font-size:18px; font-weight:500;}
 .historyList .flag + .date{display:inline-block;}
 .historyList .date{display: block;}
-.historyList .company{padding-top:20px; font-size:16px;}
+.historyList .company{padding-left:20px; font-size:16px;}
 .historyList .company .tit{display:inline-block; width:auto; margin-right:20px; padding:0px; font-weight:400;}
 
 /** project **/
