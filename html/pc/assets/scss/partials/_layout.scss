@@ -15,8 +15,6 @@ input,
 select,
 textarea { font-family: $document-font-family; }
 
-// .wrapper {}
-
 .logo {
   &.is-header {
     display: inline-flex;
@@ -33,11 +31,5 @@ textarea { font-family: $document-font-family; }
 
 .contents {
   padding: 20px;
-
 }
 
-section {
-}
-
-.content {
-}

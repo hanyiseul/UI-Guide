@@ -56,7 +56,7 @@
 
   // sidebar
   function sidebar() {
-    setTimeout(() => {
+    window.onload = function () {
       const sidebar = document.querySelector('.sidebar');
       const sideBtn = document.querySelector('.header__sidebarTrigger');
       sideBtn.addEventListener('click', () => {
@@ -68,7 +68,7 @@
         document.body.style.overflow = "visible";
         sidebar.classList.remove('is-active');
       })
-    }, '100');
+    }
   }
   
   function btnClosed() {

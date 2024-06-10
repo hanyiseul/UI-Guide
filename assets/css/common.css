@@ -48,13 +48,16 @@ header{position:fixed; top:0; left:0; z-index:100; width:100%; background:#222; 
 /* section */
 .content{position:relative; width:100%; scroll-behavior: smooth; 
   transition: 0.5s;}
-.content section{position:relative; display:flex; align-items:center; width:100%; min-height:100vh; padding: 78px 0; color:#fff; background:#222; transition:all 0.5s linear; box-sizing: border-box;}
+.content section{position:relative; display:flex; align-items:center; width:100%; min-height:100vh; padding: 78px 0; color:#fff; background:#222; transition:all 0.5s linear; box-sizing: border-box; scroll-behavior: smooth; transition: 0.1s all;}
 .content .main{position:sticky; top:0; height:100vh; color:#fff; background:#222;}
+.content .main .titArea{opacity:1; transition: 3s liner;}
 .content .main .wrap {align-items:start}
+.content .main.on .wrap .titArea{opacity:0}
 section .wrap{position:relative; display:flex; flex-direction:column; justify-content:center; width:1200px; height:100%; box-sizing:border-box; margin:0 auto;}
 section.on{height:450px !important;}
 section.on .titArea{transform:none;}
 section.on .contact{position:absolute; width:1px; height:1px; clip:rect(0 0 0 0); overflow:hidden;}
+
 
 /* tit */
 .titArea [class^=tit]{position:relative; display:inline-block; z-index:2; line-height:1.2em;}

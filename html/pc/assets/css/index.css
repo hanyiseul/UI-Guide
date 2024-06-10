@@ -6881,7 +6881,10 @@ textarea {
   height: calc(var(--vh, 1vh) * 100 - 134px);
   padding: 15px 50px 15px 30px;
   background-color: #222;
-  overflow-y: scroll;
+  overflow-y: auto;
+}
+.sidebar::-webkit-scrollbar {
+  display: none;
 }
 
 .sidebar__list li {
