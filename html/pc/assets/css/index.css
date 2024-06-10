@@ -7620,6 +7620,9 @@ table.board a {
   width: 100%;
   background-color: #ffffff;
 }
+.container__guide header .btnMenu {
+  display: none;
+}
 .container__guide .sidebar {
   position: fixed;
   top: 79px;
@@ -7785,4 +7788,59 @@ table.board a {
 .table.typo__table tbody td {
   padding: 20px 0;
   border-bottom: 1px solid #ECECEC;
+}
+
+@media (max-width: 768px) {
+  header .header__inner {
+    padding: 30px 20px;
+  }
+  header .header__inner .btnMenu {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: 3px solid #fff;
+    border-width: 3px 0;
+    background: none;
+    vertical-align: top;
+    transition: all 0.3s;
+  }
+  header .header__inner .btnMenu:before {
+    content: "";
+    float: right;
+    display: block;
+    width: 20px;
+    height: 3px;
+    background: #fff;
+    transition: all 0.3s;
+  }
+  header .logo {
+    margin-left: 20px;
+  }
+  header .header__item {
+    width: 40%;
+  }
+  header .header__item .gnb li {
+    margin: 0;
+  }
+  .container__guide .contents {
+    padding: 60px 20px 80px;
+  }
+  .container__guide .sidebar {
+    left: -100%;
+    transition: 0.2s all;
+  }
+  .container__guide.sidebar-active {
+    overflow: hidden;
+  }
+  .container__guide.sidebar-active .sidebar {
+    left: 0;
+    width: 100%;
+  }
+  .container__guide.sidebar-active .btnMenu {
+    height: 0;
+    border-width: 0;
+  }
 }

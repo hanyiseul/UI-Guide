@@ -1,6 +1,5 @@
 (() => {
   const guideBtn = document.querySelectorAll('.guideBtn');
-
     guideBtn.forEach((button)=>{
       button.addEventListener('click', () => {
           const guide = button.closest('.is-guide').getElementsByClassName('guide-code');
@@ -28,9 +27,11 @@
   });
 
   window.onload = function () {
-    const gnbBtn = document.querySelectorAll('.btn__gnb');
-    gnbBtn.forEach((button)=>{
-      console.log(button)
+    const btnMenu = document.querySelector("header .btnMenu");
+    console.log(btnMenu)
+    btnMenu.addEventListener("click", () => {
+      console.log('hi')
+      btnMenu.closest(".container.container__guide").classList.toggle('sidebar-active');
     })
   }
 })();
