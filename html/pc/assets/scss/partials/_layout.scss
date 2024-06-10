@@ -26,9 +26,9 @@ textarea { font-family: $document-font-family; }
 }
 
 .container {
-  min-height: calc((calc(var(--vh, 1vh) * 100)) - 116px); // header
+  min-height: calc((calc(var(--vh, 1vh) * 100)) - 55px); // header
   padding-left: 210px;
-  background-color: #f1f1f1;
+  background-color: #222;
 }
 
 .contents {

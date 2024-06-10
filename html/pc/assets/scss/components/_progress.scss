@@ -1,8 +1,7 @@
 .progress {
   display: flex;
   height: 20px;
-  border: 1px solid $gray-300;
-  background-color: $white;
+  background-color: #222;
 
   &.is-scroll {
     position: fixed;

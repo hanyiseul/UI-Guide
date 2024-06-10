@@ -1,5 +1,6 @@
 (() => { 
   if(window.innerWidth > 1024) {
+    const content = document.querySelector('.main')
   //   const content = document.querySelector('.main__content');
   //   const section = document.querySelectorAll('.main__content section')
   //   let page = 0;
@@ -28,7 +29,7 @@
   //     content.style.top = page * -100 + 'vh'
   //   }
   // }, {passive: false})
-  // }
+  }
   
 })();
 

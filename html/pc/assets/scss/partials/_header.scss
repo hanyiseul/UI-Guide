@@ -2,18 +2,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
-  padding: 20px 20px 20px 30px;
-  border-bottom: 1px solid $gray-200;
+  height: 80px;
+  padding: 30px 20px 30px 30px;
+  color: #fff;
+  background-color: #222;
 }
 
 .logo {
   // width: 50px;
   height: auto;
   h1 {
-      font-size: 16px;
-      font-weight: 500;
+    font-size: 16px;
+    font-weight: 500;
+    a {
+      color: #fff;
     }
+  }
 }
 .gnb {
   @include flex-center();
@@ -21,6 +25,9 @@
 
   li {
     margin: 0 20px;
+    a {
+      color: #fff;
+    }
   }
 }
 
