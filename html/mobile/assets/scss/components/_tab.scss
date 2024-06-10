@@ -1,33 +1,38 @@
-.tabs{
+.tab{
   position: relative;
   height: 100%;
   margin: 0;
   padding: 0;
   background-color: $white;
 
-  +.tabs {
+  +.tab {
     margin: 2rem 0 0;
   }
 }
 
-.tab__item {
+.tab__list {
   display: flex;
   border-top: 0.1rem solid $gray-600;
-  .tab__btn {
+  > li {
     width: 50%;
-    padding: 1.5rem 0;
-    color: $gray-300;
-    font-size: 1.6rem;
-    font-weight: 600;
-    text-align: center;
-    line-height: 2.2rem;
-    border: none;
-    background: none;
+    border-bottom: 0.1rem solid #ECECEC;
+    
+    .btn__tab {
+      display: block;
+      padding: 1.5rem 0;
+      color: $gray-300;
+      font-size: 1.6rem;
+      font-weight: 600;
+      text-align: center;
+      line-height: 2.2rem;
+      border: none;
+      background: none;
 
-    &.is-active {
-      color: $black;
-      border-color: $white;
-      background-color: $white;
+      &.is-active {
+        color: $black;
+        border-color: $white;
+        background-color: $white;
+      }
     }
     &:not(:first-child) {
       margin-left: 0;

@@ -1,711 +1,127 @@
-<div class="sidebar">
+<aside class="sidebar">
   <header class="header sidebar__header">
-    <div class="header__item is-left">
-      <a class="btn is-icon sidebar__icon" href="#">
-        <svg class="icon"><use href="#icon-sidebar-home"></use></svg>
-        <span class="visually-hidden">메인 페이지로 이동</span>
-      </a>
-    </div>
     <div class="header__item is-right is-wide">
-      <a class="btn is-icon sidebar__icon" href="#">
-        <svg class="icon"><use href="#icon-sidebar-settings"></use></svg>
-        <span class="visually-hidden">설정 페이지로 이동</span>
-      </a>
-      <button type="button" class="btn is-icon sidebar__icon">
-        <svg class="icon"><use href="#icon-sidebar-logout"></use></svg>
-        <span class="visually-hidden">로그아웃</span>
-      </button>
       <button type="button" class="btn is-icon sidebar__icon header__sidebarClose">
-        <svg class="icon"><use href="#icon-sidebar-close"></use></svg>
+        <img src="../../../assets/images/svg/icon-sidebar-close.svg" alt="" class="icon">
         <span class="visually-hidden">주 메뉴 닫기</span>
       </button>
     </div>
   </header>
-  <div class="user">
-    <div class="user__avatar">
-      <img src="/html/mobile/assets/images/svg/user-photo.svg" alt="">
-    </div>
-    <div class="user__inform">
-      <div class="user__item">
-        <em class="user__name">홍길동</em>
-        <span class="user__position">매니저</span>
-      </div>
-      <div class="user__item">
-        <span class="user__unit">전략 기획팀</span>
-      </div>
-    </div>
-  </div>
-  <nav class="nav is-primary">
-    <button type="button" class="nav__item has-notice is-active" data-url="#tab__content-1">
-      <span class="nav__text">Guide</span>
-    </button>
-    <button type="button" class="nav__item has-mail" data-url="#tab__content-2">
-      <span class="nav__text">메일</span>
-    </button>
-    <button type="button" class="nav__item has-approval" data-url="#tab__content-3">
-      <span class="nav__text">전자결제</span>
-    </button>
-    <button type="button" class="nav__item has-notice" data-url="#tab__content-4">
-      <span class="nav__text">게시판</span>
-    </button>
-    <button type="button" class="nav__item has-organization" data-url="#tab__content-5">
-      <span class="nav__text">조직도</span>
-    </button>
-    <button type="button" class="nav__item has-contact" data-url="#tab__content-6">
-      <span class="nav__text">연락처</span>
-    </button>
-  </nav>
   <nav class="nav is-secondary">
     <div class="nav__overlay">
-      <div class="tab__content is-active" id="tab__content-1">
-        <strong class="nav__title">Guide</strong>
-        <ul class="nav__block has-lnb">
-          <!-- Components -->
-          <li class="nav__item is-current is-active">
-            <a class="nav__link" href="#">
-              <span class="nav__text">Components</span>
-              <svg class="icon"><use href="#icon-lnb-arrow"></use></svg>
-            </a>
-            <ul class="twoDepth">
-              <li class="twoDepth__item">
-                <a class="twoDepth__link  has-count" href="/pages/components/loading.html">
-                  <span>Loading</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/components/header.html">
-                  <span>Header</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/components/typography.html">
-                  <span>Typography</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/components/list.html">
-                  <span>List</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/components/button.html">
-                  <span>Button/Icon/Control</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/components/dropdown.html">
-                  <span>Dropdown</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/components/form.html">
-                  <span>Form</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/components/formDetail.html">
-                  <span>FormDetail</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/components/post.html">
-                  <span>Post</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/components/post.html">
-                  <span>Post Detail</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/components/tab.html">
-                  <span>Tab</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/components/modal.html">
-                  <span>Modal</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/components/paging.html">
-                  <span>Paging</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <!-- /Components -->
+      <strong class="nav__title">Guide</strong>
+      <ul class="nav__block has-lnb">
+        <!-- Components -->
+        <li class="nav__item is-current is-active">
+          <a class="nav__link" href="#">
+            <span class="nav__text">Components</span>
+            <svg class="icon"><use href="#icon-lnb-arrow"></use></svg>
+          </a>
+          <ul class="twoDepth">
+            <li class="twoDepth__item">
+              <a class="twoDepth__link  has-count" href="../guide/components/loading.html">
+                <span>Loading</span>
+                <span class="twoDepth__count is-textSecondary">완료</span>
+              </a>
+            </li>
+            <li class="twoDepth__item">
+              <a class="twoDepth__link has-count" href="../components/typography.html">
+                <span>Typography</span>
+                <span class="twoDepth__count is-textSecondary">완료</span>
+              </a>
+            </li>
+            <li class="twoDepth__item">
+              <a class="twoDepth__link has-count" href="../components/list.html">
+                <span>List</span>
+                <span class="twoDepth__count is-textSecondary">완료</span>
+              </a>
+            </li>
+            <li class="twoDepth__item">
+              <a class="twoDepth__link has-count" href="../components/button.html">
+                <span>Button/Icon/Control</span>
+                <span class="twoDepth__count is-textSecondary">완료</span>
+              </a>
+            </li>
+            <li class="twoDepth__item">
+              <a class="twoDepth__link has-count" href="../components/dropdown.html">
+                <span>Dropdown</span>
+                <span class="twoDepth__count is-textSecondary">완료</span>
+              </a>
+            </li>
+            <li class="twoDepth__item">
+              <a class="twoDepth__link has-count" href="../components/form.html">
+                <span>Form</span>
+                <span class="twoDepth__count is-textSecondary">완료</span>
+              </a>
+            </li>
+            <li class="twoDepth__item">
+              <a class="twoDepth__link has-count" href="../components/formDetail.html">
+                <span>FormDetail</span>
+                <span class="twoDepth__count is-textSecondary">완료</span>
+              </a>
+            </li>
+            <li class="twoDepth__item">
+              <a class="twoDepth__link has-count" href="../components/post.html">
+                <span>Post</span>
+                <span class="twoDepth__count is-textSecondary">완료</span>
+              </a>
+            </li>
+            <li class="twoDepth__item">
+              <a class="twoDepth__link has-count" href="../components/post.html">
+                <span>Post Detail</span>
+                <span class="twoDepth__count is-textSecondary">완료</span>
+              </a>
+            </li>
+            <li class="twoDepth__item">
+              <a class="twoDepth__link has-count" href="../components/tab.html">
+                <span>Tab</span>
+                <span class="twoDepth__count is-textSecondary">완료</span>
+              </a>
+            </li>
+            <li class="twoDepth__item">
+              <a class="twoDepth__link has-count" href="../components/modal.html">
+                <span>Modal</span>
+                <span class="twoDepth__count is-textSecondary">완료</span>
+              </a>
+            </li>
+            <li class="twoDepth__item">
+              <a class="twoDepth__link has-count" href="../components/paging.html">
+                <span>Paging</span>
+                <span class="twoDepth__count is-textSecondary">완료</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- /Components -->
 
-          <!-- Templates -->
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span class="nav__text">Templates</span>
-              <svg class="icon"><use href="#icon-lnb-arrow"></use></svg>
-            </a>
-            <ul class="twoDepth">
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/index.html">
-                  <span>Page list</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/main.html">
-                  <span>Main</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/layout.html">
-                  <span>Layout</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/setting.html">
-                  <span>Setting</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/search.html">
-                  <span>Search</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/login.html">
-                  <span>Login</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/loginError.html">
-                  <span>Login Error</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/findPassword.html">
-                  <span>Find Password</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/findSuccess.html">
-                  <span>Find Password Success</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/findFailed.html">
-                  <span>Find Password Fail</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <!-- /Templates -->
-        </ul>
-      </div>
-      <div class="tab__content" id="tab__content-2">
-        <strong class="nav__title">메일</strong>
-        <ul class="nav__block has-lnb">
-
-          <!-- Templates -->
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span class="nav__text">Templates</span>
-              <svg class="icon"><use href="#icon-lnb-arrow"></use></svg>
-            </a>
-            <ul class="twoDepth">
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/mail/mailList.html">
-                  <span>메일 리스트</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/mail/post.html">
-                  <span>메일 보내기</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/mail/mailView.html">
-                  <span>메일 상세</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/mail/mailModal1.html">
-                  <span>[modal] 임시저장</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <!-- /Templates -->
-
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span class="nav__text">받은 편지함 203</span>
-              <svg class="icon"><use href="#icon-lnb-arrow"></use></svg>
-            </a>
-            <ul class="twoDepth">
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">Kakao Enterprise 2</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">GS ITM 9</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">보령약국</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">FreshKorea</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">Kakao Picoma</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">삼성 SDS</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span class="nav__text">보낸 편지함</span>
-              <svg class="icon"><use href="#icon-lnb-arrow"></use></svg>
-            </a>
-            <ul class="twoDepth">
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">Kakao Enterprise 2</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">GS ITM 9</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">보령약국</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">FreshKorea</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">Kakao Picoma</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">삼성 SDS</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span class="nav__text">임시 보관함</span>
-              <svg class="icon"><use href="#icon-lnb-arrow"></use></svg>
-            </a>
-            <ul class="twoDepth">
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">Kakao Enterprise 2</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">GS ITM 9</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">보령약국</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">FreshKorea</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">Kakao Picoma</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">삼성 SDS</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span class="nav__text">스팸 편지함 1,018</span>
-              <svg class="icon"><use href="#icon-lnb-arrow"></use></svg>
-            </a>
-            <ul class="twoDepth">
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">Kakao Enterprise 2</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">GS ITM 9</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">보령약국</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">FreshKorea</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">Kakao Picoma</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">삼성 SDS</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span class="nav__text">휴지통 3,990</span>
-              <svg class="icon is-trash"><use href="#icon-lnb-trash"></use></svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="tab__content" id="tab__content-3">
-        <strong class="nav__title">전자결재</strong>
-        <ul class="nav__block has-lnb">
-
-          <!-- Templates -->
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span class="nav__text">Templates</span>
-              <svg class="icon"><use href="#icon-lnb-arrow"></use></svg>
-            </a>
-            <ul class="twoDepth">
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/approval/processingList.html">
-                  <span>결재처리</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/approval/sharingProcessingList.html">
-                  <span>공람처리</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/approval/runningList.html">
-                  <span>결재현황</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/approval/processingView.html">
-                  <span>보고서보기</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/approval/approvalModal1.html">
-                  <span>[modal] 의견남기기</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/approval/approvalModal2.html">
-                  <span>[modal] 정상처리</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/approval/approvalModal3.html">
-                  <span>[modal] 결재의견</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <!-- /Templates -->
-
-          <li class="nav__item is-current is-active">
-            <a class="nav__link" href="#">
-              <span class="nav__text">도착문서</span>
-              <svg class="icon"><use href="#icon-lnb-arrow"></use></svg>
-            </a>
-            <ul class="twoDepth">
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="#">
-                  <span>결재처리</span>
-                  <span class="twoDepth__count is-textSecondary">501</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="#">
-                  <span>공람처리</span>
-                  <span class="twoDepth__count is-textPrimary">76</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span class="nav__text">진행문서</span>
-              <svg class="icon"><use href="#icon-lnb-arrow"></use></svg>
-            </a>
-            <ul class="twoDepth">
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">결재현황</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">발송현황</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span class="nav__text">개인문서</span>
-              <svg class="icon"><use href="#icon-lnb-arrow"></use></svg>
-            </a>
-            <ul class="twoDepth">
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">중단문서</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">결재문서</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">접수문서</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">공람문서</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="tab__content" id="tab__content-4">
-        <strong class="nav__title">게시판</strong>
-        <ul class="nav__block has-lnb">
-          <!-- Templates -->
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span class="nav__text">Templates</span>
-              <svg class="icon"><use href="#icon-lnb-arrow"></use></svg>
-            </a>
-            <ul class="twoDepth">
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/board/boardList.html">
-                  <span>목록</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/board/boardView.html">
-                  <span>상세</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/	templates/board/boardWrite.html">
-                  <span>작성</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <!-- /Templates -->
-        </ul>
-        <ul class="nav__block is-primary has-quick">
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span>최근 게시물</span>
-              <span class="nav__badge is-new">NEW</span>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span>최근읽은 게시물</span>
-              <span class="nav__badge is-read">READ</span>
-            </a>
-          </li>
-        </ul>
-        <ul class="nav__block has-lnb">
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span class="nav__text">전사공지</span>
-              <svg class="icon"><use href="#icon-lnb-arrow"></use></svg>
-            </a>
-            <ul class="twoDepth">
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">특별 공지</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">전사 오류 관련 공지</a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link" href="#">임시 공지</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span class="nav__text">구매업무 및 절차 공지</span>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span class="nav__text">자유게시판</span>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span class="nav__text">사업절차 및 방법론</span>
-            </a>
-          </li>
-        </ul>
-        <ul class="nav__block is-secondary has-quick">
-          <li class="nav__item">
-            <a class="nav__link is-related" href="#">관련 게시물</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link is-temporary" href="#">임시 저장함</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link is-scrap" href="#">스크랩 게시물</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link is-registration" href="#">등록 대기중 게시물</a>
-          </li>
-        </ul>
-      </div>
-      <div class="tab__content" id="tab__content-5">
-        <strong class="nav__title">조직도</strong>
-        <ul class="nav__block has-lnb">
-          <!-- Templates -->
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span class="nav__text">Templates</span>
-              <svg class="icon"><use href="#icon-lnb-arrow"></use></svg>
-            </a>
-            <ul class="twoDepth">
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/organization/organization01.html">
-                  <span>조직도01</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/organization/organization02.html">
-                  <span>조직도02</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <!-- /Templates -->
-        </ul>
-        <div class="nav__block">
-          <div id="organization" class="tui-tree-wrap"></div>
-        </div>
-      </div>
-      <div class="tab__content" id="tab__content-6">
-        <strong class="nav__title">연락처</strong>
-        <ul class="nav__block has-lnb">
-          <!-- Templates -->
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span class="nav__text">Templates</span>
-              <svg class="icon"><use href="#icon-lnb-arrow"></use></svg>
-            </a>
-            <ul class="twoDepth">
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/contact/contactList.html">
-                  <span>목록</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/contact/contactView.html">
-                  <span>상세</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/contact/contactWrite.html">
-                  <span>작성</span>
-                  
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-              <li class="twoDepth__item">
-                <a class="twoDepth__link has-count" href="/pages/templates/contact/contactModal1.html">
-                  <span>[modal] 등록하시겠습니까?</span>
-                  <span class="twoDepth__count is-textSecondary">완료</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <!-- /Templates -->
-
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span class="nav__text">연락처</span>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span class="nav__text">최근 사용한 연락처</span>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span class="nav__text">휴지통 3,990</span>
-              <svg class="icon is-trash"><use href="#icon-lnb-trash"></use></svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+        <!-- Templates -->
+        <li class="nav__item is-current is-active">
+          <a class="nav__link" href="#">
+            <span class="nav__text">Templates</span>
+            <svg class="icon"><use href="#icon-lnb-arrow"></use></svg>
+          </a>
+          <ul class="twoDepth">
+            <li class="twoDepth__item">
+              <a class="twoDepth__link has-count" href="../../index.html">
+                <span>Page list</span>
+              </a>
+            </li>
+            <li class="twoDepth__item">
+              <a class="twoDepth__link has-count" href="../templates/layout.html">
+                <span>Layout</span>
+                <span class="twoDepth__count is-textSecondary">완료</span>
+              </a>
+            </li>
+            <li class="twoDepth__item">
+              <a class="twoDepth__link has-count" href="../templates/setting.html">
+                <span>Setting</span>
+                <span class="twoDepth__count is-textSecondary">완료</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- /Templates -->
+      </ul>
     </div>
   </nav>
-</div>
-<script>
-  var organizationData = [
-    {text: 'CEO 대표이사', children: [
-      {text: '경영전략 본부', state: 'opened', children: [
-        {text:'경영전략 1팀'},
-        {text:'경영전략 2팀'},
-        {text:'경영전략 3팀'},
-      ]},
-      {text: '사업개발 센터', state: 'closed', children: [
-        {text:'사업개발 1팀'},
-        {text:'사업개발 2팀'},
-        {text:'사업개발 3팀'},
-      ]},
-      {text: '디자인 센터', state: 'closed', children: [
-        {text:'디자인 1팀'},
-        {text:'디자인 2팀'},
-        {text:'디자인 3팀'},
-      ]},
-      {text: '유통/커머스 본부', state: 'closed', children: [
-        {text:'유통 1팀'},
-        {text:'커머스 2팀'},
-      ]},
-    ]},
-    {text: '홍길동 팀', state:'closed', children: [
-      {text:'홍길동 1팀'},
-      {text:'홍길동 2팀'},
-      {text:'홍길동 3팀'}
-    ]},
-    {text: '세종대왕 팀', state:'closed', children: [
-      {text:'세종대왕 1팀'},
-      {text:'세종대왕 2팀'},
-      {text:'세종대왕 3팀'}
-    ]},
-  ];
-
-  var tree = new tui.Tree('#organization', {
-    data: organizationData,
-    nodeDefaultState: 'opened'
-  });
-</script>
+</aside>
