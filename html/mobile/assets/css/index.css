@@ -7761,23 +7761,27 @@ select:focus {
   font-weight: 500;
 }
 
-.tabs {
+.tab {
   position: relative;
   height: 100%;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
 }
-.tabs + .tabs {
+.tab + .tab {
   margin: 2rem 0 0;
 }
 
-.tab__item {
+.tab__list {
   display: flex;
   border-top: 0.1rem solid #222222;
 }
-.tab__item .tab__btn {
+.tab__list > li {
   width: 50%;
+  border-bottom: 0.1rem solid #ECECEC;
+}
+.tab__list > li .btn__tab {
+  display: block;
   padding: 1.5rem 0;
   color: #BBBBBB;
   font-size: 1.6rem;
@@ -7787,12 +7791,12 @@ select:focus {
   border: none;
   background: none;
 }
-.tab__item .tab__btn.is-active {
+.tab__list > li .btn__tab.is-active {
   color: #000000;
   border-color: #ffffff;
   background-color: #ffffff;
 }
-.tab__item .tab__btn:not(:first-child) {
+.tab__list > li:not(:first-child) {
   margin-left: 0;
 }
 

@@ -78,7 +78,7 @@
 .project .imgProject{max-width:100%; max-height:100%;}
 
 /* boxCon */
-.boxCon{ box-sizing:border-box; margin:10px 10px; padding:30px; border:1px solid #999; background:#eee;}
+.boxCon{ box-sizing:border-box; margin:10px 10px; padding:30px; border:1px solid #999; background:#fff;}
 .boxCon .info{margin:20px 0 0; padding:30px 0 0; border-top:1px solid #666;}
 .boxCon .info .tit3{margin:15px 0 0; font-weight:500; line-height:1.2em;}
 .boxCon .info .date{font-size:14px; text-align:right;}
@@ -90,6 +90,8 @@
     /* main */
     .main .wrap{display:block;}
     .main .wrap .titArea{transform:none;}
+    .arrow{padding-top: 20px;}
+    .arrow:before{width:12px; height:12px;}
 
     /* contact */
     .contact{position:initial; bottom:0; top:0; margin-top:10px; direction:rtl;}
@@ -108,15 +110,14 @@
     .infoArea .infoList .tit{width:80px; font-size:1.6rem;}
     .infoArea .infoList .desc{width:auto; font-size:1.6rem;}
     .infoArea .infoList .date{font-size:1.4rem;}
-    .infoArea .infoList .historyList{width:100%; max-height:inherit; overflow-y:auto; margin-top:20px;}
+    .infoArea .infoList .historyList{width:100%; max-height:inherit; overflow-y:auto;}
     .introduce{position:initial; font-size:1.4rem; line-height:1.5em; text-align:center; word-break:keep-all;}
 
-    .historyList li{padding:10px 10px 10px 0;}
-    .historyList li:first-child{padding-top:10px;}
+    .historyList li{align-items: center;}
     .historyList li .tit{display:block; font-size:1.6rem; line-height:1.2em;}
     .historyList .flag{font-size:1.2rem;}
     .historyList .flag + .date{display:block; margin-top:13px; padding-left:0px;}
-    .historyList .company{padding-top:10px; font-size:1.4rem;}
+    .historyList .company{font-size:1.4rem;}
     .historyList .company .tit{width:50px; font-size:1.6rem;}
     .historyList .company .desc{display:inline-block; font-size:1.6rem; line-height:1.2em;}
 
@@ -124,7 +125,7 @@
 
     /* project */
     .projectArea{margin:30px 0 30px;}
-    .prjWrap .boxCon{width:100%;}
+    .prjWrap .boxCon{width:100%;border-radius:10px;}
     .projectArea .project{display:block; height:auto; margin:0 0 30px;}
 
     .project .fl{width:100%; padding:0;}
