@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html:lang(ko) {
+  word-break: keep-all;
+}
+
+body {
+  overflow-wrap: break-word;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+button,
+fieldset,
+iframe,
+input,
+select,
+textarea {
+  border: 0;
+}
+
+button,
+dialog,
+input,
+mark,
+meter,
+progress {
+  background-color: transparent;
+}
+
+table {
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button,
+input,
+meter,
+progress,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+iframe {
+  border: 0;
+}
+
+/* CSS Reset by [class] - Samsung Internet, Internet Explorer does supports it.(2021-07) */
+/*
+[class] {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+[class]::before,
+[class]::after { box-sizing: border-box; }
+[class]:where(ol, ul) { list-style: none; }
+[class]:where(button, fieldset, iframe, input, select, textarea) { border: 0; }
+[class]:where(button, dialog, input, mark, meter, progress) { background-color: transparent; }
+[class]:where(table) {
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+[class]:where(button, input, meter, progress, select, textarea) {
+  -webkit-appearance: none;
+  appearance: none;
+}
+*/
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+[class^="is-show"] .is-sticky {
+  display: block;
+}
+
+[class^="section"] {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.is-sticky {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  will-change: transform, opacity;
+}
+
+.scroll__msg {
+  opacity: 0;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+/*# sourceMappingURL=common.css.map */

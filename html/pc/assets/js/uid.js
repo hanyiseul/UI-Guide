@@ -18,6 +18,13 @@
     }
     includeHTML();
 
+    // 모바일 높이
+    function mobileHeight () {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+    mobileHeight();
+
     // dropdown
     function dropdown() {
       const btn = document.querySelectorAll('.dropdown__btn');
@@ -118,7 +125,6 @@
         })
       })
       closedBtn.forEach(btn => {
-        console.log(btn.closest('.modal'))
         btn.addEventListener('click', () => {
           btn.closest('.modal').classList.remove('is-active');
           document.body.removeAttribute('style');

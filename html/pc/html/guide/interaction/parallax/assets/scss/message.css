@@ -1,0 +1,95 @@
+.section0 {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.section0 .is-sticky {
+  height: 100%;
+}
+
+.section0 .scroll__msg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, 0, 0);
+          transform: translate3d(-50%, 0, 0);
+  color: #000;
+}
+
+.section1 {
+  padding-top: 50vh;
+  line-height: 1.6;
+}
+
+.section1 .description {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  font-size: 3rem;
+  color: #888;
+}
+
+.bannerArea {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 9.7rem;
+  color: #fff;
+  background: pink;
+  border-bottom: 2px solid #000;
+}
+
+.bannerArea .bannerArea__wrap {
+  position: relative;
+  width: 100%;
+  height: 9.7rem;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+.bannerArea .bannerArea__wrap .bannerArea__roller {
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  white-space: nowrap;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.bannerArea .bannerArea__wrap .bannerArea__roller .banner__content {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  margin-right: 6.18rem;
+  font-size: 0;
+}
+
+.bannerArea .bannerArea__wrap .bannerArea__roller .banner__content img {
+  position: relative;
+  top: 50%;
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  vertical-align: top;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.bannerArea .bannerArea__wrap .bannerArea__roller .banner__content .desc {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: inline-block;
+  margin-left: 2.2em;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 130%;
+}
+/*# sourceMappingURL=message.css.map */

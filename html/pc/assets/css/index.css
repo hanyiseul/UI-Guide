@@ -7835,6 +7835,10 @@ table.board a {
     left: -100%;
     transition: 0.2s all;
   }
+  .container__guide .sidebar .menu__link {
+    display: inline-block;
+    width: 100%;
+  }
   .container__guide.sidebar-active {
     overflow: hidden;
   }

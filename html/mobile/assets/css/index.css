@@ -31,6 +31,7 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: top;
+  pointer-events: none;
 }
 
 ::-moz-placeholder {
@@ -7632,6 +7633,9 @@ section.contents__setting {
   width: 1.4rem;
   height: 1.6rem;
   vertical-align: top;
+}
+.flag .btn__remove img {
+  pointer-events: none;
 }
 .flag .btn__remove .icon {
   width: 1rem;

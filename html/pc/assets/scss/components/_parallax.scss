@@ -1,0 +1,210 @@
+.parallax{
+	overflow-x:hidden;
+	margin:0;
+
+  // common
+  [class^="is-show"] .is-sticky{
+    display:block;
+  }
+
+  [class^="section"]{
+    position:relative;
+  //	padding-top:50vh; 
+    box-sizing:border-box;
+  }
+
+  .is-sticky{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    will-change:transform, opacity;
+  }
+
+  .scroll__msg{
+    opacity:0;
+    font-size:2em;
+    font-weight:bold;
+    text-align:center;
+  }
+
+  // image change
+  .section0{    
+    position: sticky;
+    z-index: 99;
+    background-color:transparent;
+    padding:0;
+    .is-sticky{
+      position:sticky;
+      top:0;
+      left:0;
+      bottom:0;
+      z-index:99;
+      width:100%;
+      height:100vh !important;
+      overflow:hidden;
+      opacity: 1;
+      transition:1s all;
+      .img__content{
+        &.pc{
+          display:block;
+        }
+        &.mo{
+          display:none;
+        }
+        position:absolute;
+        top:50%;
+        left:0;
+        width:100%;
+        height:100%;    
+        opacity:0;
+        transform:translateY(-50%);	
+        .imgArea{
+          position:relative;
+          height:100vh;
+          overflow:hidden;
+          &.is-scroll{
+            .img__pc, 
+            .imgArea__bg{
+              position:absolute;
+              left:0;
+              width:100%;
+              height:100%;
+              background-color: #fff;
+              img{
+                position:absolute;
+                left:50%;
+                bottom:0;
+                width:1280px;
+                max-width:100%;
+                height:auto;
+                max-height:100%;
+                transform:(translateX(-50%));
+              }
+            }
+            .imgArea__bg{
+              display: flex;
+              align-items:flex-end;
+              justify-content: center;
+              background: #000;
+              clip:rect(0px, 0vw, 100vh, 0px);
+              .img__leftArea{
+                width:100%;
+                height:100%;
+                position:absolute;
+                bottom:0;
+                .img__message{
+                  font-size:40px;
+                  font-weight:700;
+                  line-height:140%;
+                  position:absolute;
+                  top:50%;
+                  left:50%;
+                  width:1280px;
+                  max-width: 100%;
+                  color: #fff;
+                  transform:translate3d(-50%,-50%,0);
+                  opacity:0;
+                  &.en{
+                    margin-left:-160px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width : 767px) {
+    .section0{
+      position:relative;
+      .is-sticky{
+        position:fixed;
+        width:100%;
+        height:100%;
+        .img__content{
+          position:relative;
+          top:auto;
+          opacity:0;
+          background:#000;
+          transform: translateY(0);
+          &.pc{
+            display:none;
+          }
+          &.mo{
+            display:block;
+          }
+          .imgArea.is-scroll{
+            position:absolute;
+            top:0;
+            width: 100%;
+            height: 100vh;
+            .img__mo{
+              height:100%;
+              .img__before,
+              .img__after{
+                display:flex;
+                align-items:center;
+                justify-content:flex-end;
+                flex-direction:column;
+                position:absolute;
+                bottom:0;
+                left:50%;
+                transform:translateX(-50%);
+                width:100%;
+                height:100vh;
+                background-color: #fff;
+                img{
+                  width:330px;
+                  height:auto;
+                }
+              }
+              .img__after{
+                height:0vh;
+                clip: rect(0px, auto, auto, 0px);
+                background: #000;
+              }
+            }
+          }
+          .img__message{
+            font-size:20px;
+            font-weight:700;
+            line-height:130%;
+            position: absolute;
+            top:50%;
+            width:100%;
+            color:#fff;
+            text-align:center;
+            opacity:0;
+          }
+        }
+      }
+    }
+  }
+  
+  // canvas
+  .canvasArea{
+    top:0; 
+    height:100%;
+    .canvas__img{
+      position:absolute; 
+      top:50%; 
+      left:50%;
+    }
+  }
+  
+  .section1{
+    padding-top:50vh;
+    line-height:1.6;
+    .description {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      font-size: 3rem;
+      color: #888;
+    }
+  }
+}

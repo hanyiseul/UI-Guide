@@ -258,6 +258,10 @@
     .sidebar {
       left: -100%;
       transition: 0.2s all;
+      .menu__link {
+        display: inline-block;
+        width: 100%;
+      }
     }
     &.sidebar-active {
       overflow: hidden;

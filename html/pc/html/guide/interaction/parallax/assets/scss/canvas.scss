@@ -1,0 +1,21 @@
+.canvasArea{
+	top:0; 
+	height:100%;
+	.canvas__img{
+		position:absolute; 
+		top:50%; 
+		left:50%;
+	}
+}
+
+.section1{
+	padding-top:50vh;
+	line-height:1.6;
+	.description {
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 0 1rem;
+		font-size: 3rem;
+		color: #888;
+	}
+}

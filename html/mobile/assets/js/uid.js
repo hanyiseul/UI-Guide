@@ -56,7 +56,7 @@
 
   // sidebar
   function sidebar() {
-    window.onload = function () {
+    setTimeout(() => {
       const sidebar = document.querySelector('.sidebar');
       const sideBtn = document.querySelector('.header__sidebarTrigger');
       sideBtn.addEventListener('click', () => {
@@ -68,7 +68,7 @@
         document.body.style.overflow = "visible";
         sidebar.classList.remove('is-active');
       })
-    }
+    }, 100);
   }
   
   function btnClosed() {
@@ -226,7 +226,7 @@
           <div class="flag">
             <span class="label">${input.value}</span>
             <button type="button" class="btn btn__remove">
-              <svg class="icon"><use href="#icon-closed"></use></svg>
+              <img src="/html/mobile/assets/images/svg/icon-closed.svg" alt="">
               <span class="visually-hidden">삭제</span>
             </button>
           </div>`;
@@ -241,6 +241,7 @@
 
     receiver.forEach(receiver => {
       receiver.addEventListener("click", (e) => {
+        console.log(e.target)
         if(e.target.classList.contains("btn__remove")) {
           e.target.closest('.receiver__flag').remove();
         }

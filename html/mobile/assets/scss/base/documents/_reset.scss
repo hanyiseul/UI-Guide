@@ -11,7 +11,7 @@ body {
 }
 a { color: $gray-600; text-decoration: none; -webkit-tap-highlight-color: transparent; }
 button { color: $gray-600; }
-img { max-width: 100%; height: auto; vertical-align: top; }
+img { max-width: 100%; height: auto; vertical-align: top; pointer-events: none;}
 ::-moz-placeholder { opacity: 1; }        /* Firefox */
 [class] { margin: 0; padding: 0; box-sizing: border-box; }
 [class]::before,

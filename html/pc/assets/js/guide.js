@@ -20,18 +20,14 @@
           code.innerHTML =  guide[i].innerHTML;
           guideCode[i].appendChild(code);
       }
-
-      button.addEventListener('click', () =>{
-          console.log(button);
-      });
   });
 
   window.onload = function () {
-    const btnMenu = document.querySelector("header .btnMenu");
-    console.log(btnMenu)
-    btnMenu.addEventListener("click", () => {
-      console.log('hi')
-      btnMenu.closest(".container.container__guide").classList.toggle('sidebar-active');
-    })
+    setTimeout(() => {
+      const btnMenu = document.querySelector("header .btnMenu");
+      btnMenu.addEventListener("click", () => {
+        btnMenu.closest(".container.container__guide").classList.toggle('sidebar-active');
+      })
+    }, 100);
   }
 })();
