@@ -101,7 +101,7 @@
 				msgB_translateY_in: [10, 0, {start:0.55, end:0.75}],
 				msgB_translateY_out: [0, -10, {start:0.8, end:0.9}],
 				//section5 banner
-				bannerTrans : [0, -30, {start:0, end:1}],
+				bannerTrans : [0, -50, {start:0, end:1}],
 			}
 		},
 		{
@@ -114,7 +114,7 @@
 				banner : document.querySelector('.section5 .bannerArea__roller'),
 			},
 			values:{
-				bannerTrans : [-30, 0, {start:0, end:1}],
+				bannerTrans : [-50, 0, {start:0, end:1}],
 			}
 		},
 		{
