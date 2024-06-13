@@ -41,7 +41,7 @@
   //     content.style.top = page * -100 + 'vh'
   //   }
   // }, {passive: false})
-  }
+  // }
   
 })();
 
