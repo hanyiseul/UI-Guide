@@ -7681,8 +7681,8 @@ table.board a {
 .section0.on .msgA {
   opacity: 1;
   bottom: -5%;
-  animation: messageA1 2s running forwards, messageA2 2s running forwards;
-  animation-delay: 0.5s, 4s;
+  animation: messageA1 1s running forwards, messageA2 1s running forwards;
+  animation-delay: 0.5s, 2s;
 }
 .section0.on .msgA h1 {
   font-size: 24px;
@@ -7696,7 +7696,7 @@ table.board a {
   opacity: 0;
   bottom: 50%;
   animation: messageB 1s running forwards;
-  animation-delay: 6s;
+  animation-delay: 2.5s;
 }
 .section0.pause .content__bg {
   background: #000;
