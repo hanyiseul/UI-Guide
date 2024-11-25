@@ -67,7 +67,7 @@ section.on .contact{position:absolute; width:1px; height:1px; clip:rect(0 0 0 0)
 .titArea .tit3{font-size:16px;}
 .titArea .subTit {margin: 10px 0 0;}
 .titArea .subTit a {position: relative; color: #fff;}
-.titArea .subTit a:not(:first-child) {margin-left: 10px; padding-left: 10px;}
+.titArea .subTit a:not(:first-child) {margin-left: 10px; padding-left: 12px;}
 .titArea .subTit a:not(:first-child):before {content: ''; position: absolute; top: 50%; left: 0; display: block; width: 1px; height: 15px; background: #fff; transform: translateY(-50%)}
 .titArea .desc{display:inline-block; width:100%; margin-bottom:10px; font-size:16px;}
 
