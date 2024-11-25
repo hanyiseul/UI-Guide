@@ -159,22 +159,30 @@
   background: $gray-200;
 
   xmp {
-      width: 100%;
-      max-height: 250px;
-      margin: 0;
-      padding: 20px 0;
-      overflow-y: scroll;
-      font-family: 'Pretendard';
-      color: $black;
-      font-size: 14px;
-      white-space: pre-wrap;
+    width: 100%;
+    max-height: 250px;
+    margin: 0;
+    padding: 20px 0;
+    overflow-y: scroll;
+    font-family: 'Pretendard';
+    color: $black;
+    font-size: 14px;
+    white-space: pre-wrap;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #ccc; /* 스크롤바 막대 색상 */
+      border-radius: 12px 12px 12px 12px;
+    }
   }
 }
 
 .guideBtn{
   position: absolute;
   top: 12px;
-  right: 12px;
+  right: 20px;
   display: block;
   width: auto;
   height: auto;
