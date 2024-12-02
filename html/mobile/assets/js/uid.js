@@ -90,44 +90,44 @@
     const checkbox = document.querySelectorAll('.list__input');
     const checkModal = document.querySelector('.checked__modal');
     
-    // // 전체선택
-    // checkAll.forEach(checkAll => {
-    //   if(checkAll) {
-    //     checkAll.addEventListener('change', ()=> {
-    //       checkbox.forEach(checkbox => {
-    //         if(checkAll.checked) {
-    //           checkbox.checked = true
-    //           if(checkModal) {
-    //             checkModal.classList.remove('is-closed');
-    //           }
-    //           checkbox.closest('li').classList.add('is-select');
-    //         } else {
-    //           checkbox.checked = false
-    //           if(checkModal) {
-    //             checkModal.classList.add('is-closed');
-    //           }
-    //           checkbox.closest('li').classList.remove('is-select');
-    //         }
-    //       });
-    //     });
-    //     checkAll.addEventListener('click', ()=> {
-    //       checkbox.forEach(checkbox => {
-    //         checkbox.checked = true
-    //         checkbox.closest('li').classList.add('is-select');
-    //       });
-    //     });
-    //   }
-    // });
+    // 전체선택
+    checkAll.forEach(checkAll => {
+      if(checkAll) {
+        checkAll.addEventListener('change', ()=> {
+          checkbox.forEach(checkbox => {
+            if(checkAll.checked) {
+              checkbox.checked = true
+              if(checkModal) {
+                checkModal.classList.remove('is-closed');
+              }
+              checkbox.closest('li').classList.add('is-select');
+            } else {
+              checkbox.checked = false
+              if(checkModal) {
+                checkModal.classList.add('is-closed');
+              }
+              checkbox.closest('li').classList.remove('is-select');
+            }
+          });
+        });
+        checkAll.addEventListener('click', ()=> {
+          checkbox.forEach(checkbox => {
+            checkbox.checked = true
+            checkbox.closest('li').classList.add('is-select');
+          });
+        });
+      }
+    });
 
-    // // 선택 삭제
-    // if(checkDelete) {    
-    //   checkDelete.addEventListener('click', () => {
-    //     const checked = document.querySelectorAll('.list__input:checked')
-    //     checked.forEach(checked => {
-    //       checked.closest('li').remove();
-    //     });
-    //   });
-    // }
+    // 선택 삭제
+    if(checkDelete) {    
+      checkDelete.addEventListener('click', () => {
+        const checked = document.querySelectorAll('.list__input:checked')
+        checked.forEach(checked => {
+          checked.closest('li').remove();
+        });
+      });
+    }
     
     // 선택시 박스 컬러
     checkbox.forEach(checkbox => {
