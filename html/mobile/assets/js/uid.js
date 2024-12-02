@@ -56,7 +56,7 @@
   };
 
   // sidebar
-  function sidebar() {
+  window.onload = function sidebar() {
     setTimeout(() => {
       const sidebar = document.querySelector('.sidebar');
       const sideBtn = document.querySelector('.header__sidebarTrigger');
