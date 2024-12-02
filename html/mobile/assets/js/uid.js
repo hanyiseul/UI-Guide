@@ -13,6 +13,7 @@
           };
           xhttp.open('GET', includePath, true);
           xhttp.send();
+          sidebar();
         };
       });
     }
@@ -544,7 +545,6 @@
     includeHTML();
     mobileHeight();
     tab();
-    sidebar();
     btnClosed();
     listChecked();
     dropdown();
