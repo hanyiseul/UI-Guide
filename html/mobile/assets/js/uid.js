@@ -68,7 +68,7 @@
         document.body.style.overflow = "visible";
         sidebar.classList.remove('is-active');
       })
-    }, 100);
+    }, 300);
   }
   
   function btnClosed() {
