@@ -57,19 +57,19 @@
 
   // sidebar
   function sidebar() {
-    const sidebar = document.querySelector('.sidebar');
-    const sideBtn = document.querySelector('.header__sidebarTrigger');
-    sideBtn.addEventListener('click', () => {
-      document.body.style.overflow = "hidden";
-      sidebar.classList.add('is-active');
-    })
-    const sideClose = document.querySelector('.header__sidebarClose');
-    sideClose.addEventListener("click", () => {
-      document.body.style.overflow = "visible";
-      sidebar.classList.remove('is-active');
-    })
     setTimeout(() => {
-    }, 300);
+      const sidebar = document.querySelector('.sidebar');
+      const sideBtn = document.querySelector('.header__sidebarTrigger');
+      sideBtn.addEventListener('click', () => {
+        document.body.style.overflow = "hidden";
+        sidebar.classList.add('is-active');
+      })
+      const sideClose = document.querySelector('.header__sidebarClose');
+      sideClose.addEventListener("click", () => {
+        document.body.style.overflow = "visible";
+        sidebar.classList.remove('is-active');
+      })
+    }, 350);
   }
   
   function btnClosed() {
