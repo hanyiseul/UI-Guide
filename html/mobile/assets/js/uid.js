@@ -91,7 +91,7 @@
     const checkModal = document.querySelector('.checked__modal');
     
     // 전체선택
-    checkAll.forEach(checkAll => {
+ /*    checkAll.forEach(checkAll => {
       if(checkAll) {
         checkAll.addEventListener('change', ()=> {
           checkbox.forEach(checkbox => {
@@ -118,7 +118,7 @@
         });
       }
     });
-
+ */
     // 선택 삭제
     if(checkDelete) {    
       checkDelete.addEventListener('click', () => {
